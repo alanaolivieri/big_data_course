@@ -1,502 +1,133 @@
-# Práctico Hadoop 
+# Prácticas de Hadoop
 
-## Preparar el ambiente para trabajar.
+Esta carpeta contiene los materiales necesarios para preparar el entorno de trabajo y realizar tres prácticas introductorias con **Hadoop, HDFS y Hive**.
 
-Primero debemos instalar java para poder proceder con la instalación de hadoop para eso debemos abrir una nueva terminal y ejecutar:
+## Estructura
 
-`sudo apt update`
+### Preparación del entorno
 
-`sudo apt install openjdk-11-jdk -y`
+Antes de realizar los Ejemplos es necesario configurar las herramientas que se utilizarán durante las prácticas.
 
-recuerda que la contraseña de admin es **eurecat**
+#### `[00_environment_setup.md](00_environment_setup.md)`
 
-Ahora vamos a proceder a instalar hadoop para eso vamos a descargarlo y descomprimirlo  ejecutando estos comandos 
+Preparación del entorno para trabajar con Hadoop de forma local.
 
-`wget https://downloads.apache.org/hadoop/common/hadoop-3.3.6/hadoop-3.3.6.tar.gz`
+Incluye:
 
-`tar xzf hadoop-3.3.6.tar.gz`
+- instalación de Java;
+- descarga e instalación de Hadoop;
+- configuración de variables de entorno;
+- configuración de `JAVA_HOME`;
+- comprobación de la instalación.
 
---- 
-```diff
-Nota: ⚠️ Si tar xzf hadoop-3.3.6.tar.gz parece quedar “colgado”
+Esta preparación es necesaria para realizar el Ejemplo de **WordCount**.
 
-Al ejecutar:     tar xzf hadoop-3.3.6.tar.gz 
+#### `[02_docker_environment_setup.md](02_docker_environment_setup.md)`
 
-Puede parecer que la terminal queda bloqueada o que no está haciendo nada. Esto es normal.
+Preparación del entorno Hadoop con Docker.
 
-Por defecto, el comando tar no muestra ningún mensaje mientras está descomprimiendo.
-Trabaja en silencio y vuelve al prompt cuando termina.
+Incluye:
 
-¿Cómo verificar que funcionó?
+- instalación de Docker;
+- instalación de Git;
+- descarga del proyecto desde GitHub;
+- creación y arranque de los contenedores;
+- comprobación del estado del clúster;
+- introducción a los principales componentes:
+  - NameNode;
+  - DataNode;
+  - ResourceManager;
+  - NodeManager.
 
-Luego de ejecutar el comando, escribir:    ls
+Esta preparación se utiliza para el Ejemplo de **HDFS**.
 
-Si aparece una carpeta llamada:    hadoop-3.3.6
+#### `[04_hive_environment_setup.md]()`
 
-entonces la extracción fue correcta.
+Preparación del entorno para trabajar con Hive.
 
-```
+Incluye:
 
---- 
-`sudo mv hadoop-3.3.6 /opt/hadoop`
+- preparación del directorio de trabajo;
+- descarga del conjunto de datos;
+- descarga de la imagen de Hive;
+- creación y arranque del contenedor;
+- comprobación del estado del contenedor;
+- conexión a Hive mediante Beeline.
 
-Ahora debemos agregar las variables de hadoop al archivo de bash para esto debemos ejecutar.
-Para esto debemos ejecutar 
-
-`sudo nano .bashrc`
-
-Vamos al final del archivo utilizando &darr; y pegamos este código al final 
-
-```sh
-  #Hadoop Related Options
-  export HADOOP_HOME=/opt/hadoop
-  export HADOOP_INSTALL=$HADOOP_HOME
-  export HADOOP_MAPRED_HOME=$HADOOP_HOME
-  export HADOOP_COMMON_HOME=$HADOOP_HOME
-  export HADOOP_HDFS_HOME=$HADOOP_HOME
-  export YARN_HOME=$HADOOP_HOME
-  export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_HOME/lib/native
-  export PATH=$PATH:$HADOOP_HOME/sbin:$HADOOP_HOME/bin
-```
-
-Presionamos **ctrl + O** para salvar **enter** para confirmar y luego **ctrl + X** para cerrar el editor.
-
-Luego ejecutamos el siguiente comando para actualizar la configuración
-
-`source .bashrc`
-
-Ahora si escribimos en la consola `hadoop` deberíamos recibir el siguiente error: `ERROR: JAVA_HOME is not set and could not be found.`
-
-Esto se debe a que hadoop no sabe dónde tenemos instalado java dentro de nuestro sistema operativo por lo tanto vamos a solucionarlo.
-Editamos la configuración de ambiente de hadoop utilizando:
-
-`sudo nano $HADOOP_HOME/etc/hadoop/hadoop-env.sh`
-
-Buscamos la línea donde dice:
-
-```sh
-  # The java implementation to use. By default, this environment
-  # variable is REQUIRED on ALL platforms except OS X!
-  # export JAVA_HOME=
-```
-
-y la reemplazamos por:
-
-```sh
-  # The java implementation to use. By default, this environment
-  # variable is REQUIRED on ALL platforms except OS X!
-  export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
-```
-
-Presionamos **ctrl + O** para salvar **enter** para confirmar y luego **ctrl + X** para cerrar el editor.
-
-Ahora si ejecutamos el comando `hadoop` tendríamos que ver todos los comandos que nos permite ejecutar hadoop.
-
-## Ejemplo contar palabras repetidas.
-
-Ahora que tenemos el ambiente instalado podemos utilizar hadoop. Primero vamos a crear una carpeta nueva utilizando:
-
-`mkdir ejemplo_mapreduce`
-
-y entramos a la misma utilizando 
-
-
-`cd ejemplo_mapreduce`
-
-Ahora vamos a crear un archivo de texto y agregar algunas palabras. En la consola ejecutamos:
-
-`touch data.txt`
-
-`nano data.txt`
-
-Escribimos o pegamos algún texto de internet intentando que tenga palabras repetidas y luego guardamos el mismo utilizando los comandos que ya conocemos:
-
-**ctrl + O** para salvar **enter** para confirmar y luego **ctrl + X** para cerrar el editor.
-
-Ahora vamos a descargar un archivo jar que ejecutaremos utilizando hadoop para contar las palabras. Para esto ejecutamos: 
-
-`wget https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-examples/3.3.6/hadoop-mapreduce-examples-3.3.6.jar` 
-
-Para ver el contenido del documento .jar: 
-
-`hadoop jar hadoop-mapreduce-examples-3.3.6.jar`
-
-Y ahora ejecutamos:
-
-`hadoop jar hadoop-mapreduce-examples-3.3.6.jar wordcount data.txt output`
-
-podemos consultar los resultados ejecutando:
-
-`cat  output/part-r-00000`
-
-También podemos ver esto en la interfaz gráfica utilizando.
-
-`nautilus .`
-
---- 
-```diff
-Importante: volver a ejecutar el WordCount
-
-Hadoop no permite sobrescribir la carpeta de salida.
-Si intentas ejecutar nuevamente:
-hadoop jar hadoop-mapreduce-examples-3.3.6.jar wordcount data.txt output
-
-obtendrás un error indicando que la carpeta output ya existe.
-
-Por lo tanto, antes de volver a ejecutar el proceso, es necesario eliminar la carpeta output:
-rm -rf output
-
-También podrás eliminar la carpeta "output" de forma manual.
-
-Luego podrás ejecutar nuevamente el job:
-hadoop jar hadoop-mapreduce-examples-3.3.6.jar wordcount data.txt output
-
-Y consultar otra vez los resultados:
-cat output/part-r-00000
-
-```
---- 
-
-
-# Configurar Nodos de Clúster en Hadoop Dockerizado
-
-En la sección anterior aprendimos a instalar hadoop en un ordenar manualmente pero para manejar un clúster o funciones más complejas deberíamos de meternos en configuraciones que no resultan de gran valor en este curso ya que serían muy distintas en ambientes reales. Es por esto que en esta sección se va a utilizar docker para desplegar contenedores pre-configurados y así simplificar el mismo.
-
-*Docker es una plataforma que te permite empaquetar aplicaciones y sus dependencias en "contenedores" aislados. Estos contenedores funcionan como cajas de herramientas virtuales que incluyen todo lo necesario para que la aplicación se ejecute correctamente, desde el código hasta el sistema operativo.*
-
-## Preparar el ambiente para trabajar.
-
-Primero debemos instalar docker y git para poder proceder con la creación del clúster de hadoop, para eso debemos **abrir una nueva terminal** y ejecutar:
-
-`sudo snap install docker`
-
-`sudo apt install git -y`
-
-recuerda que la contraseña de admin es **eurecat**
-
-Ahora vamos a descargar la imagen de docker correspondiente:
-
-`git clone https://github.com/luciaalvarezuy/Docker_hadoop`
- 
-procedemos a entrar a la carpeta que acabamos de clonar utilizando:
-
-`cd Docker_hadoop`
-
-y ya podemos iniciar las imágenes de docker ejecutando
-
-`sudo docker-compose up -d`
-
-Podemos ver los contenedores desplegados utilizando 
-
-`sudo docker ps`
-
-------------
-Componentes principales
-
-🗂 NameNode
-Es el “cerebro” de HDFS (Hadoop Distributed File System).
--   Administra los metadatos.
--   Sabe dónde están almacenados los bloques de datos.
--   No guarda los datos directamente.
-
-------------------------------------------------------------------------
-💾 DataNode
-Es el encargado de almacenar físicamente los bloques de datos.
-En un cluster real existirían múltiples DataNodes distribuidos en distintas máquinas.
-Aquí estamos simulando uno dentro de Docker.
-
-------------------------------------------------------------------------
-🎛 ResourceManager
-Forma parte de YARN.
--   Gestiona los recursos del cluster (CPU y memoria).
--   Decide cómo se distribuyen las tareas.
-
-------------------------------------------------------------------------
-⚙ NodeManager
-Ejecuta las tareas asignadas por el ResourceManager en cada nodo.
-
-------------------------------------------------------------------------
-Estado de los contenedores (STATUS)
-En la columna STATUS podemos ver algo como:
-    Up (healthy)
-
-Esto significa que:
--   El contenedor está en ejecución.
--   El servicio interno está funcionando correctamente.
--   El healthcheck pasó sin errores.
-
-Si apareciera:
--   Exited
--   Restarting
--   Unhealthy
-significaría que hay un problema en el servicio.
-
-------------------------------------------------------------------------
-Puertos expuestos (PORTS)
-En la columna PORTS vemos los puertos que permiten acceder a las interfaces web.
-
-Por ejemplo:
--   9870 → Interfaz web del NameNode
--   8088 → Interfaz web de YARN
-
--------
-Ahora vamos al navegador y escribimos `http://localhost:9870` donde podemos ver el explorador web de Hadoop.
-
-## Crear un archivo en HDFS.
-
-Ahora podemos ejecutar la terminal **dentro** de uno de los contenedores que hemos creado utilizando el comando:
-
-`sudo docker exec -it namenode bash`
-
-dentro de esta terminal crearemos una carpeta llamada user/root/input utilizando el comando 
-
-`hdfs dfs -mkdir -p /user/root/input`
-
-copiamos todos los archivos xml de configuración de Hadoop al directorio de que creamos:
-
-`hdfs dfs -put $HADOOP_HOME/etc/hadoop/*.xml /user/root/input`
-
-ahora podemos descargar un archivo desde git al directorio:
-
-`curl https://raw.githubusercontent.com/ibm-developer-skills-network/ooxwv-docker_hadoop/master/SampleMapReduce.txt --output data.txt`
-
-y copiamos el archivo al directorio utilizando:
-
-`hdfs dfs -put data.txt /user/root/`
-
-## Ver el archivo en HDFS.
-
-volvemos al navegador, a la ruta `http://localhost:9870`
-
-vamos a Utilities &rarr; Broswe the file system y luego a la ruta user/root como se muestra en las imágenes:
-
-![hadoop1](https://github.com/luciaalvarezuy/Big-Data-Course/blob/main/Hadoop/01_exercise/hadoop1.png)
-
-![01_exercise](https://github.com/luciaalvarezuy/Big-Data-Course/blob/main/Hadoop/01_exercise/hadoop2.png)
-
-Ten en cuenta que el tamaño del bloque es de 128 MB aunque el tamaño del archivo sea en realidad mucho menor. Esto se debe a que el tamaño de bloque predeterminado utilizado por HDFS es de 128 MB.
-
-Puedes hacer clic en el archivo para ver en qué bloque se encuentra. Esto te dará información sobre el archivo en términos de número de bytes, ID de bloque, etc.
-
-![hadoop3](https://github.com/luciaalvarezuy/Big-Data-Course/blob/main/Hadoop/01_exercise/hadoop3.png)
-
-para salir de la terminal dentro del contenedor simplemente podemos ejecutar: `exit`
-
-# Configurar Hive and Bee
-
-## Obtención de la información para trabajar
-
-Antes de comenzar vamos a descargar un archivo con datos con el que trabajaremos. Para esto **abrimos una nueva terminal** y vamos a crear un nuevo directorio utilizando el comando:
-
-`sudo mkdir /home/project` 
-
-`sudo mkdir /home/project/data`
-
-y nos movemos al directorio utilizando el comando:
-
-`cd /home/project/data`
-
-ahora procedemos a descargar el archivo desde github con el comando:
-
-`sudo wget -O BigData_Custom_Sample.csv https://raw.githubusercontent.com/luciaalvarezuy/Big-Data-Course/main/Hadoop/01_exercise/BigData_Custom_Sample.csv`
-
-podemos ver este archivo en vs code utilizando el comando `code .`
-
-## Ejecución de la imagen Hive en docker  
-
-Ahora que tenemos la información podemos descargar la imagen de docker de apache/hive, para eso **abrimos una nueva terminal** y ejecutamos: 
-
-`sudo docker pull apache/hive:4.0.0-alpha-1`
-
-Ahora que tenemos la imagen descargada podemos chequearlo utilizando 
-
-`sudo docker images`
-
-Para ejecutar la misma podemos ejecutar:
-
-`sudo docker run -d -p 10000:10000 -p 10002:10002 --env SERVICE_NAME=hiveserver2 -v /home/project/data:/hive_custom_data --name myhiveserver apache/hive:4.0.0-alpha-1`
-
-Tenemos varias configuraciones:
-
-- `-p 10000:10000 -p 10002:10002`: Se mapean los puertos del contenedor de docker con las de nuestro ordenador o vm. Es decir, el puerto 10000 del contenedor corresponde con el 10000 de nuestro ordenador y lo mismo para el 10002.
-- `--env SERVICE_NAME=hiveserver2`Simplemente seteamos la variable de entorno SERVICE_NAME
-- `--name myhiveserver`  Nombraremos la instancia del servidor como "myhiveserver"
-- `-v /home/project/data:/hive_custom_data` Definimos el mapeo de volúmenes entre el contenedor y el ordenador. Al igual que con los puertos en este caso estamos diciendo que los archivos que agreguemos en la carpeta */home/project/data* de nuestro ordenador se replicarán en la carpeta */hive_custom_data* del contenedor (nótese que en */home/project/data* fue donde agregamos nuestro archivo csv con el que vamos a trabajar)
-
-Para ver las imágenes desde las cuales estamos trabajando `sudo docker ps`
-
-Ahora vamos al navegador y escribimos `http://localhost:10002` donde podemos ver el explorador web de hive.
-
-## Crear tablas, agregar y ver datos en Hive
-
-**Abrimos una nueva terminal** y ejecutamos: 
-
-Con Hive funcionando, que te permite acceder a beeline. Beeline es una interfaz de línea de comandos SQL donde puedes crear, modificar, eliminar tablas y acceder a los datos dentro de ellas.
-
-`sudo docker exec -it myhiveserver beeline -u 'jdbc:hive2://localhost:10000/'`
-
-Tendríamos que ver este resultado:
-
-![hive1](https://github.com/luciaalvarezuy/Big-Data-Course/blob/main/Hadoop/01_exercise/hive1.png)
-
-Ya dentro de la consola vamos a crear una tabla y a cargarle la información que descargamos en el archivo csv. Para crear la tabla podemos ejecutar el siguiente comando:
-
-`create table Opiniones(id int, edad int, sexo string, pais_donde_vive string, opinion_big_data string)  row format delimited fields terminated by ',' ;`
-
-Para ver si la tabla se creo correctamente podemos utilizar el siguiente comando 
-
-`show tables;`
-
-Si todo es correcto tendríamos que ver el siguiente resultado:
-
-![hive2](https://github.com/luciaalvarezuy/Big-Data-Course/blob/main/Hadoop/01_exercise/hive2.png)
-
-Ahora podemos cargar la tabla que descargamos en el primer paso en la tabla utilizando el siguiente comando:
-
-`LOAD DATA INPATH '/hive_custom_data/BigData_Custom_Sample.csv' INTO TABLE opiniones;`
-
-Podemos ver los datos cargado ejecutando:
-
-`SELECT * FROM opiniones;`
-
----
----
-
-# Prácticas con Hive
-
-A continuación se incluyen ejercicios guiados y simples para practicar **consultas básicas en Hive** sobre la tabla `opiniones`.  
-Cada paso muestra el comando exacto para copiar y pegar.
+Esta preparación es necesaria para el ejemplo de **Hive**.
 
 ---
 
-## Verificación rápida
+## Ejemplos
 
-`SELECT * FROM opiniones LIMIT 10;`
+### Ejemplo 1 — WordCount con MapReduce
 
----
+Introducción práctica a MapReduce mediante el programa `WordCount`.
 
-## Ejercicio A — Agregaciones básicas
+El Ejemplo permite:
 
-1. Total de opiniones:  
-   `SELECT COUNT(*) AS total_opiniones FROM opiniones;`
+- crear un archivo de texto;
+- ejecutar un proceso MapReduce;
+- contar la frecuencia de las palabras;
+- consultar los resultados generados por Hadoop.
 
-2. Edad mínima, máxima y promedio:  
-   `SELECT MIN(edad) AS edad_min, MAX(edad) AS edad_max, AVG(edad) AS edad_prom FROM opiniones;`
+Archivo:
 
-3. Distribución por sexo:  
-   `SELECT sexo, COUNT(*) AS cantidad FROM opiniones GROUP BY sexo ORDER BY cantidad DESC;`
-
----
-
-## Ejercicio B — Filtros y ordenamientos
-
-1. Opiniones de mayores de 30 años:  
-   `SELECT id, edad, pais_donde_vive FROM opiniones WHERE edad > 30 ORDER BY edad DESC;`
-
-2. Personas entre 25 y 40 años (rango):  
-   `SELECT id, edad, sexo FROM opiniones WHERE edad BETWEEN 25 AND 40 ORDER BY edad;`
+`[01_wordcount.md](01_wordcount.md)`
 
 ---
 
-## Ejercicio C — Crear tabla a partir de una consulta
+### Ejemplo 2 — Trabajar con HDFS
 
-Crear una tabla con personas mayores de 30 para trabajar aparte:
+Práctica introductoria sobre el sistema de archivos distribuido de Hadoop.
 
-`CREATE TABLE opiniones_mayores30 AS SELECT id, edad, sexo, pais_donde_vive, opinion_big_data FROM opiniones WHERE edad > 30;`
+El Ejemplo permite:
 
-Verificar:
+- acceder al contenedor del NameNode;
+- crear directorios en HDFS;
+- cargar archivos;
+- consultar los archivos almacenados;
+- visualizar la información desde la interfaz web de Hadoop.
 
-`SHOW TABLES;`  
+Archivo:
 
-
-`SELECT COUNT(*) FROM opiniones_mayores30;` 
-
-
-`SELECT * FROM opiniones_mayores30 LIMIT 10;`
-
----
-## Ejercicio D — Top-N por país
-
-Top 5 países con más opiniones:
-
-`SELECT pais_donde_vive, COUNT(*) AS cantidad FROM opiniones GROUP BY pais_donde_vive ORDER BY cantidad DESC LIMIT 5;`
+`[03_hdfs.md]()`
 
 ---
 
-## Ejercicio E — Conteos rápidos de valores distintos
+### Ejemplo 3 — Hive y Beeline
 
-Países distintos:  
+Práctica para trabajar con datos estructurados mediante Hive.
 
-   `SELECT COUNT(DISTINCT pais_donde_vive) AS paises_distintos FROM opiniones;`
+El Ejemplo permite:
 
----
+- ejecutar Hive mediante Docker;
+- conectarse con Beeline;
+- crear una tabla;
+- cargar datos desde un archivo CSV;
+- realizar consultas básicas;
+- aplicar filtros, agregaciones y agrupaciones.
 
-## Nota final
+Archivo:
 
-Si alguna sentencia devuelve vacío, revisa la ortografía de las columnas (`id`, `edad`, `sexo`, `pais_donde_vive`, `opinion_big_data`) y que los datos se hayan cargado correctamente con:  
-
-`SELECT * FROM opiniones LIMIT 10;`
-
-
-
-
-Para salir de la terminal de beehive podemos utilizar **ctrl + D**
-
-Internamente, Hive utiliza MapReduce para procesar y analizar datos. Cuando ejecutas una consulta de Hive, esta genera trabajos de MapReduce que se ejecutan en el clúster de Hadoop.
-
----- 
-⛔ Si presionas CTRL + C
-
-Si interrumpiste el proceso, puede haber quedado una carpeta incompleta.
-
-
-----
-----
-
-
-Te pueden dar algunos problemas:
-
-## Error común: "The container name '/myhiveserver' is already in use"
-
-Este error aparece cuando intentamos crear un contenedor con Docker que tiene el **mismo nombre** que otro contenedor ya existente.  
-Por ejemplo:
-
-`docker: Error response from daemon: Conflict. The container name "/myhiveserver" is already in use by container ...`
-
-Esto significa que el contenedor llamado **myhiveserver** ya fue creado antes y Docker no permite duplicar nombres.
+`[05_hive_beeline.md]()`
 
 ---
 
-### Verificar los contenedores existentes
+## Orden recomendado
 
-Podemos listar todos los contenedores (activos e inactivos) con:
+1. Preparar el entorno local de Hadoop.
+2. Realizar el Ejemplo de WordCount.
+3. Preparar el entorno Docker.
+4. Realizar el Ejemplo de HDFS.
+5. Preparar el entorno Hive.
+6. Realizar el Ejemplo de Hive y Beeline.
 
-`sudo docker ps -a`
+## Objetivo
 
-En la última columna (`NAMES`) verás si existe uno con el nombre **myhiveserver**.
+Estas prácticas permiten introducir de forma progresiva algunos de los componentes principales del ecosistema Hadoop:
 
-<img width="818" height="137" alt="image" src="https://github.com/user-attachments/assets/48ecbb8d-2cd5-47bf-b1e1-ab6aab354a19" />
-
----
-
-### Eliminar o renombrar el contenedor viejo
-
-Si queremos **borrarlo por completo**, ejecutamos:
-
-`sudo docker rm -f myhiveserver`
-
-> El parámetro `-f` fuerza el borrado incluso si el contenedor está en ejecución.
-
-Si preferimos **mantenerlo pero cambiarle el nombre**, podemos usar:
-
-`sudo docker rename myhiveserver myhiveserver_old`
-
----
-
-### Crear un nuevo contenedor limpio
-
-Una vez borrado o renombrado el anterior, ya podemos ejecutar el comando original sin conflicto:
-
-`sudo docker run -d -p 10000:10000 -p 10002:10002 --env SERVICE_NAME=hiveserver2 -v /home/project/data:/hive_custom_data --name myhiveserver apache/hive:4.0.0-alpha-1`
-
----
+- **MapReduce** para procesamiento de datos;
+- **HDFS** para almacenamiento distribuido;
+- **Docker** para simular un entorno Hadoop con diferentes servicios;
+- **Hive** para consultar y analizar datos mediante una sintaxis similar a SQL.
