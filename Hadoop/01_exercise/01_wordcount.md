@@ -82,12 +82,11 @@ Data    3
 Hadoop  2
 ```
 
-## ¿Qué está ocurriendo?
+También podemos ver esto en la interfaz gráfica utilizando.
 
-Durante este proceso se aplica la lógica de MapReduce:
-
-- **Map**: identifica las palabras y genera pares palabra-valor.
-- **Reduce**: agrupa las palabras iguales y suma sus apariciones.
+```bash
+nautilus .
+```
 
 ## Volver a ejecutar el ejercicio
 

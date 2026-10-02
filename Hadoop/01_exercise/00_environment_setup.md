@@ -60,7 +60,7 @@ sudo mv hadoop-3.3.6 /opt/hadoop
 Abrir el archivo `.bashrc`:
 
 ```bash
-nano ~/.bashrc
+nano .bashrc
 ```
 
 Añadir al final:
@@ -86,7 +86,7 @@ Guardar los cambios:
 Aplicar la nueva configuración:
 
 ```bash
-source ~/.bashrc
+source .bashrc
 ```
 
 ## 4. Configurar Java para Hadoop

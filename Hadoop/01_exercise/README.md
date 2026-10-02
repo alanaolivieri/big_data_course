@@ -8,7 +8,9 @@ Esta carpeta contiene los materiales necesarios para preparar el entorno de trab
 
 Antes de realizar los Ejemplos es necesario configurar las herramientas que se utilizarán durante las prácticas.
 
-#### `[00_environment_setup.md](00_environment_setup.md)`
+#### Hadoop
+
+[00_environment_setup.md](00_environment_setup.md)
 
 Preparación del entorno para trabajar con Hadoop de forma local.
 
@@ -22,7 +24,9 @@ Incluye:
 
 Esta preparación es necesaria para realizar el Ejemplo de **WordCount**.
 
-#### `[02_docker_environment_setup.md](02_docker_environment_setup.md)`
+#### Docker
+
+[02_docker_environment_setup.md](02_docker_environment_setup.md)
 
 Preparación del entorno Hadoop con Docker.
 
@@ -41,7 +45,9 @@ Incluye:
 
 Esta preparación se utiliza para el Ejemplo de **HDFS**.
 
-#### `[04_hive_environment_setup.md]()`
+#### Hive
+
+[04_hive_environment_setup.md]()
 
 Preparación del entorno para trabajar con Hive.
 
@@ -73,7 +79,7 @@ El Ejemplo permite:
 
 Archivo:
 
-`[01_wordcount.md](01_wordcount.md)`
+[01_wordcount.md](01_wordcount.md)
 
 ---
 
@@ -91,7 +97,7 @@ El Ejemplo permite:
 
 Archivo:
 
-`[03_hdfs.md]()`
+[03_hdfs.md](03_hdfs.md)
 
 ---
 
@@ -110,7 +116,7 @@ El Ejemplo permite:
 
 Archivo:
 
-`[05_hive_beeline.md]()`
+[05_hive_beeline.md]()
 
 ---
 

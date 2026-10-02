@@ -22,13 +22,13 @@ eurecat
 Clonar el repositorio que contiene la configuración necesaria para levantar el entorno Hadoop:
 
 ```bash
-git clone https://github.com/luciaalvarezuy/Docker_hadoop
+git clone https://github.com/alanaolivieri/docker_hadoop
 ```
 
 Entrar en la carpeta descargada:
 
 ```bash
-cd Docker_hadoop
+cd docker_hadoop
 ```
 
 ## 3. Iniciar el clúster Hadoop
