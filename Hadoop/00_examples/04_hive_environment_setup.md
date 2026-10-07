@@ -13,6 +13,12 @@ Al finalizar esta guía tendremos:
 
 ---
 
+Pasar a root
+
+```bash
+sudo -i
+```
+
 ## 1. Crear el directorio de datos
 
 Crear la carpeta donde almacenaremos los archivos que utilizaremos con Hive:

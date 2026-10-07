@@ -97,13 +97,6 @@ http://localhost:9870
 
 Desde esta interfaz se puede consultar información del **NameNode** y explorar posteriormente los archivos almacenados en HDFS.
 
-También puede utilizarse el puerto:
-
-```text
-8088
-```
-
-para acceder a la interfaz de YARN.
 
 ## Entorno preparado
 

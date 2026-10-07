@@ -35,13 +35,13 @@ Incluye:
 - Solución de errores habituales.
 - Enunciado y solución de los ejercicios.
 
-### `install`
-Archivos necesarios para desplegar un entorno Hadoop con **Docker**.
-
-Contiene la configuración del clúster y de sus servicios, como NameNode, DataNode, ResourceManager y NodeManager.
-
 ### `troubleshooting_hive.md`
 Archivo auxiliar con comandos para resolver problemas relacionados con el contenedor de **Hive**, especialmente cuando `myhiveserver` se encuentra detenido o debe crearse nuevamente.
+
+### Instalación necesaria
+Los archivos necesarios para desplegar un entorno Hadoop con **Docker** se encuentran ene [este](https://github.com/alanaolivieri/docker_hadoop) repositorio.
+
+Contiene la configuración del clúster y de sus servicios, como NameNode, DataNode, ResourceManager y NodeManager.
 
 ## Objetivo
 

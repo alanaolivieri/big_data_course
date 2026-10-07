@@ -2,6 +2,14 @@
 
 Antes de realizar los ejercicios prácticos, debemos preparar la máquina virtual instalando **Java** y **Hadoop**.
 
+## Teclado en español
+
+En la terminal escribir
+
+```bash
+setxkbmap es
+```
+
 ## 1. Instalar Java
 
 Hadoop necesita Java para funcionar.
