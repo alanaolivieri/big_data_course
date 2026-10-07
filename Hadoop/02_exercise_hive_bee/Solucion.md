@@ -1,333 +1,215 @@
-**Preparar el entorno**
+# Soluciones — Ejercicio práctico Hive
 
-En la mayoría de los casos solo necesitas ejecutar estos dos comandos para trabajar con Hive.
+## Ejercicio 1 — ¿Cuántos países diferentes aparecen?
 
-*Paso 1. Arrancar el contenedor de Hive*
-
-`sudo docker start myhiveserver`
-
-*Paso 2. Conectarse a Hive con Beeline*
-
-`sudo docker exec -it myhiveserver beeline -u 'jdbc:hive2://localhost:10000/`
-
-Si todo funciona correctamente, deberías ver algo como:
-
-    Connected to: Apache Hive
-    0: jdbc:hive2://localhost:10000>
-
-Desde ese prompt ya puedes ejecutar consultas SQL en Hive.
-
-⚠️ Nota: puede ser necesario ejecutar el segundo comando más de una vez. Esto ocurre porque Hive tarda unos segundos en iniciar dentro del contenedor después de arrancarlo.
-
-------------------------------------------------------------------------
-
-**Solución de problemas**
-
-Los siguientes pasos solo son necesarios si los comandos anteriores fallan.
-
-**Problema 1: el contenedor no arranca o está corrupto**
-
-Si el contenedor myhiveserver no arranca correctamente, puedes eliminarlo y crear uno nuevo.
-
-1. Ver el estado de los contenedores
-
-`sudo docker ps -a`
-
-Si aparece algo como:
-    myhiveserver   Exited (...)
-
-significa que el contenedor existe pero no está funcionando correctamente.
-
-2. Eliminar el contenedor viejo
-
-`sudo docker rm -f myhiveserver`
-
-El parámetro -f fuerza el borrado incluso si el contenedor está en ejecución.
-
-3. Crear un nuevo contenedor limpio
-
-`sudo docker run -d -p 10000:10000 -p 10002:10002 --env SERVICE_NAME=hiveserver2 -v /home/project/data:/hive_custom_data --name myhiveserver apache/hive:4.0.0-alpha-1`
-
-Este comando crea un nuevo contenedor de HiveServer2. Después puedes volver a conectarte con:
-
-`sudo docker exec -it myhiveserver beeline -u 'jdbc:hive2://localhost:10000/'`
-
-------------------------------------------------------------------------
-
-**Problema 2: error de puerto ocupado**
-
-A veces aparece este error:
-
-    Bind for 0.0.0.0:10000 failed: port is already allocated
-
-Qué significa: El puerto 10000 ya está siendo usado por otro proceso o contenedor.
-
-1. Ver qué contenedores están activos
-
-`sudo docker ps`
-
-Esto mostrará qué contenedor está usando ese puerto.
-
-2. Parar el contenedor que usa el puerto
-
-`sudo docker stop $(sudo docker ps -q --filter "publish=10000")`
-
-Esto detiene cualquier contenedor que esté usando el puerto 10000.
-
-3. Borrar el contenedor viejo (opcional)
-
-Si sabes el nombre del contenedor, puedes eliminarlo directamente:
-
-`sudo docker rm -f myhiveserver`
-
-4. Crear nuevamente el contenedor de Hive
-
-`sudo docker run -d -p 10000:10000 -p 10002:10002 --env SERVICE_NAME=hiveserver2 -v /home/project/data:/hive_custom_data --name myhiveserver apache/hive:4.0.0-alpha-1`
-
-------------------------------------------------------------------------
-
-**Conectarse a Hive**
-
-Una vez que el contenedor está funcionando, puedes conectarte con:
-
-`sudo docker exec -it myhiveserver beeline -u 'jdbc:hive2://localhost:10000/'`
-
-Deberías ver el prompt:
-
-    jdbc:hive2://localhost:10000>
-
-Desde aquí podrás ejecutar consultas SQL sobre Hive.
-
------------------------------------------------------------------------
------------------------------------------------------------------------
-
-## Verificar la tabla cargada
-
-Para confirmar que la tabla `opiniones` existe:
+Para contar países distintos utilizamos `COUNT(DISTINCT ...)`:
 
 ```sql
-SHOW TABLES;
-```
-
-Si la tabla fue creada correctamente, aparecerá en el listado.
-
-Si al ejecutar el comando `SHOW TABLES;` aparece una tabla vacía, como se muestra a continuación:
-
-+-----------+
-
-| tab_name  |
-
-+-----------+
-
-+-----------+
-
-significa que no existe ninguna tabla creada en la base de datos actual.
-
-En ese caso, debemos crear la tabla `opiniones` de forma manual e indicar el formato de los datos. 
-Para hacerlo, ejecuta los siguientes comandos en Beeline:
-
-```sql
-CREATE TABLE opiniones (
-    id INT,
-    edad INT,
-    sexo STRING,
-    pais_donde_vive STRING,
-    opinion_big_data STRING
-)
-ROW FORMAT DELIMITED
-FIELDS TERMINATED BY ',';
-```
-
-Luego, carga el archivo CSV con los datos dentro de la tabla recién creada:
-
-```sql
-LOAD DATA INPATH '/hive_custom_data/BigData_Custom_Sample.csv' INTO TABLE opiniones;
-```
-
-Después de ejecutar estos comandos, puedes verificar que la tabla fue creada correctamente con:
-
-```sql
-SHOW TABLES;
-SELECT * FROM opiniones LIMIT 10;
-```
-
-
-
----
-
-## Ejercicio 1 — Promedio de edad de los participantes
-
-Calcular la edad promedio de las personas que completaron la encuesta.
-
-```sql
-SELECT AVG(edad) AS edad_promedio
+SELECT COUNT(DISTINCT pais_donde_vive) AS total_paises
 FROM opiniones;
 ```
 
 ---
 
+## Ejercicio 2 — Participación por sexo y país
 
-## Ejercicio 2 — Conteo por combinación de sexo y país
-
-Muestra cuántas personas de cada sexo hay por país. Permite ver si hay diferencias en la participación por género según el país.
-
-```sql
-SELECT pais_donde_vive, sexo, COUNT(*) AS cantidad 
-FROM opiniones 
-GROUP BY pais_donde_vive, sexo 
-ORDER BY pais_donde_vive, cantidad DESC;
-```
-
-Esto ordena primero por el nombre del país (alfabéticamente) y, dentro de cada país, por la cantidad en orden descendente. Es decir, te muestra primero Argentina, luego Chile, luego España, etc., y dentro de cada país, el sexo con más respuestas arriba. Si querés ver los países con más respuestas totales arriba
-Entonces necesitás ordenar primero por la cantidad (para que los países más grandes aparezcan primero).
-
-Tu consulta debería quedar así:
+Agrupamos por país y sexo y contamos cuántos registros hay en cada combinación:
 
 ```sql
-SELECT pais_donde_vive, sexo, COUNT(*) AS cantidad
+SELECT
+    pais_donde_vive,
+    sexo,
+    COUNT(*) AS cantidad
 FROM opiniones
 GROUP BY pais_donde_vive, sexo
-ORDER BY cantidad DESC, pais_donde_vive; 
-```
-
-Ahora, el primer criterio de orden es la cantidad (de mayor a menor).
-Si dos países tienen la misma cantidad, se ordenan alfabéticamente por país.
----
-
-## Ejercicio 3 — Distribución por país
-
-Contar cuántas opiniones hay por país y ordenarlas de mayor a menor.
-
-```sql
-SELECT pais_donde_vive, COUNT(*) AS cantidad
-FROM opiniones
-GROUP BY pais_donde_vive
 ORDER BY cantidad DESC;
 ```
----
 
-## Ejercicio 4 — Filtrar por condición
-
-Mostrar solo las opiniones de personas mayores de 30 años.
-
-```sql
-SELECT * FROM opiniones 
-WHERE edad > 30;
-```
+La primera fila del resultado corresponderá a la combinación de país y sexo con mayor número de registros.
 
 ---
-## Ejercicio 5 — Conteos rápidos de valores distintos
-Etiquetas de sexo distintas:
+
+## Ejercicio 3 — Crear una clasificación por edad
+
+Crear una nueva columna llamada `categoria_edad` que clasifique a cada persona según su edad:
+
+- `Joven` → menores de 30 años;
+- `Adulto` → entre 30 y 49 años;
+- `Adulto 50+` → 50 años o más.
+
+La consulta debe mostrar:
+
+- `id`;
+- `edad`;
+- `categoria_edad`.
 
 ```sql
-SELECT COUNT(DISTINCT sexo) AS etiquetas_sexo
+SELECT
+    id,
+    edad,
+    CASE
+        WHEN edad < 30 THEN 'Joven'
+        WHEN edad < 50 THEN 'Adulto'
+        ELSE 'Adulto 50+'
+    END AS categoria_edad
 FROM opiniones;
 ```
 
----
-## Ejercicio 6 — Crear tabla con opiniones de un país específico
+La columna `categoria_edad` no existe originalmente en la tabla. Se genera en el resultado de la consulta mediante `CASE WHEN`.
 
-Crear una tabla nueva llamada opiniones_uruguay que contenga solo los registros de personas que viven en Uruguay.
+---
+
+## Ejercicio 4 — Buscar palabras dentro de las opiniones
+
+Para buscar opiniones que contengan la palabra `datos` utilizamos `LIKE`:
 
 ```sql
-CREATE TABLE opiniones_uruguay AS SELECT id, edad, sexo, pais_donde_vive, opinion_big_data
+SELECT
+    id,
+    pais_donde_vive,
+    opinion_big_data
 FROM opiniones
-WHERE pais_donde_vive = 'Uruguay'; 
+WHERE opinion_big_data LIKE '%datos%';
 ```
 
-Verificar que la tabla se haya creado correctamente:
+El símbolo `%` indica que puede existir cualquier texto antes o después de la palabra buscada.
+
+---
+
+## Ejercicio 5 — Analizar la longitud de las opiniones
+
+Utilizamos `LENGTH()` para calcular la cantidad de caracteres de cada opinión:
 
 ```sql
-SHOW TABLES; 
+SELECT
+    id,
+    pais_donde_vive,
+    opinion_big_data,
+    LENGTH(opinion_big_data) AS longitud
+FROM opiniones
+ORDER BY longitud DESC
+LIMIT 5;
 ```
 
-Contar cuántos registros tiene la nueva tabla:
+La primera fila corresponde a la opinión con mayor número de caracteres.
+
+---
+
+## Ejercicio 6 — Comparar edades por sexo
+
+Agrupamos por `sexo` y utilizamos varias funciones de agregación:
 
 ```sql
-SELECT COUNT(*)
-FROM opiniones_uruguay; 
+SELECT
+    sexo,
+    MIN(edad) AS edad_minima,
+    MAX(edad) AS edad_maxima,
+    AVG(edad) AS edad_promedio,
+    COUNT(*) AS cantidad_personas
+FROM opiniones
+GROUP BY sexo;
 ```
 
-Visualizar los primeros registros para comprobar que los datos sean correctos:
+Este resultado permite comparar la distribución de edades entre los diferentes grupos.
+
+---
+
+## Ejercicio 7 — Crear una tabla derivada
+
+Crear una nueva tabla que contenga únicamente personas menores de 30 años:
+
+```sql
+CREATE TABLE opiniones_jovenes AS
+SELECT
+    id,
+    edad,
+    sexo,
+    pais_donde_vive,
+    opinion_big_data
+FROM opiniones
+WHERE edad < 30;
+```
+
+### Comprobar que la tabla existe
+
+```sql
+SHOW TABLES;
+```
+
+Debería aparecer:
+
+```text
+opiniones_jovenes
+```
+
+### Contar cuántos registros contiene
+
+```sql
+SELECT COUNT(*) AS cantidad
+FROM opiniones_jovenes;
+```
+
+### Visualizar los primeros 10 registros
 
 ```sql
 SELECT *
-FROM opiniones_uruguay
-LIMIT 10; 
+FROM opiniones_jovenes
+LIMIT 10;
 ```
 
-
-
 ---
 
----
+## Ejercicio 8 — Consulta libre
 
-### Recomendación
+En este ejercicio pueden existir muchas soluciones correctas.
 
-Antes de comenzar cada práctica, es recomendable limpiar el entorno de Docker para evitar errores con contenedores anteriores.
-Esto garantiza que todos trabajen con un entorno limpio y sin conflictos residuales.
+### Ejemplo
 
-Pasos sugeridos:
+**¿Qué quiero averiguar?**
 
-`sudo docker ps -a`  
-
-`sudo docker rm -f myhiveserver`
-
-De esta forma, se aseguran de empezar desde cero, evitando problemas con contenedores previos o servicios que quedaron activos.
-
----
-
-Antes de crear un nuevo contenedor, verificá siempre si el puerto 10000 está ocupado (es el que utiliza HiveServer2 para conectarse con Beeline):
-
-`sudo lsof -i :10000`
-
-Si aparece un proceso activo, significa que el puerto está en uso —probablemente por otro contenedor de Hive—.
-En ese caso, podés:
-
-- Detener el proceso o contenedor que lo está usando, o
-
-- Usar otro puerto distinto (por ejemplo, 10001) para evitar conflictos.
-
----
-
-Nota importante sobre la carga de datos en Hive
-
-Un error muy común al comenzar con Hive es que, al cargar un archivo CSV, la primera fila (los encabezados) se interpreta como si fuera una fila de datos. Esto sucede porque Hive, por defecto, no sabe que el archivo tiene cabecera.
-
-Por eso, después de crear y cargar la tabla, siempre conviene ejecutar un SELECT * LIMIT 10 para verificar que los datos se hayan cargado correctamente.
-
-Si observás valores como NULL o encabezados (sexo, pais_donde_vive, etc.) en la primera fila, significa que la cabecera se cargó como registro.
-
-Para evitarlo, podés agregar esta propiedad al crear la tabla:
-`TBLPROPERTIES ("skip.header.line.count"="1");`
-
-Esto le indica a Hive que ignore la primera línea del CSV y cargue solo los datos reales.
-
-Así, te asegurás de tener una tabla limpia y correctamente interpretada desde el inicio.
-
-Ejemplo de cómo cargar los datos 
+Quiero saber qué países tienen más personas mayores de 30 años y cuál es su edad promedio.
 
 ```sql
-CREATE TABLE opiniones_segunda_carga (
-    id INT,
-    edad INT,
-    sexo STRING,
-    pais_donde_vive STRING,
-    opinion_big_data STRING
-)
-ROW FORMAT DELIMITED
-FIELDS TERMINATED BY ','
-TBLPROPERTIES ("skip.header.line.count"="1");
+SELECT
+    pais_donde_vive,
+    COUNT(*) AS cantidad_personas,
+    AVG(edad) AS edad_promedio
+FROM opiniones
+WHERE edad > 30
+GROUP BY pais_donde_vive
+ORDER BY cantidad_personas DESC
+LIMIT 5;
 ```
 
-```sql
-LOAD DATA INPATH '/hive_custom_data/BigData_Custom_Sample.csv' INTO TABLE opiniones_segunda_carga;
+Esta consulta utiliza:
+
+- `WHERE` para filtrar personas mayores de 30 años;
+- `COUNT()` para contar registros;
+- `AVG()` para calcular la edad promedio;
+- `GROUP BY` para agrupar por país;
+- `ORDER BY` para ordenar los resultados;
+- `LIMIT` para mostrar únicamente los cinco primeros.
+
+---
+
+# Resumen de funciones utilizadas
+
+| Elemento | Uso |
+|---|---|
+| `COUNT()` | Contar registros |
+| `DISTINCT` | Evitar valores repetidos |
+| `GROUP BY` | Agrupar registros |
+| `ORDER BY` | Ordenar resultados |
+| `CASE WHEN` | Crear categorías según condiciones |
+| `LIKE` | Buscar patrones en texto |
+| `LENGTH()` | Calcular la longitud de un texto |
+| `MIN()` | Obtener el valor mínimo |
+| `MAX()` | Obtener el valor máximo |
+| `AVG()` | Calcular el promedio |
+| `LIMIT` | Limitar el número de resultados |
+
+Para salir de Beeline:
+
+```text
+Ctrl + D
 ```
-
-
-Ver todos los registros
-```sql
-SELECT *
-FROM opiniones_segunda_carga;
-```
-
