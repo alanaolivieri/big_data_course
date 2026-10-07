@@ -89,7 +89,7 @@ No es necesario volver a crear el contenedor ni volver a cargar los datos.
 Si aparece algún error diferente, consultar:
 
 ```text
-troubleshooting_hive.md
+[troubleshooting_hive.md](../troubleshooting_hive.md)
 ```
 
 ---
