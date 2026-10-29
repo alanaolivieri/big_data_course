@@ -32,7 +32,7 @@ eurecat
 Descargar Hadoop 3.3.6:
 
 ```bash
-wget https://downloads.apache.org/hadoop/common/hadoop-3.3.6/hadoop-3.3.6.tar.gz
+wget https://archive.apache.org/dist/hadoop/common/hadoop-3.3.6/hadoop-3.3.6.tar.gz
 ```
 
 Descomprimir el archivo:
