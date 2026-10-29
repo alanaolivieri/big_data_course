@@ -17,15 +17,21 @@ cd ~
 ls -la
 ```
 
-    - Si aparece, abrelo con una forma mas robusta independientemente de donde te encuentres
-    ```bash
-    nano ~/.bashrc
-    ```
-    - Si dice que ``nano`` no existe, entonces ejecuta la instalación
-    ```bash
-    sudo apt install nano -y
-    ```
-    y vuelve a intentar
-    ```bash
-    nano ~/.bashrc
-    ```
+- Si aparece, abrelo con una forma mas robusta independientemente de donde te encuentres
+
+```bash
+nano ~/.bashrc
+```
+
+- Si dice que ``nano`` no existe, entonces ejecuta la instalación
+
+```bash
+sudo apt install nano -y
+```
+
+y vuelve a intentar
+
+```bash
+nano ~/.bashrc
+```
+
