@@ -242,7 +242,7 @@ cat combinado.txt
 
 ---
 
-## 8. Ejecutar WordCount sobre el archivo combinado
+### 7.1. Ejecutar WordCount sobre el archivo combinado
 
 ```bash
 hadoop jar hadoop-mapreduce-examples-3.3.6.jar wordcount combinado.txt output_combinado
@@ -258,7 +258,7 @@ Y vuelve a ejecutar WordCount.
 
 ---
 
-## 9. Visualizar el resultado combinado
+### 7.2. Visualizar el resultado combinado
 
 ```bash
 cat output_combinado/part-r-00000
@@ -274,9 +274,34 @@ Compara este resultado con los obtenidos anteriormente.
 
 ---
 
+## 8. Usar una sola línea
+
+Podemos ejecutar WordCount sobre varios archivos en una sola línea utilizando el operador lógico ``&&``.
+
+Este operador indica que el siguiente comando se ejecutará solo si el comando anterior termina correctamente.
+
+```bash
+hadoop jar hadoop-mapreduce-examples-3.3.6.jar wordcount cuento.txt output_cuento && hadoop jar hadoop-mapreduce-examples-3.3.6.jar wordcount song.txt output_song && hadoop jar hadoop-mapreduce-examples-3.3.6.jar wordcount noticia.txt output_noticia
+```
+
+De esta forma:
+
+- se procesa cuento.txt;
+- si termina correctamente, se procesa song.txt;
+- si también termina correctamente, se procesa noticia.txt.
+
+Para visualizar el contenido deberemos hacerlo como en el [paso 5](#5-visualizar-los-resultados) , ya que cada ejecución genera una carpeta de salida diferente:
+
+```text
+output_cuento
+output_song
+output_noticia
+```
+---
+
 # Para profundizar un poco más
 
-## 10. Ordenar los resultados por frecuencia
+## 9. Ordenar los resultados por frecuencia
 
 El archivo generado por WordCount contiene dos columnas:
 
@@ -306,7 +331,7 @@ Las opciones utilizadas son:
 
 ---
 
-## 11. Mostrar solamente las palabras más frecuentes
+## 10. Mostrar solamente las palabras más frecuentes
 
 Podemos combinar `sort` con `head`.
 
@@ -334,7 +359,7 @@ head → muestra únicamente los primeros
 
 ---
 
-## 12. Guardar el resultado en un archivo
+## 11. Guardar el resultado en un archivo
 
 Podemos guardar las dos palabras más frecuentes en un nuevo archivo:
 
@@ -358,7 +383,7 @@ cat resultado_top.txt
 
 ---
 
-## 13. Cambiar el nombre del archivo
+## 12. Cambiar el nombre del archivo
 
 Podemos cambiar el nombre utilizando `mv`:
 
@@ -396,3 +421,284 @@ Hemos observado cómo MapReduce:
 También hemos comprobado que el mismo proceso puede ejecutarse sobre diferentes archivos sin modificar el programa.
 
 Este principio es fundamental en Hadoop: **el procesamiento puede mantenerse mientras cambian o aumentan los datos de entrada**.
+
+---
+
+# Comparación Python vs Hadoop
+
+En este apartado vamos a ejecutar el mismo proceso de **WordCount** utilizando dos enfoques diferentes:
+
+- **Python**
+- **Hadoop MapReduce**
+
+Ambos ejecutados dentro de la máquina virtual.
+
+Para la comparación utilizaremos tres archivos de distinto tamaño:
+
+- `texto_100MB.txt`
+- `texto_1GB.txt`
+- `texto_5GB.txt`
+
+La carpeta completa `txt_grandes` estará disponible para descargar desde el [Drive](https://drive.google.com/file/d/1Xt_HrKSq73HJPGq8UqeTdgZ8Ewcvks9m/view?usp=sharing).
+
+Como la descarga la hace, por defecto, a la carpeta de descargas en un archivo comprimido .zip, necesitaremos moverlo a la carpeta del ejemplo y descomprimirlo. Podemos hacerlo de dos formas:
+
+1. Por terminal:
+
+Lo movemos a la carpeta del ejemplo que estamos utilizando
+```bash
+mv ~/Descargas/txt_grandes.zip ~/ejemplo_mapreduce/
+```
+
+Descomprimimos:
+```bash
+unzip txt_grandes.zip
+```
+
+Si te dice que unzip no está instalado:
+```bash
+sudo apt update
+sudo apt install unzip -y
+```
+
+Repetimos el paso de descomprimir.
+
+2. Por la parte gráfica
+
+También podemos mover el archivo utilizando el explorador de archivos de Ubuntu.
+
+1. Abrimos **Archivos**.
+2. Entramos en la carpeta **Descargas**.
+3. Seleccionamos el archivo descargado.
+4. Hacemos clic derecho y seleccionamos **Cortar**, o utilizamos `Ctrl + X`.
+5. En el panel izquierdo haz clic en **Carpeta personal** o **Home** y entramos a `ejemplo_mapreduce`.
+6. Hacemos clic derecho dentro de la carpeta y seleccionamos **Pegar**, o utilizamos `Ctrl + V`.
+7. Hacemos clic derecho sobre la carpeta comprimida y seleccionamos **Extraer aquí**
+
+De esta forma, el archivo quedará dentro de la carpeta donde estamos realizando el ejemplo.
+
+
+---
+
+## 1. Hipótesis antes de ejecutar
+
+Antes de comenzar, planteamos una pregunta:
+
+> **¿A medida que aumenta el tamaño del archivo, creen que Hadoop será más rápido que Python?**
+
+Podemos pensar inicialmente que Hadoop debería ganar porque está diseñado para trabajar con grandes volúmenes de datos.
+
+Sin embargo, hay un detalle importante:
+
+**en esta práctica Python y Hadoop están ejecutándose sobre los mismos recursos físicos.**
+
+Nuestro entorno es aproximadamente:
+
+```text
+Máquina virtual
+├── Python
+└── Hadoop
+```
+
+Aunque Hadoop pueda dividir el trabajo en varias tareas, todas ellas siguen utilizando la CPU, la memoria y el disco disponibles en esa misma máquina virtual.
+
+---
+
+## 2. Medir el tiempo con Hadoop
+
+Para medir cuánto tarda Hadoop podemos utilizar el comando `time`.
+
+Con el archivo de 100 MB:
+
+```bash
+time hadoop jar hadoop-mapreduce-examples-3.3.6.jar wordcount txt_grandes/texto_100MB.txt output_100MB
+```
+
+Para 1 GB:
+
+```bash
+time hadoop jar hadoop-mapreduce-examples-3.3.6.jar wordcount txt_grandes/texto_1GB.txt output_1GB
+```
+
+Para 5 GB:
+
+```bash
+time hadoop jar hadoop-mapreduce-examples-3.3.6.jar wordcount txt_grandes/texto_5GB.txt output_5GB
+```
+
+> **Importante:** las carpetas de salida no pueden existir previamente.  
+> Si ya existen, Hadoop devolverá un error.
+
+Podemos eliminarlas antes de repetir la prueba:
+
+```bash
+rm -rf output_100MB output_1GB output_5GB
+```
+
+---
+
+## 3. Medir el tiempo con Python
+
+Ejecutaremos un programa Python que realice el mismo WordCount el cual descargamos de [aquí](https://drive.google.com/file/d/1Snx-Vph8z3YwZf-DQMrdrLP4wwbkDeTq/view?usp=sharing) que es el mismo [archivo](wordcount.py) que se encuentra en este repositorio.
+
+Lo movemos a la carpeta del ejemplo que estamos utilizando
+```bash
+mv ~/Descargas/wordcount.py ~/ejemplo_mapreduce/
+```
+
+Por ejemplo:
+
+```bash
+time python3 wordcount.py txt_grandes/texto_100MB.txt output_py_100MB
+```
+
+```bash
+time python3 wordcount.py txt_grandes/texto_1GB.txt output_py_1GB
+```
+
+```bash
+time python3 wordcount.py txt_grandes/texto_5GB.txt output_py_5GB
+```
+
+El objetivo es comparar el tiempo total de ejecución utilizando exactamente los mismos archivos.
+
+> **Importante:** fíjense si al ejecutar el archivo aparece el mensaje `Terminado (killed)`.
+>
+> Esto significa que el sistema operativo detuvo el proceso porque estaba consumiendo demasiados recursos, normalmente memoria RAM.
+>
+> No significa que Python haya terminado correctamente. En este caso, el procesamiento no se completó.
+
+
+---
+
+## 4. Registrar los resultados
+
+Completa la siguiente tabla con los tiempos obtenidos:
+
+| Tamaño | Python | Hadoop |
+|---|---:|---:|
+| 100 MB |  |  |
+| 1 GB |  |  |
+| 5 GB |  |  |
+
+Después observa:
+
+- ¿qué herramienta ha sido más rápida?
+- ¿la diferencia aumenta o disminuye al crecer el archivo?
+- ¿el comportamiento es el mismo para los tres tamaños?
+
+---
+
+## 5. ¿Por qué Hadoop puede ser más lento?
+
+Hadoop tiene un coste adicional de preparación y coordinación.
+
+Antes de producir el resultado debe realizar diferentes tareas:
+
+```text
+Preparar el job
+      ↓
+Dividir la entrada
+      ↓
+Ejecutar Map
+      ↓
+Shuffle y Sort
+      ↓
+Ejecutar Reduce
+      ↓
+Escribir la salida
+```
+
+Todo este proceso introduce un coste adicional llamado **overhead**.
+
+Python, en cambio, puede leer directamente el archivo y realizar el conteo utilizando los recursos de una sola máquina.
+
+Por eso, con archivos pequeños o medianos y una sola máquina, es perfectamente posible que **Python sea más rápido que Hadoop**
+
+Esto no significa que Hadoop funcione mal. Significa que estamos utilizando Hadoop en un escenario donde todavía no puede aprovechar su principal ventaja.
+
+---
+
+## 6. ¿Dónde aparece realmente la ventaja de Hadoop?
+
+La ventaja de Hadoop aparece cuando los datos y el procesamiento se distribuyen entre varios nodos.
+
+En un clúster real podríamos tener:
+
+```text
+                    archivo muy grande
+                           ↓
+                    Hadoop / HDFS
+                           ↓
+          ┌────────────────┼────────────────┐
+          ↓                ↓                ↓
+       Nodo 1           Nodo 2           Nodo 3
+       parte A          parte B          parte C
+          ↓                ↓                ↓
+       procesa          procesa          procesa
+          └────────────────┼────────────────┘
+                           ↓
+                       resultado
+```
+
+El trabajo puede dividirse y ejecutarse en paralelo utilizando los recursos de varias máquinas.
+
+En cambio, un programa Python local tendría un esquema como:
+
+```text
+archivo muy grande
+       ↓
+una máquina
+       ↓
+CPU + memoria
+       ↓
+resultado
+```
+
+La capacidad de procesamiento queda limitada por los recursos de ese único equipo.
+
+---
+
+## 7. La conclusión importante
+
+Esta práctica no pretende demostrar que:
+
+> **Hadoop siempre es más rápido que Python.**
+
+De hecho, en nuestra máquina virtual es posible que Python sea más rápido incluso con archivos relativamente grandes.
+
+La idea importante es otra:
+
+> **Hadoop está diseñado para escalar horizontalmente.**
+
+Es decir, cuando aumentan mucho los datos, podemos añadir más nodos y repartir tanto el almacenamiento como el procesamiento.
+
+Por eso la pregunta correcta no es:
+
+> “¿Hadoop es más rápido que Python?”
+
+Sino:
+
+> **“¿Qué ocurre cuando los datos dejan de caber o de procesarse cómodamente en una sola máquina?”**
+
+Ahí es donde el procesamiento distribuido empieza a aportar una ventaja real.
+
+---
+
+## Reflexión final
+
+Si Python tarda menos en esta práctica, el resultado no contradice lo aprendido.
+
+Al contrario, demuestra una idea fundamental:
+
+> **No debemos utilizar una tecnología Big Data simplemente porque los datos sean grandes.**
+
+La tecnología adecuada depende de:
+
+- volumen de datos;
+- recursos disponibles;
+- tiempo de procesamiento requerido;
+- posibilidad de distribuir el trabajo;
+- complejidad que estamos dispuestos a asumir.
+
+Hadoop empieza a tener sentido cuando el volumen y la infraestructura permiten aprovechar realmente el **procesamiento distribuido**.
