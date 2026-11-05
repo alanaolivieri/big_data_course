@@ -8,7 +8,30 @@ Antes de comenzar, asegúrate de:
 
 - tener `myhiveserver` en ejecución;
 - estar conectado a Hive mediante Beeline;
-- tener disponible el archivo `BigData_Custom_Sample.csv`.
+- tener disponible el archivo [`BigData_Custom_Sample.csv`](./data/BigData_Custom_Sample.csv).
+
+Este archivo al descargarse queda en donwloads por defecto, por lo que lo moveremos al contenedor del hive para que pueda ser leído.
+```bash
+sudo docker cp /home/eurecat/Descargas/BigData_Custom_Sample.csv myhiveserver:/hive_custom_data/BigData_Custom_Sample.csv
+```
+
+---
+
+## 0. Volver a utilizar el entorno
+
+Si el contenedor ya fue creado anteriormente pero está detenido, no es necesario volver a crearlo.
+
+Iniciarlo con:
+
+```bash
+sudo docker start myhiveserver
+```
+
+Después conectarse nuevamente con Beeline:
+
+```bash
+sudo docker exec -it myhiveserver beeline -u 'jdbc:hive2://localhost:10000/'
+```
 
 ---
 
