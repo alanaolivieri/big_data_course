@@ -1,47 +1,72 @@
-# Recursos de Hadoop — Curso de Big Data
+# Hadoop
 
-Esta carpeta contiene los materiales prácticos relacionados con **Hadoop, HDFS, MapReduce, Docker y Hive** utilizados en el curso de Big Data de **Eurecat IT Academy**.
+Recursos prácticos para trabajar con Hadoop, HDFS, MapReduce, Docker y Hive.
 
 ## Contenido
 
-### `01_exercise`
-Práctica guiada principal de Hadoop.
+### 📁 [`00_examples`](./00_examples/README.md)
 
-Incluye:
-- Instalación y configuración de Hadoop.
-- Ejecución de un ejemplo de **MapReduce / WordCount**.
-- Creación de un clúster Hadoop con **Docker**.
-- Trabajo con archivos en **HDFS**.
-- Configuración básica de **Hive** y carga de datos desde CSV.
-- Ejemplos y capturas de apoyo.
+Contiene ejemplos, configuraciones de entorno y datos utilizados para trabajar con
+Hadoop, HDFS, Docker y Hive.
 
-### `02_exercise_wordcount`
-Ejercicio práctico de **MapReduce**.
+Incluye recursos para:
 
-El objetivo es utilizar `WordCount` para analizar diferentes archivos de texto y comparar la frecuencia de aparición de las palabras.
+- preparar los diferentes entornos de trabajo;
+- ejecutar ejemplos con Hadoop y MapReduce;
+- trabajar con HDFS;
+- configurar Hive;
+- crear y consultar tablas con Hive;
+- utilizar los datos necesarios para los ejemplos y ejercicios.
 
-Incluye el enunciado y su solución.
+---
 
-### `03_Hive_and_Bee`
-Ejercicio práctico de **Hive**.
+### 📁 [`01_exercise_wordcount`](./01_exercise_wordcount/README.md)
 
-Permite trabajar con consultas SQL sobre una tabla de opiniones cargada desde un archivo CSV.
+Ejercicio práctico de análisis de palabras con Hadoop.
 
-Incluye:
-- Preparación del entorno con Docker y Hive.
-- Conexión mediante Beeline.
-- Consultas, filtros y agregaciones.
-- Creación de nuevas tablas.
-- Solución de errores habituales.
-- Enunciado y solución de los ejercicios.
+Contiene los archivos necesarios para practicar WordCount y trabajar con el
+procesamiento de diferentes archivos mediante MapReduce.
 
-### `troubleshooting_hive.md`
-Archivo auxiliar con comandos para resolver problemas relacionados con el contenedor de **Hive**, especialmente cuando `myhiveserver` se encuentra detenido o debe crearse nuevamente.
+---
 
-### Instalación necesaria
-Los archivos necesarios para desplegar un entorno Hadoop con **Docker** se encuentran ene [este](https://github.com/alanaolivieri/docker_hadoop) repositorio.
+### 📁 [`02_exercise_hive_bee`](./02_exercise_hive_bee/README.md)
 
-Contiene la configuración del clúster y de sus servicios, como NameNode, DataNode, ResourceManager y NodeManager.
+Ejercicio práctico para trabajar con Hive y Beeline.
+
+Contiene los archivos necesarios para practicar la creación y consulta de datos
+utilizando Hive.
+
+---
+
+### 📄 [`troubleshooting_hadoop.md`](troubleshooting_hadoop.md)
+
+Guía de resolución de problemas relacionados con Hadoop y su entorno.
+
+---
+
+### 📄 [`troubleshooting_hive.md`](troubleshooting_hadoop.md)
+
+Guía de resolución de problemas relacionados con Hive y su entorno.
+
+---
+
+## Estructura
+
+```text
+Hadoop/
+│
+├── 00_examples/
+│
+├── 01_exercise_wordcount/
+│
+├── 02_exercise_hive_bee/
+│
+├── troubleshooting_hadoop.md
+├── troubleshooting_hive.md
+│
+└── README.md
+```
+---
 
 ## Objetivo
 
