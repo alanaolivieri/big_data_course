@@ -18,23 +18,11 @@ virtual basada en Debian o Ubuntu, abre una terminal **dentro de la máquina
 virtual** y ejecuta:
 
 ```bash
-sudo dpkg-reconfigure keyboard-configuration
+setxkbmap -layout es -model pc105 -variant ""
 ```
 
-Conserva el modelo de teclado sugerido si coincide con tu teclado y selecciona
-**Español (España)** como distribución. Reinicia la máquina virtual para aplicar
-la configuración del sistema. Si el escritorio sigue usando otra distribución,
-abre sus **Ajustes → Teclado → Fuentes de entrada** (el nombre del menú depende
-del escritorio), añade **Español (España)** y selecciónalo como distribución activa.
-
-La distribución del escritorio se aplica donde escribes dentro de la máquina
-virtual, incluida la terminal integrada de Visual Studio Code y Colab si lo
-abres en el navegador de la máquina virtual. Si abres Colab en el navegador de
-Windows, Colab usará la distribución activa de Windows. Comprueba que puedes
-escribir `ñ`, `.`, `(` y `)` en el entorno que vas a usar.
-
-En una sesión gráfica X11, `setxkbmap es` puede servir como cambio temporal
-para la sesión. Para que el ajuste persista, usa la configuración anterior.
+En una sesión gráfica, `setxkbmap es` puede servir como cambio temporal
+para la sesión.
 
 [Configuración del teclado en Debian](https://dyn.manpages.debian.org/bullseye/keyboard-configuration/keyboard.5.en.html)
 
@@ -51,10 +39,12 @@ Para trabajar con Google Colab:
 
 1. Abrimos [Google Colab](https://colab.research.google.com/) en el navegador.
 2. Creamos un nuevo notebook o abrimos un archivo `.ipynb`.
-3. Ejecutamos las celdas de código directamente desde el navegador.
+3. En `conectar`, clicamos en `Conectar a un entorno de ejecución alojado`.
+4. Ejecutamos las celdas de código directamente desde el navegador.
 
 > Si utilizamos Google Colab podemos omitir la instalación de Python descrita
 > en las siguientes secciones.
+> WARNING: Aquí dependeríamos directamente de los recursos gratuitos de Google Colab tenga a disposición, por ende no están garantizados y su disponibilidad puede variar. [Advertencia](research.google.com)
 
 ---
 
@@ -123,6 +113,23 @@ python3 -m pip install --user --upgrade pip
 
 Esto actualiza `pip` para el usuario actual.
 
+Si hay un warning del PATH:
+```text
+WARNING: The scripts pip, pip3 and pip3.8 are installed in
+'/home/eurecat/.local/bin' which is not on PATH.
+```
+
+Esto significa que los ejecutables de pip se instalaron en una carpeta que Ubuntu no tiene incluida en la variable PATH. Por lo tanto, agregamos la carpeta al PATH
+```bash
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
+```
+
+Comprobamos:
+```bash
+python3 -m pip --version
+```
+
 ---
 
 ## 2.5. Instalar Jupyter Notebook
@@ -145,18 +152,7 @@ python3 -m notebook
 
 Mantén la terminal abierta mientras trabajas. Si el navegador no se abre
 automáticamente, copia la URL completa que muestra Jupyter y pégala en el
-navegador de la máquina virtual. Por ejemplo,
-`http://localhost:8888/tree?token=TU_TOKEN`. Usa el puerto y el token que
-aparezcan en tu terminal. Desde el explorador de Jupyter, entra en `notebooks`
-y abre `00_intro_python.ipynb`.
-
-Si abres el navegador en Windows, `localhost` apunta a Windows. Para seguir
-estos pasos tal como están, abre el navegador dentro de la máquina virtual.
-
-Podrás usar el mismo Jupyter para PySpark cuando el kernel tenga disponible
-PySpark y el entorno de la máquina virtual esté preparado para ejecutar Spark.
-La URL anterior abre Jupyter. La sesión de Spark se inicia desde el código
-del notebook de PySpark.
+navegador de la máquina virtual `http://localhost:8888/tree`. En el explorador de Jupyter, estaremos justo en la misma `Carpeta personal`, ya aquí puedes iniciar un nuevo notebook o utilizar uno antiguo.
 
 [Guía de inicio de Jupyter](https://docs.jupyter.org/en/latest/running.html)
 
@@ -267,7 +263,24 @@ Ejecutamos:
 python3 -m pip install --user --upgrade pip
 ```
 
-Con este comando actualizamos `pip` para el usuario actual.
+Esto actualiza `pip` para el usuario actual.
+
+Si hay un warning del PATH:
+```text
+WARNING: The scripts pip, pip3 and pip3.8 are installed in
+'/home/eurecat/.local/bin' which is not on PATH.
+```
+
+Esto significa que los ejecutables de pip se instalaron en una carpeta que Ubuntu no tiene incluida en la variable PATH. Por lo tanto, agregamos la carpeta al PATH
+```bash
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
+```
+
+Comprobamos:
+```bash
+python3 -m pip --version
+```
 
 ---
 

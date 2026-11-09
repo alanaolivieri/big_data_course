@@ -1,0 +1,1008 @@
+id_persona,id_registro,ciudad,grupo,salario_original,tiene_coche,km_anuales
+1,1,Valladolid,Grup B,"1,469 â‚¬",True,32108.0
+2,2,Alacant,Grup C,"2,718 â‚¬",True,19496.0
+3,3,Alacant,Grup A,1358 euros,,
+4,4,Sevilla,Grup B,"1,478 â‚¬",False,
+5,5,Bilbao,Grup B,"1,284 â‚¬",True,
+6,6,Las Palmas de Gran Canaria,Grup B,"2,069 â‚¬",,
+7,7,Palma,Grup B,"2,349 â‚¬",True,6196.0
+8,8,Barcelona,Grup C,"2,855 â‚¬",True,20000.0
+9,9,Stavanger,Grup B,"1,338 â‚¬",False,
+10,10,Las Palmas de Gran Canaria,Grup A,"1,450 â‚¬",False,
+11,11,Valladolid,Grup A,982 â‚¬,True,14178.0
+12,12,Zaragoza,Grup B,"2,419 â‚¬",,
+13,13,Las Palmas de Gran Canaria,Grup D,"3,672 â‚¬",True,10800.0
+14,14,Stuttgart,Grup A,"1,003 â‚¬",True,6931.0
+15,15,Alacant,Grup A,mil vuit-cents,True,38248.0
+16,16,Tarragona,Grup B,"1,336 â‚¬",True,65950.0
+17,17,ValÃ¨ncia,Grup A,982 â‚¬,,
+18,18,Bergen,Grup A,"1,385 â‚¬",True,80000.0
+19,19,Bilbao,Grup B,"1,751 â‚¬",True,64444.0
+20,20,Palma,Grup A,889 euros,,
+21,21,Milano,Grup A,1121 euros,True,20000.0
+22,22,MÃ laga,Grup B,"1,880 â‚¬",,
+23,23,Genova,Grup A,"1,094 â‚¬",False,
+24,24,Lyon,Grup B,1479â‚¬,False,
+25,25,Paris,Grup B,"1,840 â‚¬",True,22384.0
+26,26,Tarragona,Grup A,993 â‚¬,False,
+27,27,Palma,Grup C,"2,660 â‚¬",True,
+28,28,Toulouse,Grup A,751 â‚¬,,
+29,29,Sevilla,Grup C,"2,628 â‚¬",,
+30,30,Napoli,Grup C,2400 euros,False,
+31,31,Venezia,Grup C,2564â‚¬,,
+32,32,Barcelona,Grup A,927â‚¬,True,116927.0
+33,33,A CoruÃ±a,Grup C,"2,510 â‚¬",,
+34,34,Tarragona,Grup B,"1,538 â‚¬",False,
+35,35,Girona,Grup C,3275 euros,,
+36,36,MÃ laga,Grup B,"1,974 â‚¬",False,
+37,37,Oslo,Grup B,"1,614 â‚¬",,
+38,38,Bilbao,Grup A,"1,014 â‚¬",True,50000.0
+39,39,Murcia,Grup C,2132â‚¬,False,
+40,40,Murcia,Grup A,dos mil,,
+37,37,Oslo,Grup B,"1,614 â‚¬",,
+41,41,Bordeaux,Grup B,"1,967 â‚¬",False,
+42,42,Girona,Grup A,1438â‚¬,,
+43,43,Palma,Grup B,"1,923 â‚¬",False,
+44,44,Palma,Grup B,"1,090 â‚¬",,
+45,45,Barcelona,Grup A,"1,032 â‚¬",False,
+46,46,Girona,Grup C,2130â‚¬,False,
+47,47,Zaragoza,Grup C,1939 euros,True,78064.0
+48,48,Bilbao,Grup C,1739â‚¬,False,
+49,49,Barcelona,Grup A,"1,112 â‚¬",True,114730.0
+50,50,A CoruÃ±a,Grup B,"1,714 â‚¬",False,
+51,51,Venezia,Grup B,"1,773 â‚¬",False,
+52,52,MÃ laga,Grup B,1647 euros,,
+53,53,ValÃ¨ncia,Grup B,"1,866 â‚¬",False,
+54,54,A CoruÃ±a,Grup B,"1,799 â‚¬",True,50000.0
+55,55,Barcelona,Grup B,"1,413 â‚¬",,
+56,56,Murcia,Grup A,1.021 â‚¬,,
+57,57,Murcia,Grup A,1156â‚¬,True,60856.0
+58,58,Venezia,Grup B,1597â‚¬,True,65950.0
+59,59,Murcia,Grup A,"1,242 â‚¬",False,
+60,60,Girona,Grup B,"2,125 â‚¬",True,
+61,61,ValÃ¨ncia,Grup D,3016â‚¬,False,
+62,62,Stuttgart,Grup A,1251â‚¬,,
+63,63,Trondheim,Grup B,"1,681 â‚¬",False,
+64,64,Sevilla,Grup C,"2,418 â‚¬",True,80000.0
+65,65,Madrid,Grup B,1664 euros,True,80000.0
+66,66,Bilbao,Grup B,1702â‚¬,True,29300.0
+67,67,Paris,Grup B,1672â‚¬,False,
+68,68,Palma,Grup C,2.275 â‚¬,,
+69,69,Berlin,Grup B,1.798 â‚¬,True,113964.0
+70,70,Nice,Grup B,1394â‚¬,True,39561.0
+71,71,Barcelona,Grup A,"1,013 â‚¬",False,
+72,72,Sevilla,Grup A,1000 euros,,
+73,73,Alacant,Grup A,"1,119 â‚¬",,
+74,74,Milano,Grup A,956 â‚¬,,
+75,75,ValÃ¨ncia,Grup A,"1,156 â‚¬",False,
+76,76,Madrid,Grup B,"1,058 â‚¬",,
+77,77,Palma,Grup D,"2,958 â‚¬",False,
+78,78,Lille,Grup A,1092 euros,,
+79,79,ValÃ¨ncia,Grup D,"3,063 â‚¬",,
+80,80,Barcelona,Grup A,827 â‚¬,,
+81,81,Valladolid,Grup B,"1,201 â‚¬",True,
+82,82,Bergen,Grup A,1133â‚¬,False,
+83,83,Las Palmas de Gran Canaria,Grup A,878 â‚¬,,
+84,84,Las Palmas de Gran Canaria,Grup A,1163 euros,True,
+85,85,Girona,Grup A,1.008 â‚¬,,
+86,86,Valladolid,Grup A,"1,436 â‚¬",True,65983.0
+87,87,Alacant,Grup B,"1,263 â‚¬",True,29386.0
+88,88,Murcia,Grup B,"1,890 â‚¬",True,20000.0
+89,89,A CoruÃ±a,Grup B,1.574 â‚¬,False,
+90,90,Barcelona,Grup A,"1,164 â‚¬",False,
+91,91,Palma,Grup C,2.257 â‚¬,True,80000.0
+92,92,Alacant,Grup A,"1,086 â‚¬",,
+93,93,Girona,Grup A,n/d,False,
+94,94,Firenze,Grup A,"1,455 â‚¬",False,
+95,95,Roma,Grup C,2488 euros,True,42398.0
+96,96,Valladolid,Grup B,1700â‚¬,,
+97,97,Bologna,Grup C,"2,166 â‚¬",,
+98,98,Firenze,Grup B,"1,392 â‚¬",False,
+99,99,Nice,Grup C,"2,359 â‚¬",,
+100,100,Alacant,Grup A,918 â‚¬,,
+101,101,Palma,Grup A,"1,075 â‚¬",,
+102,102,Murcia,Grup D,"2,627 â‚¬",False,
+103,103,Zaragoza,Grup A,"1,100 â‚¬",True,20000.0
+26,104,Madrid,Grup B,1987 euros,False,
+104,105,Madrid,Grup C,2138â‚¬,False,
+105,106,A CoruÃ±a,Grup A,1268â‚¬,True,80000.0
+106,107,Madrid,Grup B,"1,957 â‚¬",,
+107,108,Zaragoza,Grup B,"1,549 â‚¬",False,
+108,109,Leipzig,Grup B,mil vuit-cents,True,76180.0
+109,110,A CoruÃ±a,Grup B,1.825 â‚¬,False,
+110,111,Leipzig,Grup A,"1,438 â‚¬",,
+111,112,Madrid,Grup A,993 â‚¬,,
+112,113,Sevilla,Grup A,"1,240 â‚¬",False,
+26,114,Girona,Grup A,"1,178 â‚¬",False,
+113,115,Stavanger,Grup A,1244 euros,,
+114,116,Zaragoza,Grup A,810 â‚¬,,
+115,117,A CoruÃ±a,Grup C,"2,901 â‚¬",True,50000.0
+116,118,Barcelona,Grup A,932 â‚¬,True,106611.0
+117,119,Palma,Grup A,"1,082 â‚¬",True,
+118,120,Murcia,Grup B,1567â‚¬,,
+119,121,Palma,Grup C,"2,180 â‚¬",False,
+120,122,DÃ¼sseldorf,Grup A,1058 euros,False,
+121,123,Girona,Grup C,"2,303 â‚¬",True,35142.0
+122,124,Bergen,Grup C,"2,111 â‚¬",True,65950.0
+123,125,ValÃ¨ncia,Grup A,1019 euros,,
+124,126,Paris,Grup C,2227â‚¬,False,
+125,127,Tarragona,Grup A,"1,327 â‚¬",,
+126,128,Bilbao,Grup B,1.636 â‚¬,False,
+127,129,Madrid,Grup B,1324 euros,True,19232.0
+128,130,MÃ laga,Grup B,"1,268 â‚¬",True,
+129,131,MÃ laga,Grup A,"1,215 â‚¬",False,
+130,132,Nice,Grup A,997 â‚¬,,
+131,133,Sevilla,Grup B,2093â‚¬,,
+132,134,MÃ¼nchen,Grup B,"1,343 â‚¬",True,65950.0
+133,135,Bordeaux,Grup B,"1,644 â‚¬",True,20000.0
+134,136,Torino,Grup A,771 â‚¬,True,23728.0
+135,137,Palma,Grup D,3445â‚¬,False,
+136,138,Sevilla,Grup B,"1,967 â‚¬",True,3920.0
+137,139,ValÃ¨ncia,Grup A,1062â‚¬,False,
+138,140,Tarragona,Grup A,891 â‚¬,True,23206.0
+139,141,Murcia,Grup A,1.106 â‚¬,,
+89,142,Palma,Grup A,"1,276 â‚¬",False,
+140,143,Alacant,Grup A,1132 euros,,
+141,144,Zaragoza,Grup B,"1,479 â‚¬",False,
+142,145,Nantes,Grup A,861 â‚¬,False,
+143,146,Torino,Grup A,n/d,False,
+144,147,Marseille,Grup A,975 â‚¬,,
+145,148,Zaragoza,Grup B,"1,486 â‚¬",False,
+146,149,Valladolid,Grup B,1849 euros,,
+147,150,Madrid,Grup A,844â‚¬,False,
+148,151,Zaragoza,Grup A,845 â‚¬,True,50000.0
+149,152,Palma,Grup A,"1,086 â‚¬",True,5776.0
+150,153,Las Palmas de Gran Canaria,Grup C,"2,567 â‚¬",,
+151,154,Marseille,Grup A,1298â‚¬,,
+152,155,A CoruÃ±a,Grup B,"1,654 â‚¬",,
+153,156,Madrid,Grup A,1405 euros,,
+154,157,Bilbao,Grup D,"3,564 â‚¬",True,13870.0
+155,158,Valladolid,Grup A,"1,014 â‚¬",,
+156,159,Palma,Grup A,n/d,False,
+157,160,Tarragona,Grup A,"1,407 â‚¬",True,104603.0
+158,161,Bilbao,Grup D,"3,026 â‚¬",True,37506.0
+159,162,TromsÃ¸,Grup B,"2,158 â‚¬",,
+160,163,Sevilla,Grup B,1430â‚¬,False,
+161,164,Sevilla,Grup B,1457 euros,,
+162,165,Alacant,Grup A,"1,366 â‚¬",True,
+163,166,ValÃ¨ncia,Grup A,mil vuit-cents,,
+164,167,Zaragoza,Grup A,822â‚¬,,
+165,168,Valladolid,Grup A,"1,281 â‚¬",True,99990.0
+166,169,Las Palmas de Gran Canaria,Grup B,"1,727 â‚¬",False,
+167,170,Valladolid,Grup A,"1,156 â‚¬",False,
+168,171,MÃ laga,Grup B,"1,681 â‚¬",False,
+169,172,Tarragona,Grup A,833â‚¬,False,
+170,173,ValÃ¨ncia,Grup C,2648 euros,,
+171,174,Las Palmas de Gran Canaria,Grup A,"1,575 â‚¬",,
+172,175,Firenze,Grup A,"1,020 â‚¬",True,67841.0
+173,176,MÃ laga,Grup B,1641â‚¬,,
+174,177,Roma,Grup B,1750â‚¬,True,59507.0
+175,178,Hamburg,Grup A,1048â‚¬,,
+176,179,Girona,Grup B,"1,549 â‚¬",,
+177,180,Murcia,Grup C,2.025 â‚¬,,
+178,181,Murcia,Grup B,dos mil,True,48621.0
+179,182,Girona,Grup B,"1,306 â‚¬",True,27526.0
+180,183,Firenze,Grup C,"2,266 â‚¬",,
+181,184,Alacant,Grup B,"1,713 â‚¬",,
+182,185,Valladolid,Grup B,1734â‚¬,True,80000.0
+183,186,Sevilla,Grup A,"1,207 â‚¬",,
+184,187,ValÃ¨ncia,Grup C,2028 euros,,
+185,188,Barcelona,Grup A,"1,026 â‚¬",,
+186,189,Palma,Grup C,"2,140 â‚¬",False,
+187,190,Frankfurt,Grup B,1363â‚¬,False,
+188,191,A CoruÃ±a,Grup B,"1,650 â‚¬",True,62723.0
+189,192,MÃ laga,Grup C,"2,405 â‚¬",True,80000.0
+190,193,Barcelona,Grup C,2600 euros,,
+191,194,MÃ laga,Grup C,"2,902 â‚¬",,
+192,195,Las Palmas de Gran Canaria,Grup A,946â‚¬,False,
+193,196,Milano,Grup A,"1,290 â‚¬",True,80000.0
+194,197,DÃ¼sseldorf,Grup A,"1,134 â‚¬",False,
+195,198,Marseille,Grup A,722 euros,False,
+196,199,Zaragoza,Grup A,1.007 â‚¬,,
+197,200,Hamburg,Grup B,"1,499 â‚¬",,
+198,201,MÃ laga,Grup B,"1,445 â‚¬",False,
+199,202,Zaragoza,Grup B,1734 euros,False,
+200,203,Madrid,Grup B,1.761 â‚¬,True,80000.0
+201,204,Tarragona,Grup A,987 â‚¬,,
+202,205,A CoruÃ±a,Grup A,940 â‚¬,True,26866.0
+203,206,Bilbao,Grup A,mil vuit-cents,,
+204,207,ValÃ¨ncia,Grup A,854 â‚¬,True,80000.0
+205,208,Napoli,Grup A,946 â‚¬,False,
+206,209,Valladolid,Grup B,2257â‚¬,False,
+207,210,Barcelona,Grup A,904 â‚¬,,
+208,211,Alacant,Grup A,1132 euros,True,70000.0
+209,212,Las Palmas de Gran Canaria,Grup B,1446 euros,,
+210,213,Tarragona,Grup A,935 â‚¬,True,1000000.0
+211,214,Bilbao,Grup A,"1,072 â‚¬",True,5252.0
+212,215,Roma,Grup A,822 â‚¬,False,
+213,216,Murcia,Grup B,1379â‚¬,False,
+214,217,Las Palmas de Gran Canaria,Grup A,781 â‚¬,True,20000.0
+215,218,Valladolid,Grup B,1471 euros,True,81945.0
+216,219,Nice,Grup A,1027 euros,,
+217,220,Alacant,Grup B,"1,899 â‚¬",False,
+218,221,Roma,Grup B,"1,893 â‚¬",True,80000.0
+219,222,Murcia,Grup A,"1,268 â‚¬",,
+220,223,ValÃ¨ncia,Grup C,"2,039 â‚¬",,
+221,224,MÃ laga,Grup A,1073â‚¬,False,
+222,225,A CoruÃ±a,Grup C,"2,965 â‚¬",False,
+223,226,Bilbao,Grup B,"1,819 â‚¬",True,30000.0
+224,227,Alacant,Grup A,"1,183 â‚¬",,
+225,228,Tarragona,Grup C,2073â‚¬,False,
+226,229,Barcelona,Grup C,"2,209 â‚¬",False,
+227,230,Sevilla,Grup B,1617â‚¬,False,
+228,231,Valladolid,Grup B,"2,184 â‚¬",,
+229,232,Valladolid,Grup B,"1,701 â‚¬",,
+230,233,Las Palmas de Gran Canaria,Grup A,1001â‚¬,False,
+231,234,Girona,Grup B,"1,696 â‚¬",,
+232,235,Murcia,Grup A,1.147 â‚¬,True,65950.0
+233,236,Hamburg,Grup D,3552â‚¬,False,
+234,237,Sevilla,Grup B,1758â‚¬,True,80000.0
+235,238,Roma,Grup B,1726â‚¬,False,
+236,239,Alacant,Grup D,"3,615 â‚¬",False,
+237,240,Frankfurt,Grup B,1631 euros,False,
+238,241,Berlin,Grup B,2099 euros,,
+239,242,Leipzig,Grup C,"2,382 â‚¬",,
+240,243,Barcelona,Grup C,"2,803 â‚¬",False,
+241,244,Milano,Grup A,1144â‚¬,False,
+242,245,Zaragoza,Grup B,"2,044 â‚¬",False,
+243,246,Sevilla,Grup B,1400 euros,True,80000.0
+244,247,Nantes,Grup B,"1,666 â‚¬",True,
+245,248,Murcia,Grup C,2516â‚¬,True,80000.0
+246,249,MÃ laga,Grup B,1813â‚¬,,
+247,250,Bilbao,Grup D,1235 euros,False,
+248,251,Lyon,Grup A,"1,261 â‚¬",False,
+249,252,Barcelona,Grup A,1110â‚¬,False,
+250,253,Madrid,Grup C,2708â‚¬,True,6283.0
+251,254,Marseille,Grup A,n/d,,
+252,255,A CoruÃ±a,Grup A,940 â‚¬,False,
+253,256,Stuttgart,Grup B,1569â‚¬,False,
+254,257,Alacant,Grup A,"1,292 â‚¬",,
+255,258,Bordeaux,Grup A,"1,117 â‚¬",False,
+256,259,Marseille,Grup A,1057 euros,False,
+257,260,Torino,Grup A,1023â‚¬,True,80000.0
+258,261,Girona,Grup C,"2,309 â‚¬",False,
+259,262,Girona,Grup C,"1,771 â‚¬",,
+260,263,Barcelona,Grup A,"1,116 â‚¬",True,113059.0
+261,264,Palma,Grup B,"1,568 â‚¬",,
+262,265,Las Palmas de Gran Canaria,Grup A,1.026 â‚¬,False,
+263,266,Napoli,Grup A,724 â‚¬,,
+264,267,Barcelona,Grup B,1237â‚¬,,
+265,268,Valladolid,Grup B,"1,869 â‚¬",False,
+266,269,Genova,Grup C,2381â‚¬,True,50000.0
+267,270,Tarragona,Grup B,1632â‚¬,False,0.0
+268,271,Genova,Grup A,785 â‚¬,True,65950.0
+269,272,Roma,Grup A,"1,027 â‚¬",,
+270,273,Roma,Grup B,"1,895 â‚¬",,
+271,274,Valladolid,Grup B,1473â‚¬,,
+272,275,Murcia,Grup B,"1,682 â‚¬",True,80000.0
+273,276,Nice,Grup B,"1,594 â‚¬",,
+274,277,Sevilla,Grup C,"2,003 â‚¬",,
+275,278,ValÃ¨ncia,Grup B,"1,778 â‚¬",,
+276,279,Toulouse,Grup B,1454â‚¬,True,4103.0
+277,280,MÃ laga,Grup A,"1,179 â‚¬",False,
+26,281,Alacant,Grup A,1179 euros,True,63574.0
+278,282,Palma,Grup B,1968â‚¬,,
+279,283,Bergen,Grup C,"2,603 â‚¬",False,
+280,284,Girona,Grup B,"1,738 â‚¬",True,20000.0
+281,285,Murcia,Grup A,"1,250 â‚¬",True,100054.0
+282,286,Las Palmas de Gran Canaria,Grup A,871â‚¬,False,
+283,287,Palma,Grup A,886â‚¬,True,56135.0
+284,288,Torino,Grup A,795 â‚¬,False,
+285,289,Alacant,Grup A,"1,079 â‚¬",,
+286,290,Trondheim,Grup C,"2,626 â‚¬",True,30452.0
+287,291,Lille,Grup C,n/d,False,
+288,292,Las Palmas de Gran Canaria,Grup C,3001â‚¬,False,
+289,293,A CoruÃ±a,Grup A,"1,276 â‚¬",False,
+290,294,Murcia,Grup B,"1,584 â‚¬",False,
+291,295,Bilbao,Grup B,1723 euros,,
+292,296,ValÃ¨ncia,Grup A,1510â‚¬,True,9639.0
+293,297,A CoruÃ±a,Grup A,951 â‚¬,False,
+294,298,Tarragona,Grup B,"1,247 â‚¬",True,14109.0
+295,299,Napoli,Grup A,724 â‚¬,,
+296,300,Madrid,Grup A,920 â‚¬,True,80000.0
+297,301,Murcia,Grup B,"1,678 â‚¬",False,
+298,302,ValÃ¨ncia,Grup A,"1,278 â‚¬",,
+299,303,Palma,Grup A,743 â‚¬,,
+300,304,A CoruÃ±a,Grup C,"2,943 â‚¬",True,80000.0
+301,305,Murcia,Grup A,"1,060 â‚¬",True,80000.0
+302,306,Bilbao,Grup A,"1,003 â‚¬",False,
+303,307,Barcelona,Grup C,n/d,False,
+304,308,Nantes,Grup A,1280 euros,,
+305,309,Milano,Grup B,"2,094 â‚¬",,
+306,310,Barcelona,Grup A,"1,281 â‚¬",True,20000.0
+307,311,Bordeaux,Grup A,"1,125 â‚¬",True,
+308,312,Murcia,Grup A,1256 euros,,
+309,313,Las Palmas de Gran Canaria,Grup A,881 euros,True,49000.0
+310,314,Palma,Grup C,2711 euros,,
+311,315,Girona,Grup A,845 â‚¬,False,
+312,316,Oslo,Grup C,2.534 â‚¬,False,
+313,317,Palma,Grup B,"1,724 â‚¬",,
+314,318,Valladolid,Grup C,"2,675 â‚¬",True,30000.0
+315,319,A CoruÃ±a,Grup A,"1,007 â‚¬",False,
+316,320,Murcia,Grup B,"1,730 â‚¬",True,87108.0
+317,321,Berlin,Grup A,"1,024 â‚¬",,
+318,322,Stavanger,Grup C,3061 euros,True,
+319,323,ValÃ¨ncia,Grup C,"1,983 â‚¬",False,
+320,324,Palma,Grup A,1250 euros,True,13833.0
+321,325,Valladolid,Grup A,"1,320 â‚¬",False,
+322,326,A CoruÃ±a,Grup B,1.403 â‚¬,True,30000.0
+323,327,Zaragoza,Grup B,1668 euros,False,
+324,328,Barcelona,Grup A,880 â‚¬,,
+325,329,Barcelona,Grup B,2094â‚¬,True,27752.0
+326,330,Valladolid,Grup B,"1,577 â‚¬",,
+327,331,Murcia,Grup C,1880 euros,True,54025.0
+328,332,Palma,Grup A,"1,090 â‚¬",True,80000.0
+329,333,Bilbao,Grup C,"2,177 â‚¬",True,80000.0
+330,334,MÃ laga,Grup A,"1,287 â‚¬",True,15579.0
+331,335,Tarragona,Grup D,"2,713 â‚¬",True,80000.0
+332,336,Girona,Grup A,1121 euros,True,12947.0
+333,337,Tarragona,Grup A,1309â‚¬,,
+334,338,Girona,Grup D,3.162 â‚¬,False,
+335,339,MÃ laga,Grup A,tres mil,,
+336,340,Barcelona,Grup C,3041â‚¬,False,
+337,341,Las Palmas de Gran Canaria,Grup B,"1,675 â‚¬",True,80000.0
+338,342,Palma,Grup B,1851 euros,,
+339,343,Las Palmas de Gran Canaria,Grup B,"1,261 â‚¬",,
+340,344,Bilbao,Grup D,3.133 â‚¬,False,
+341,345,Madrid,Grup A,888 â‚¬,,
+342,346,Bilbao,Grup C,"2,285 â‚¬",,
+343,347,ValÃ¨ncia,Grup B,"1,724 â‚¬",,
+344,348,Paris,Grup C,2180â‚¬,,
+345,349,Sevilla,Grup A,"1,092 â‚¬",False,
+346,350,Bilbao,Grup A,718 â‚¬,False,
+347,351,Tarragona,Grup A,881 â‚¬,,
+348,352,Las Palmas de Gran Canaria,Grup A,897 â‚¬,False,
+349,353,Roma,Grup A,"1,296 â‚¬",,
+350,354,Zaragoza,Grup B,"1,591 â‚¬",,
+351,355,Nice,Grup B,"1,887 â‚¬",False,
+352,356,Murcia,Grup A,1068â‚¬,,
+353,357,KÃ¶ln,Grup A,842 euros,True,43566.0
+354,358,Valladolid,Grup A,"1,438 â‚¬",False,
+355,359,Tarragona,Grup B,mil vuit-cents,True,80000.0
+356,360,Paris,Grup A,1507â‚¬,True,20000.0
+357,361,Tarragona,Grup B,1916â‚¬,,
+358,362,Lille,Grup B,1265 euros,,
+359,363,Girona,Grup B,"1,807 â‚¬",True,42512.0
+360,364,Trondheim,Grup A,766 â‚¬,,
+361,365,Zaragoza,Grup A,966 â‚¬,True,72237.0
+362,366,Torino,Grup A,821 â‚¬,,
+363,367,Madrid,Grup A,"1,021 â‚¬",,
+364,368,Sevilla,Grup B,"1,893 â‚¬",False,
+365,369,Palma,Grup A,"1,060 â‚¬",False,
+366,370,Las Palmas de Gran Canaria,Grup A,"1,317 â‚¬",False,
+367,371,Las Palmas de Gran Canaria,Grup B,"2,273 â‚¬",,
+368,372,Bilbao,Grup B,"1,409 â‚¬",,
+369,373,Palma,Grup A,"1,030 â‚¬",,
+370,374,Murcia,Grup B,"1,087 â‚¬",,
+371,375,Stavanger,Grup A,847 â‚¬,,
+372,376,Barcelona,Grup A,999 â‚¬,,
+373,377,Bologna,Grup A,"1,012 â‚¬",,
+374,378,Valladolid,Grup A,"1,222 â‚¬",True,40723.0
+375,379,Napoli,Grup B,"1,277 â‚¬",,
+376,380,MÃ laga,Grup A,778 â‚¬,False,
+377,381,Madrid,Grup B,"1,215 â‚¬",,
+378,382,Alacant,Grup B,"1,725 â‚¬",True,6140.0
+379,383,Oslo,Grup A,971 â‚¬,,
+380,384,Barcelona,Grup B,n/d,,
+381,385,Murcia,Grup B,"1,390 â‚¬",,
+382,386,Bergen,Grup A,"1,015 â‚¬",False,
+383,387,Napoli,Grup B,1459â‚¬,True,118147.0
+384,388,Alacant,Grup B,"1,556 â‚¬",False,
+385,389,Lille,Grup A,985 â‚¬,True,60652.0
+386,390,Zaragoza,Grup B,"1,079 â‚¬",False,
+387,391,Valladolid,Grup A,956â‚¬,False,
+388,392,Hamburg,Grup D,"3,284 â‚¬",False,
+389,393,Milano,Grup C,"2,795 â‚¬",,
+390,394,ValÃ¨ncia,Grup C,3186 euros,,
+391,395,Milano,Grup A,995â‚¬,,
+392,396,Las Palmas de Gran Canaria,Grup A,1.099 â‚¬,False,
+393,397,Trondheim,Grup B,"1,278 â‚¬",False,
+394,398,Girona,Grup C,3034 euros,True,40000.0
+395,399,Toulouse,Grup B,1390â‚¬,,
+396,400,Tarragona,Grup A,1.322 â‚¬,True,21069.0
+397,401,MÃ laga,Grup B,2002â‚¬,,
+398,402,Barcelona,Grup B,"1,511 â‚¬",,
+399,403,Sevilla,Grup A,1083 euros,,
+400,404,Nantes,Grup A,"1,261 â‚¬",True,94969.0
+401,405,Oslo,Grup C,"1,732 â‚¬",True,11362.0
+402,406,ValÃ¨ncia,Grup B,"2,130 â‚¬",,
+403,407,Oslo,Grup B,"1,778 â‚¬",False,
+404,408,Barcelona,Grup A,885 euros,True,31309.0
+405,409,Roma,Grup A,1.552 â‚¬,,
+406,410,Firenze,Grup B,1432â‚¬,,
+407,411,Bilbao,Grup A,896â‚¬,,
+408,412,A CoruÃ±a,Grup A,842 â‚¬,False,
+409,413,Madrid,Grup C,2828 euros,True,86060.0
+410,414,Zaragoza,Grup A,860 â‚¬,True,95003.0
+411,415,Genova,Grup A,"1,149 â‚¬",False,
+412,416,Marseille,Grup A,1104â‚¬,True,57089.0
+413,417,Zaragoza,Grup B,"1,761 â‚¬",False,
+414,418,Venezia,Grup B,"1,377 â‚¬",False,
+415,419,Zaragoza,Grup C,"2,368 â‚¬",False,
+416,420,Sevilla,Grup A,1450 euros,True,80000.0
+417,421,Genova,Grup B,"1,616 â‚¬",True,115098.0
+418,422,Barcelona,Grup A,mil vuit-cents,False,
+419,423,MÃ laga,Grup A,"1,177 â‚¬",False,
+420,424,Nantes,Grup A,864â‚¬,,
+421,425,Palma,Grup B,1753â‚¬,False,
+422,426,Las Palmas de Gran Canaria,Grup A,845 â‚¬,,
+423,427,Zaragoza,Grup B,"1,644 â‚¬",True,21422.0
+424,428,Alacant,Grup A,tres mil,True,80000.0
+425,429,Bilbao,Grup B,"2,290 â‚¬",True,65950.0
+426,430,Palma,Grup B,1643â‚¬,True,40000.0
+427,431,Barcelona,Grup B,"1,056 â‚¬",False,
+428,432,Barcelona,Grup C,"1,947 â‚¬",,
+429,433,Murcia,Grup A,1078â‚¬,True,80000.0
+430,434,MÃ laga,Grup A,1031â‚¬,True,71500.0
+431,435,Palma,Grup A,"1,148 â‚¬",,
+432,436,Napoli,Grup A,993 euros,,
+433,437,Napoli,Grup C,"2,245 â‚¬",True,54623.0
+434,438,Lille,Grup C,"1,906 â‚¬",False,
+435,439,Toulouse,Grup B,1729 euros,,
+436,440,Tarragona,Grup A,774 â‚¬,False,
+437,441,Alacant,Grup B,"1,557 â‚¬",False,
+438,442,Torino,Grup B,"1,376 â‚¬",True,53463.0
+439,443,MÃ laga,Grup B,2.121 â‚¬,True,11346.0
+440,444,MÃ laga,Grup B,"1,909 â‚¬",,
+441,445,Firenze,Grup B,1435 euros,True,44565.0
+442,446,Las Palmas de Gran Canaria,Grup A,n/d,False,
+443,447,A CoruÃ±a,Grup D,"3,128 â‚¬",False,
+444,448,Napoli,Grup B,"2,040 â‚¬",False,
+445,449,Toulouse,Grup A,"1,263 â‚¬",,
+446,450,Murcia,Grup B,"1,525 â‚¬",,
+447,451,Bilbao,Grup A,"1,317 â‚¬",True,80000.0
+448,452,Bergen,Grup C,"1,820 â‚¬",False,
+449,453,Genova,Grup A,"1,205 â‚¬",False,
+450,454,Bilbao,Grup C,"2,387 â‚¬",True,80000.0
+451,455,Zaragoza,Grup A,1121 euros,True,23129.0
+452,456,Las Palmas de Gran Canaria,Grup B,"1,310 â‚¬",,
+453,457,ValÃ¨ncia,Grup A,"1,113 â‚¬",True,50000.0
+454,458,Zaragoza,Grup B,dos mil,True,3936.0
+455,459,MÃ laga,Grup C,"2,338 â‚¬",False,
+456,460,Girona,Grup A,1120â‚¬,False,
+457,461,Nice,Grup B,1207 euros,True,80000.0
+458,462,Sevilla,Grup A,"1,047 â‚¬",,
+459,463,MÃ laga,Grup B,"1,701 â‚¬",,
+460,464,TromsÃ¸,Grup A,858â‚¬,False,
+461,465,Paris,Grup A,"1,034 â‚¬",True,14527.0
+462,466,Milano,Grup B,"1,498 â‚¬",,
+463,467,A CoruÃ±a,Grup A,1212 euros,True,42899.0
+464,468,Sevilla,Grup A,797 â‚¬,,
+465,469,Madrid,Grup C,"2,456 â‚¬",True,50000.0
+466,470,MÃ laga,Grup A,"1,151 â‚¬",True,16390.0
+467,471,Sevilla,Grup A,"1,194 â‚¬",,
+468,472,Girona,Grup B,dos mil,False,
+469,473,Murcia,Grup B,"1,463 â‚¬",False,
+470,474,Oslo,Grup B,"1,397 â‚¬",True,8516.0
+471,475,Valladolid,Grup A,989 â‚¬,,
+472,476,A CoruÃ±a,Grup A,922 â‚¬,False,
+473,477,Madrid,Grup A,1.341 â‚¬,True,14892.0
+474,478,Zaragoza,Grup A,"1,027 â‚¬",,
+475,479,Bilbao,Grup A,1155â‚¬,False,
+476,480,ValÃ¨ncia,Grup B,1579â‚¬,True,5584.0
+477,481,Oslo,Grup B,"1,546 â‚¬",False,
+478,482,Barcelona,Grup B,"1,367 â‚¬",,
+479,483,Palma,Grup A,"1,399 â‚¬",,
+480,484,Genova,Grup B,1341â‚¬,False,
+481,485,ValÃ¨ncia,Grup B,1532â‚¬,,
+482,486,Alacant,Grup A,"1,336 â‚¬",True,12431.0
+483,487,Tarragona,Grup C,1781 euros,True,13407.0
+484,488,Palma,Grup B,"1,711 â‚¬",False,
+485,489,Girona,Grup B,1799â‚¬,,
+486,490,Napoli,Grup A,874 â‚¬,True,20000.0
+487,491,Sevilla,Grup A,1.517 â‚¬,True,29278.0
+488,492,Nice,Grup A,1461â‚¬,False,
+489,493,Palma,Grup B,"1,385 â‚¬",True,18378.0
+490,494,Valladolid,Grup A,842â‚¬,False,
+491,495,Las Palmas de Gran Canaria,Grup B,"1,428 â‚¬",,
+492,496,Napoli,Grup B,"1,438 â‚¬",False,
+493,497,Lille,Grup B,2135â‚¬,False,
+494,498,Bordeaux,Grup C,2.690 â‚¬,False,
+495,499,Valladolid,Grup B,"1,342 â‚¬",False,
+496,500,Milano,Grup A,833 euros,True,20000.0
+497,501,Oslo,Grup B,"1,906 â‚¬",,
+498,502,Zaragoza,Grup A,1.028 â‚¬,True,21062.0
+499,503,Firenze,Grup B,"1,421 â‚¬",True,65950.0
+500,504,Trondheim,Grup A,"1,015 â‚¬",,
+501,505,Alacant,Grup A,931 â‚¬,,
+502,506,Palma,Grup B,"1,244 â‚¬",False,
+503,507,Bologna,Grup B,1.527 â‚¬,False,
+504,508,Murcia,Grup C,2134â‚¬,False,
+505,509,Murcia,Grup C,"2,952 â‚¬",False,
+506,510,Tarragona,Grup A,770 â‚¬,True,80000.0
+507,511,Bologna,Grup A,1078â‚¬,False,
+508,512,MÃ laga,Grup A,962 â‚¬,False,
+509,513,ValÃ¨ncia,Grup B,1470â‚¬,False,
+510,514,Palma,Grup A,943â‚¬,,
+511,515,Trondheim,Grup A,"1,139 â‚¬",False,
+512,516,Murcia,Grup B,"1,212 â‚¬",,
+513,517,Firenze,Grup B,1409â‚¬,,
+514,518,Palma,Grup A,958 euros,,
+515,519,Berlin,Grup B,"1,109 â‚¬",,
+516,520,Lyon,Grup A,1.081 â‚¬,,
+517,521,Stuttgart,Grup B,"2,099 â‚¬",,
+518,522,Sevilla,Grup B,"1,619 â‚¬",False,
+519,523,Las Palmas de Gran Canaria,Grup A,929â‚¬,True,50000.0
+520,524,Lille,Grup A,1137 euros,False,
+521,525,Venezia,Grup C,"1,939 â‚¬",False,
+522,526,Alacant,Grup B,"1,497 â‚¬",True,80000.0
+523,527,Tarragona,Grup A,dos mil,False,
+524,528,Las Palmas de Gran Canaria,Grup A,"1,254 â‚¬",,
+525,529,Valladolid,Grup B,"1,664 â‚¬",,
+526,530,Toulouse,Grup C,"2,696 â‚¬",False,
+527,531,Bologna,Grup B,"2,066 â‚¬",,
+528,532,Marseille,Grup B,1380â‚¬,False,
+529,533,TromsÃ¸,Grup B,"1,303 â‚¬",True,80000.0
+530,534,Bilbao,Grup B,"1,420 â‚¬",True,80000.0
+531,535,Napoli,Grup B,"1,827 â‚¬",False,
+532,536,ValÃ¨ncia,Grup B,2107 euros,True,80000.0
+533,537,ValÃ¨ncia,Grup A,868â‚¬,False,
+534,538,A CoruÃ±a,Grup A,901 â‚¬,,
+535,539,Bilbao,Grup A,"1,407 â‚¬",False,
+536,540,Oslo,Grup B,"1,329 â‚¬",,
+537,541,Murcia,Grup A,1199â‚¬,False,
+538,542,A CoruÃ±a,Grup A,889 â‚¬,False,
+539,543,Bilbao,Grup A,830 â‚¬,False,
+540,544,Valladolid,Grup A,"1,234 â‚¬",False,
+541,545,Las Palmas de Gran Canaria,Grup A,903â‚¬,True,
+542,546,Firenze,Grup B,mil vuit-cents,False,
+543,547,Alacant,Grup A,1025â‚¬,True,74741.0
+544,548,Zaragoza,Grup B,"1,450 â‚¬",False,
+545,549,Napoli,Grup B,"1,649 â‚¬",False,
+546,550,Sevilla,Grup C,"2,218 â‚¬",False,
+547,551,Nantes,Grup A,866â‚¬,True,80000.0
+548,552,Sevilla,Grup B,"1,698 â‚¬",False,
+549,553,Valladolid,Grup A,863â‚¬,False,
+550,554,MÃ laga,Grup A,"1,253 â‚¬",False,
+551,555,A CoruÃ±a,Grup A,759â‚¬,False,
+552,556,MÃ¼nchen,Grup B,1687â‚¬,False,
+553,557,MÃ laga,Grup C,2446â‚¬,False,
+554,558,MÃ laga,Grup A,"1,176 â‚¬",False,
+555,559,Las Palmas de Gran Canaria,Grup A,956â‚¬,False,
+556,560,Bilbao,Grup A,1278 euros,True,28115.0
+557,561,Girona,Grup B,"1,940 â‚¬",,
+558,562,Girona,Grup B,"2,050 â‚¬",,
+559,563,Palma,Grup B,1493 euros,,
+560,564,Roma,Grup C,2529 euros,,
+561,565,Tarragona,Grup B,"1,400 â‚¬",True,80000.0
+562,566,Toulouse,Grup A,"1,029 â‚¬",False,
+563,567,MÃ laga,Grup A,tres mil,,
+564,568,Roma,Grup A,775 â‚¬,,
+565,569,Barcelona,Grup A,856 â‚¬,True,80000.0
+566,570,Madrid,Grup B,1.419 â‚¬,False,
+567,571,Bilbao,Grup A,"1,315 â‚¬",False,
+568,572,A CoruÃ±a,Grup A,1035â‚¬,False,
+569,573,ValÃ¨ncia,Grup D,2746 euros,True,80000.0
+570,574,MÃ laga,Grup A,1102â‚¬,False,
+571,575,Bilbao,Grup A,"1,368 â‚¬",True,26936.0
+572,576,Tarragona,Grup A,"1,469 â‚¬",True,65950.0
+573,577,Milano,Grup C,"1,984 â‚¬",True,113145.0
+574,578,Zaragoza,Grup B,1.944 â‚¬,True,50000.0
+575,579,A CoruÃ±a,Grup B,"1,747 â‚¬",False,
+576,580,A CoruÃ±a,Grup A,860â‚¬,,
+577,581,ValÃ¨ncia,Grup A,1272â‚¬,True,2938.0
+578,582,Palma,Grup A,"1,105 â‚¬",True,20000.0
+579,583,Milano,Grup A,701 â‚¬,,
+580,584,Bilbao,Grup A,1155â‚¬,,
+581,585,MÃ laga,Grup B,1899 euros,,
+582,586,Barcelona,Grup A,"1,064 â‚¬",False,
+583,587,Toulouse,Grup B,1758 euros,True,93114.0
+584,588,MÃ¼nchen,Grup A,958 â‚¬,False,
+585,589,Oslo,Grup B,"1,429 â‚¬",True,111435.0
+586,590,Tarragona,Grup A,"1,314 â‚¬",True,8460.0
+587,591,A CoruÃ±a,Grup A,1184â‚¬,True,80000.0
+588,592,Bilbao,Grup D,3369â‚¬,,
+589,593,Nantes,Grup D,"3,338 â‚¬",True,
+590,594,MÃ laga,Grup C,"2,693 â‚¬",,
+591,595,Firenze,Grup C,"2,254 â‚¬",True,67158.0
+592,596,Barcelona,Grup B,1900â‚¬,,
+593,597,Bordeaux,Grup A,"1,227 â‚¬",True,80657.0
+594,598,A CoruÃ±a,Grup C,"2,356 â‚¬",,
+595,599,Stavanger,Grup B,"1,501 â‚¬",False,
+596,600,Zaragoza,Grup A,933 â‚¬,False,
+597,601,MÃ laga,Grup B,"1,688 â‚¬",,
+598,602,Valladolid,Grup C,1844â‚¬,True,80000.0
+599,603,Palma,Grup A,"1,075 â‚¬",,
+247,604,Bilbao,Grup A,"1,676 â‚¬",True,50.0
+600,605,Leipzig,Grup D,2.458 â‚¬,,
+601,606,Girona,Grup A,"1,297 â‚¬",True,44563.0
+602,607,Toulouse,Grup A,1099â‚¬,,
+603,608,Valladolid,Grup A,"1,431 â‚¬",,
+604,609,Madrid,Grup C,2268 euros,True,20000.0
+605,610,Sevilla,Grup A,1098â‚¬,,
+606,611,ValÃ¨ncia,Grup B,"1,615 â‚¬",,
+607,612,Madrid,Grup B,"1,602 â‚¬",False,
+608,613,Zaragoza,Grup B,"1,752 â‚¬",,
+609,614,Bilbao,Grup C,2.706 â‚¬,False,
+610,615,Genova,Grup B,1.766 â‚¬,False,
+611,616,Murcia,Grup A,"1,138 â‚¬",True,107311.0
+612,617,Girona,Grup A,"1,201 â‚¬",True,33895.0
+613,618,Murcia,Grup A,1.200 â‚¬,,
+614,619,Tarragona,Grup A,1184â‚¬,,
+615,620,Torino,Grup A,857 â‚¬,False,
+616,621,Madrid,Grup A,976 â‚¬,,
+617,622,Torino,Grup B,"1,707 â‚¬",True,84895.0
+618,623,Genova,Grup C,"2,212 â‚¬",True,22880.0
+619,624,Madrid,Grup A,1219â‚¬,True,11090.0
+620,625,Sevilla,Grup B,"1,470 â‚¬",,
+621,626,Torino,Grup D,"3,600 â‚¬",True,
+622,627,Nantes,Grup A,824â‚¬,,
+623,628,Tarragona,Grup D,"2,876 â‚¬",,
+624,629,Barcelona,Grup A,940 euros,,
+625,630,Zaragoza,Grup B,"1,579 â‚¬",,
+626,631,A CoruÃ±a,Grup C,"2,362 â‚¬",False,
+627,632,Zaragoza,Grup A,"1,012 â‚¬",False,
+628,633,Firenze,Grup B,"1,815 â‚¬",True,80000.0
+629,634,Zaragoza,Grup A,1110 euros,False,
+630,635,Tarragona,Grup A,1258 euros,False,
+631,636,Marseille,Grup C,"2,817 â‚¬",False,
+632,637,Las Palmas de Gran Canaria,Grup B,2125 euros,True,11169.0
+633,638,MÃ laga,Grup A,1030 euros,False,
+634,639,Valladolid,Grup A,1192â‚¬,,
+635,640,Madrid,Grup B,1511 euros,True,80000.0
+636,641,Sevilla,Grup B,1285 euros,,
+637,642,Girona,Grup B,"1,747 â‚¬",False,
+638,643,Marseille,Grup D,2936 euros,False,
+639,644,Zaragoza,Grup B,1.610 â‚¬,False,
+640,645,Alacant,Grup A,"1,177 â‚¬",True,80000.0
+641,646,Toulouse,Grup A,"1,291 â‚¬",False,
+642,647,Stavanger,Grup B,"1,524 â‚¬",,
+643,648,Torino,Grup B,mil vuit-cents,False,
+644,649,Las Palmas de Gran Canaria,Grup A,"1,260 â‚¬",True,30000.0
+645,650,Lyon,Grup A,918 â‚¬,,
+646,651,Stavanger,Grup C,2019â‚¬,,
+647,652,Oslo,Grup C,2178â‚¬,,
+648,653,Palma,Grup A,1117 euros,True,20000.0
+649,654,Madrid,Grup B,1731 euros,,
+650,655,Palma,Grup B,"1,557 â‚¬",True,29434.0
+651,656,Stuttgart,Grup A,tres mil,,
+652,657,Roma,Grup A,896 â‚¬,True,62991.0
+653,658,Valladolid,Grup B,"1,238 â‚¬",False,
+654,659,Barcelona,Grup B,1.585 â‚¬,,
+655,660,Bologna,Grup B,"1,478 â‚¬",,
+656,661,Murcia,Grup A,952 â‚¬,True,80000.0
+657,662,Alacant,Grup D,3330â‚¬,,
+658,663,Nantes,Grup A,"1,432 â‚¬",False,
+659,664,ValÃ¨ncia,Grup A,1156 euros,True,65950.0
+660,665,Madrid,Grup A,1595â‚¬,True,80000.0
+661,666,Bordeaux,Grup A,746 â‚¬,True,65983.0
+662,667,Toulouse,Grup B,"1,619 â‚¬",False,
+663,668,MÃ laga,Grup B,"1,851 â‚¬",False,
+664,669,Alacant,Grup A,906 â‚¬,True,
+665,670,KÃ¶ln,Grup B,"1,939 â‚¬",True,80000.0
+666,671,Torino,Grup A,947 â‚¬,False,
+667,672,Barcelona,Grup A,817 â‚¬,False,
+668,673,ValÃ¨ncia,Grup C,"2,392 â‚¬",,
+669,674,Bergen,Grup A,796â‚¬,True,114489.0
+670,675,Tarragona,Grup B,"1,947 â‚¬",True,50000.0
+671,676,Stuttgart,Grup B,"1,306 â‚¬",True,80000.0
+672,677,MÃ laga,Grup A,"1,121 â‚¬",True,65983.0
+673,678,Madrid,Grup A,"1,001 â‚¬",True,80000.0
+674,679,Alacant,Grup A,"1,390 â‚¬",,
+675,680,Napoli,Grup D,3423 euros,True,32431.0
+676,681,MÃ laga,Grup B,"1,669 â‚¬",True,65950.0
+677,682,Murcia,Grup C,"2,425 â‚¬",,
+678,683,Barcelona,Grup A,806 â‚¬,True,80000.0
+679,684,A CoruÃ±a,Grup A,"1,193 â‚¬",False,
+680,685,Zaragoza,Grup C,"1,923 â‚¬",False,
+681,686,Sevilla,Grup C,"2,048 â‚¬",False,
+682,687,Genova,Grup B,1382â‚¬,False,
+683,688,MÃ laga,Grup B,2149â‚¬,,
+684,689,Girona,Grup A,1.163 â‚¬,,
+685,690,Alacant,Grup B,"1,724 â‚¬",False,
+686,691,Tarragona,Grup A,1.435 â‚¬,,
+554,692,MÃ laga,Grup C,1663â‚¬,True,80000.0
+687,693,Bilbao,Grup D,"2,947 â‚¬",True,18402.0
+688,694,Toulouse,Grup A,1342â‚¬,,
+689,695,Alacant,Grup B,"1,192 â‚¬",False,
+690,696,ValÃ¨ncia,Grup C,"2,401 â‚¬",True,74348.0
+691,697,Stavanger,Grup A,939 â‚¬,,
+692,698,Barcelona,Grup B,"2,242 â‚¬",False,0.0
+693,699,A CoruÃ±a,Grup B,"1,895 â‚¬",True,96645.0
+694,700,Valladolid,Grup B,1630 euros,,
+695,701,Bilbao,Grup B,"1,570 â‚¬",,
+696,702,Napoli,Grup B,2060â‚¬,False,
+697,703,Murcia,Grup B,"1,555 â‚¬",False,
+698,704,Tarragona,Grup A,"1,309 â‚¬",False,
+699,705,Murcia,Grup D,3437â‚¬,,
+700,706,Bordeaux,Grup C,"2,406 â‚¬",False,
+701,707,Zaragoza,Grup A,979 euros,True,99638.0
+702,708,Sevilla,Grup C,"2,211 â‚¬",False,
+703,709,Madrid,Grup D,3600â‚¬,True,28988.0
+704,710,MÃ laga,Grup B,1286 euros,True,60905.0
+705,711,Oslo,Grup A,978 â‚¬,True,65950.0
+706,712,Lyon,Grup A,843 â‚¬,,
+707,713,MÃ laga,Grup C,2569 euros,,
+708,714,Las Palmas de Gran Canaria,Grup A,"1,005 â‚¬",,
+709,715,Lyon,Grup B,"1,608 â‚¬",,
+710,716,Palma,Grup C,"2,343 â‚¬",,
+711,717,Madrid,Grup A,1000â‚¬,False,
+712,718,Las Palmas de Gran Canaria,Grup B,"1,540 â‚¬",True,65950.0
+713,719,Marseille,Grup A,904 euros,,
+714,720,Barcelona,Grup A,860 â‚¬,True,80000.0
+715,721,Las Palmas de Gran Canaria,Grup B,"1,491 â‚¬",,
+716,722,Zaragoza,Grup B,1538 euros,,
+717,723,Tarragona,Grup A,"1,469 â‚¬",False,
+718,724,Alacant,Grup A,937â‚¬,True,
+719,725,Bergen,Grup B,mil vuit-cents,,
+720,726,Valladolid,Grup A,980 â‚¬,,
+721,727,Sevilla,Grup A,"1,027 â‚¬",False,
+722,728,Girona,Grup B,1165â‚¬,False,
+723,729,A CoruÃ±a,Grup D,"3,068 â‚¬",,
+724,730,ValÃ¨ncia,Grup B,1.789 â‚¬,True,29952.0
+725,731,Zaragoza,Grup D,2.613 â‚¬,False,
+726,732,Palma,Grup B,1572 euros,True,107127.0
+727,733,Madrid,Grup C,"2,037 â‚¬",,
+728,734,DÃ¼sseldorf,Grup A,901 â‚¬,,
+729,735,Madrid,Grup B,"1,893 â‚¬",True,28726.0
+730,736,Zaragoza,Grup B,2.397 â‚¬,,
+731,737,Bergen,Grup C,"1,944 â‚¬",False,
+732,738,Alacant,Grup D,"3,087 â‚¬",True,80000.0
+733,739,Sevilla,Grup A,919 â‚¬,True,-50.0
+734,740,MÃ¼nchen,Grup A,909 â‚¬,False,
+735,741,Palma,Grup A,1115â‚¬,True,6377.0
+736,742,Sevilla,Grup B,"1,486 â‚¬",True,45301.0
+737,743,Valladolid,Grup C,"2,574 â‚¬",False,0.0
+738,744,Bilbao,Grup A,1280â‚¬,True,99431.0
+739,745,Murcia,Grup B,"1,539 â‚¬",,
+740,746,A CoruÃ±a,Grup D,"2,917 â‚¬",False,
+741,747,Roma,Grup C,"2,726 â‚¬",,
+742,748,Girona,Grup B,"1,825 â‚¬",,
+743,749,Paris,Grup A,tres mil,False,
+744,750,Valladolid,Grup A,967 â‚¬,,
+745,751,Palma,Grup B,"1,850 â‚¬",,
+746,752,ValÃ¨ncia,Grup B,1412â‚¬,True,65950.0
+747,753,ValÃ¨ncia,Grup B,"1,636 â‚¬",True,80000.0
+649,754,Barcelona,,2.358 â‚¬,,
+748,755,MÃ laga,Grup B,1825 euros,,
+749,756,MÃ¼nchen,Grup B,"1,519 â‚¬",True,77960.0
+750,757,Zaragoza,Grup A,786â‚¬,True,81381.0
+649,758,MÃ laga,Grup B,1879 euros,False,
+649,759,Sevilla,Grup A,"2,000 â‚¬",,
+751,760,Alacant,Grup A,1409 euros,False,
+752,761,Valladolid,Grup B,"1,499 â‚¬",False,
+753,762,Torino,Grup A,968â‚¬,,
+754,763,Berlin,Grup A,"1,132 â‚¬",True,-50.0
+755,764,Hamburg,Grup A,"1,209 â‚¬",True,50000.0
+756,765,Girona,Grup B,"1,939 â‚¬",,
+757,766,Murcia,Grup C,1997 euros,False,
+758,767,Nice,Grup B,1318 euros,,
+759,768,Barcelona,Grup A,"1,255 â‚¬",True,80000.0
+760,769,Alacant,Grup A,1021â‚¬,False,
+761,770,Murcia,Grup A,1283 euros,True,56365.0
+762,771,A CoruÃ±a,Grup C,"3,203 â‚¬",,
+763,772,Sevilla,Grup B,"1,364 â‚¬",,
+764,773,Tarragona,Grup A,765 â‚¬,True,116654.0
+765,774,Barcelona,Grup B,1307â‚¬,True,52646.0
+766,775,Girona,Grup A,"1,327 â‚¬",True,16998.0
+767,776,Lille,Grup B,"1,348 â‚¬",False,
+768,777,Girona,Grup B,1314 euros,,
+769,778,A CoruÃ±a,Grup B,1833â‚¬,True,-50.0
+770,779,Las Palmas de Gran Canaria,Grup A,1.179 â‚¬,,
+771,780,Girona,Grup A,935 â‚¬,True,80000.0
+772,781,Barcelona,Grup A,"1,015 â‚¬",,
+773,782,A CoruÃ±a,Grup B,"1,319 â‚¬",False,
+774,783,MÃ laga,Grup A,723â‚¬,,
+775,784,Bologna,Grup C,2131 euros,,
+776,785,A CoruÃ±a,Grup B,"1,405 â‚¬",False,
+777,786,Sevilla,Grup C,2124 euros,,
+778,787,Barcelona,Grup C,2561â‚¬,,
+779,788,Leipzig,Grup A,"1,034 â‚¬",False,
+780,789,Firenze,Grup B,1920 euros,True,40000.0
+781,790,TromsÃ¸,Grup A,"1,381 â‚¬",False,
+782,791,Bologna,Grup D,2.870 â‚¬,False,
+783,792,Barcelona,Grup A,808 â‚¬,,
+784,793,A CoruÃ±a,Grup A,"1,041 â‚¬",True,29847.0
+785,794,Toulouse,Grup B,"1,843 â‚¬",False,
+786,795,Barcelona,Grup B,1727 euros,,
+787,796,Palma,Grup B,"1,146 â‚¬",False,
+788,797,Nantes,Grup B,2235â‚¬,False,
+789,798,A CoruÃ±a,Grup B,"1,774 â‚¬",True,80000.0
+790,799,Tarragona,Grup B,"2,170 â‚¬",,
+791,800,Frankfurt,Grup B,"1,634 â‚¬",False,
+792,801,Barcelona,Grup B,"1,497 â‚¬",,
+793,802,Girona,Grup A,807 â‚¬,False,
+794,803,A CoruÃ±a,Grup A,"1,343 â‚¬",False,
+795,804,Sevilla,Grup C,2406 euros,,
+796,805,Sevilla,Grup A,"1,021 â‚¬",False,
+797,806,Napoli,Grup B,"1,849 â‚¬",True,53342.0
+798,807,Tarragona,Grup B,"1,785 â‚¬",True,65950.0
+799,808,Barcelona,Grup A,"1,378 â‚¬",True,80000.0
+800,809,Zaragoza,Grup B,"1,846 â‚¬",,
+801,810,Napoli,Grup B,"1,993 â‚¬",,
+802,811,MÃ laga,Grup B,1203 euros,True,52327.0
+803,812,Sevilla,Grup A,1.311 â‚¬,True,4934.0
+804,813,Genova,Grup B,"1,319 â‚¬",True,43088.0
+805,814,Madrid,Grup C,"2,491 â‚¬",True,-50.0
+806,815,Madrid,Grup D,"2,872 â‚¬",True,80000.0
+807,816,Bologna,Grup A,994 â‚¬,,
+808,817,Las Palmas de Gran Canaria,Grup A,838 â‚¬,False,
+809,818,Toulouse,Grup C,"2,234 â‚¬",True,80000.0
+810,819,Girona,Grup A,"1,259 â‚¬",True,65950.0
+811,820,Bordeaux,Grup A,803 â‚¬,True,20000.0
+812,821,Sevilla,Grup A,"1,191 â‚¬",False,
+813,822,Marseille,Grup C,1.804 â‚¬,,
+814,823,Murcia,Grup B,"1,350 â‚¬",False,
+815,824,Girona,Grup B,"1,640 â‚¬",False,
+816,825,Madrid,Grup A,"1,024 â‚¬",,
+817,826,Hamburg,Grup A,"1,441 â‚¬",False,
+818,827,Bilbao,Grup D,"3,672 â‚¬",True,80000.0
+819,828,MÃ laga,Grup A,1046â‚¬,True,20000.0
+820,829,ValÃ¨ncia,Grup A,1.021 â‚¬,True,13608.0
+821,830,MÃ laga,Grup A,1.131 â‚¬,,
+822,831,Barcelona,Grup B,"1,778 â‚¬",True,65983.0
+823,832,Alacant,Grup A,1160â‚¬,False,
+824,833,MÃ laga,Grup A,"1,225 â‚¬",False,
+825,834,Palma,Grup B,"2,147 â‚¬",True,30000.0
+826,835,Firenze,Grup B,"1,691 â‚¬",True,22166.0
+827,836,Alacant,Grup A,838 â‚¬,False,
+828,837,Stuttgart,Grup B,"2,009 â‚¬",True,29464.0
+829,838,Bilbao,Grup A,"1,114 â‚¬",False,
+830,839,Valladolid,Grup C,2133â‚¬,False,
+831,840,Girona,Grup C,"2,637 â‚¬",,
+832,841,Lille,Grup C,"2,225 â‚¬",True,80000.0
+833,842,Stavanger,Grup D,"3,610 â‚¬",False,
+834,843,Valladolid,Grup A,854 euros,True,-50.0
+835,844,MÃ laga,Grup D,2634â‚¬,True,20000.0
+836,845,Napoli,Grup C,"2,065 â‚¬",,
+837,846,Alacant,Grup A,"1,120 â‚¬",False,
+838,847,Sevilla,Grup A,"1,126 â‚¬",False,
+839,848,Sevilla,Grup D,3425 euros,,
+840,849,Toulouse,Grup A,1108â‚¬,True,
+841,850,Sevilla,Grup A,867 euros,,
+842,851,Tarragona,Grup A,"1,105 â‚¬",,
+843,852,Tarragona,Grup A,1.276 â‚¬,True,113111.0
+844,853,Palma,Grup A,747 â‚¬,,
+845,854,ValÃ¨ncia,Grup A,850 â‚¬,,
+846,855,Las Palmas de Gran Canaria,Grup B,"1,644 â‚¬",True,65950.0
+847,856,Valladolid,Grup A,"1,072 â‚¬",True,32672.0
+848,857,Murcia,Grup A,"1,031 â‚¬",False,
+849,858,A CoruÃ±a,Grup A,726 â‚¬,,
+850,859,Marseille,Grup B,1929 euros,True,30000.0
+851,860,Bordeaux,Grup A,n/d,False,
+852,861,Oslo,Grup A,1.237 â‚¬,True,80000.0
+853,862,Bilbao,Grup B,1.349 â‚¬,,
+854,863,Firenze,Grup C,"1,804 â‚¬",True,6369.0
+855,864,Barcelona,Grup A,792â‚¬,False,
+856,865,MÃ laga,Grup A,1259â‚¬,False,
+857,866,Valladolid,Grup A,816 â‚¬,True,30481.0
+858,867,Madrid,Grup B,"1,989 â‚¬",True,30000.0
+859,868,Valladolid,Grup A,1.336 â‚¬,,
+860,869,MÃ laga,Grup A,823 â‚¬,False,
+861,870,Frankfurt,Grup B,"2,025 â‚¬",True,20000.0
+862,871,Paris,Grup A,966 â‚¬,,
+863,872,Barcelona,Grup B,"1,957 â‚¬",,
+864,873,Murcia,Grup C,2810 euros,False,
+865,874,Madrid,Grup A,1124 euros,,
+866,875,Sevilla,Grup A,n/d,False,
+867,876,MÃ laga,Grup A,797 â‚¬,True,115076.0
+868,877,Madrid,Grup A,1184â‚¬,False,
+869,878,Madrid,Grup A,985 â‚¬,False,
+870,879,Sevilla,Grup A,1070â‚¬,,
+871,880,Girona,Grup B,"1,495 â‚¬",False,
+872,881,Barcelona,Grup A,1.340 â‚¬,True,36221.0
+873,882,Sevilla,Grup A,932 â‚¬,False,
+874,883,Frankfurt,Grup B,1.629 â‚¬,False,
+875,884,ValÃ¨ncia,Grup B,1417â‚¬,False,
+876,885,Las Palmas de Gran Canaria,Grup A,866 euros,False,
+877,886,Valladolid,Grup A,"1,233 â‚¬",,
+878,887,Alacant,Grup A,"1,072 â‚¬",True,65950.0
+879,888,Palma,Grup A,922 euros,,
+880,889,Murcia,Grup A,"1,121 â‚¬",False,
+881,890,Nantes,Grup B,"1,831 â‚¬",True,82014.0
+882,891,Tarragona,Grup A,"1,283 â‚¬",,
+883,892,Genova,Grup B,1310â‚¬,,
+884,893,Girona,Grup B,1549 euros,True,80000.0
+885,894,DÃ¼sseldorf,Grup B,"1,166 â‚¬",,
+886,895,Torino,Grup C,"2,180 â‚¬",,
+887,896,Marseille,Grup A,783â‚¬,,
+888,897,Bilbao,Grup A,998 euros,,
+889,898,Madrid,Grup A,1328â‚¬,True,80000.0
+890,899,Firenze,Grup A,"1,331 â‚¬",False,
+891,900,Alacant,Grup A,"1,260 â‚¬",,
+892,901,Palma,Grup B,"1,870 â‚¬",True,32217.0
+893,902,Palma,Grup B,"1,687 â‚¬",True,30000.0
+894,903,Lille,Grup B,"1,353 â‚¬",True,25193.0
+895,904,Alacant,Grup C,"3,070 â‚¬",,
+896,905,Frankfurt,Grup B,"2,100 â‚¬",False,
+897,906,Tarragona,Grup A,1320 euros,,
+898,907,Firenze,Grup B,"1,721 â‚¬",True,80000.0
+899,908,A CoruÃ±a,Grup B,2056 euros,False,
+900,909,Tarragona,Grup A,"1,062 â‚¬",True,109099.0
+901,910,Las Palmas de Gran Canaria,Grup B,"1,198 â‚¬",,
+902,911,Frankfurt,Grup B,"1,740 â‚¬",True,80000.0
+903,912,Tarragona,Grup A,919 â‚¬,False,
+26,913,Tarragona,Grup A,"1,000 â‚¬",False,
+904,914,Zaragoza,Grup A,"1,095 â‚¬",,
+905,915,Las Palmas de Gran Canaria,Grup B,"1,635 â‚¬",True,80000.0
+906,916,Tarragona,Grup A,1043 euros,,
+907,917,Palma,Grup C,n/d,True,81219.0
+908,918,ValÃ¨ncia,Grup B,1782 euros,,
+909,919,Sevilla,Grup B,"1,331 â‚¬",,
+910,920,Tarragona,Grup A,"1,054 â‚¬",True,24307.0
+911,921,Bilbao,Grup A,988 â‚¬,,
+912,922,Torino,Grup A,926 â‚¬,False,0.0
+913,923,Bilbao,Grup A,943 â‚¬,True,110775.0
+914,924,MÃ laga,Grup C,"2,502 â‚¬",False,
+915,925,Madrid,Grup A,819â‚¬,,
+916,926,Murcia,Grup A,779 â‚¬,,
+917,927,Barcelona,Grup B,1.927 â‚¬,,
+918,928,Nantes,Grup A,902â‚¬,False,
+919,929,Alacant,Grup C,"2,426 â‚¬",,
+920,930,Bilbao,Grup A,"1,106 â‚¬",,
+921,931,Firenze,Grup B,"1,529 â‚¬",False,
+922,932,A CoruÃ±a,Grup A,1578 euros,True,-50.0
+923,933,Murcia,Grup A,1.469 â‚¬,False,
+924,934,A CoruÃ±a,Grup A,938 â‚¬,False,
+925,935,Firenze,Grup A,1.185 â‚¬,True,17246.0
+926,936,Bilbao,Grup D,3672 euros,,
+927,937,Hamburg,Grup B,"1,575 â‚¬",False,
+928,938,Murcia,Grup B,"1,530 â‚¬",True,20000.0
+929,939,MÃ laga,Grup A,"1,308 â‚¬",True,30000.0
+930,940,Nice,Grup A,"1,232 â‚¬",False,
+931,941,Bologna,Grup A,830 â‚¬,False,
+932,942,Hamburg,Grup C,2163 euros,False,
+933,943,MÃ laga,Grup A,990 â‚¬,False,
+934,944,MÃ laga,Grup A,1508 euros,,
+935,945,Palma,Grup C,dos mil,,
+936,946,Berlin,Grup B,"1,567 â‚¬",True,50370.0
+937,947,Girona,Grup A,673â‚¬,,
+938,948,DÃ¼sseldorf,Grup B,"1,421 â‚¬",,
+939,949,ValÃ¨ncia,Grup A,"1,073 â‚¬",,
+940,950,Zaragoza,Grup B,"1,531 â‚¬",,
+941,951,Girona,Grup B,"2,179 â‚¬",False,
+942,952,Bilbao,Grup A,"1,202 â‚¬",True,20000.0
+943,953,Torino,Grup A,n/d,False,
+944,954,Hamburg,Grup A,927 euros,,
+945,955,Zaragoza,Grup A,n/d,,
+946,956,Zaragoza,Grup A,n/d,True,9017.0
+947,957,Sevilla,Grup A,"1,042 â‚¬",True,65950.0
+948,958,Bergen,Grup C,"2,759 â‚¬",False,
+949,959,KÃ¶ln,Grup B,"1,501 â‚¬",False,
+950,960,Murcia,Grup C,2191â‚¬,,
+951,961,Milano,Grup A,"1,118 â‚¬",,
+952,962,Zaragoza,Grup A,"1,120 â‚¬",,
+953,963,Madrid,Grup A,"1,188 â‚¬",,
+954,964,Las Palmas de Gran Canaria,Grup B,"1,188 â‚¬",False,
+955,965,Tarragona,Grup C,"2,683 â‚¬",,
+956,966,Palma,Grup A,842 â‚¬,False,
+957,967,Tarragona,Grup A,"1,166 â‚¬",False,
+958,968,Bilbao,Grup B,"1,762 â‚¬",True,65950.0
+959,969,Las Palmas de Gran Canaria,Grup C,"2,403 â‚¬",True,7861.0
+960,970,Barcelona,Grup B,"1,666 â‚¬",False,
+961,971,Milano,Grup C,"2,852 â‚¬",True,80000.0
+962,972,Bordeaux,Grup B,1692â‚¬,True,80000.0
+963,973,Las Palmas de Gran Canaria,Grup D,"2,721 â‚¬",False,
+964,974,Roma,Grup A,"1,288 â‚¬",False,
+965,975,Madrid,Grup A,950â‚¬,True,80000.0
+966,976,Valladolid,Grup C,"2,625 â‚¬",,
+967,977,Zaragoza,Grup A,"1,222 â‚¬",True,97162.0
+968,978,Bologna,Grup C,1931 euros,,
+969,979,Palma,Grup A,902 â‚¬,,
+970,980,Palma,Grup B,"2,004 â‚¬",False,
+971,981,Torino,Grup B,"1,316 â‚¬",True,20000.0
+972,982,Sevilla,Grup B,dos mil,False,
+973,983,Murcia,Grup A,"1,032 â‚¬",False,
+974,984,Murcia,Grup B,"1,989 â‚¬",,
+975,985,Palma,Grup B,"1,244 â‚¬",True,56745.0
+976,986,Roma,Grup B,1225 euros,True,116027.0
+977,987,Las Palmas de Gran Canaria,Grup C,2.184 â‚¬,,
+978,988,Girona,Grup A,"1,002 â‚¬",True,50453.0
+979,989,A CoruÃ±a,Grup A,"1,183 â‚¬",True,27921.0
+980,990,Zaragoza,Grup D,3486 euros,True,35591.0
+981,991,Barcelona,Grup B,1377â‚¬,False,
+982,992,Alacant,Grup B,"1,903 â‚¬",,
+983,993,Girona,Grup A,1437â‚¬,False,
+984,994,Bilbao,Grup A,tres mil,True,80000.0
+985,995,KÃ¶ln,Grup B,"1,644 â‚¬",False,
+986,996,Alacant,Grup A,1158â‚¬,,
+987,997,Zaragoza,Grup A,"1,074 â‚¬",True,80000.0
+988,998,Nice,Grup B,"1,954 â‚¬",,
+989,999,Palma,Grup C,"2,010 â‚¬",False,
+26,1000,Tarragona,Grup A,"1,073 â‚¬",False,
+990,1001,Oslo,Grup B,2.290 â‚¬,True,80000.0
+368,372,Bilbao,Grup B,"1,409 â‚¬",,
+724,730,ValÃ¨ncia,Grup B,1.789 â‚¬,True,29952.0
+750,757,Zaragoza,Grup A,786â‚¬,True,81381.0
+,1002,,,,,
+991,1003,Desconeguda,Z,molts,,
