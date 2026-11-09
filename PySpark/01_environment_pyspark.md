@@ -7,29 +7,20 @@ Elige **una** de las tres opciones. En esta práctica usaremos **Java 17 y PySpa
 ### 1.1. Usar el entorno de Google
 
 
-1. Abre un notebook temporal en Colab y ejecuta `!java -version` en una celda.
-2. Si necesitas instalar Java 17, ejecuta `!apt-get update -qq` y después `!apt-get install -y openjdk-17-jre-headless`, en celdas separadas.
-3. Si todavía no tienes PySpark 3.5.x, ejecuta la siguiente celda y reinicia la sesión de Python:
+1. Abre un notebook temporal en Colab y ejecuta la siguiente celda y reinicia la sesión de Python:
 
 ```python
 %pip install "pyspark>=3.5,<3.6"
 ```
 
-4. Si Colab está seleccionando otra versión de Java, ejecuta estas líneas antes de iniciar Spark. Ajusta la ruta si Java 17 está instalado en otra carpeta:
-
-```python
-import os
-os.environ["JAVA_HOME"] = "/usr/lib/jvm/java-17-openjdk-amd64"
-```
-
-Este ajuste vale para el kernel actual. Si lo necesitas en el cuaderno de práctica, repite esas líneas allí antes de iniciar Spark. Continúa con la [comprobación](#4-comprobar-que-spark-arranca).
+Continúa con la [comprobación](#4-comprobar-que-spark-arranca).
 
 ### 1.2. Conectar Colab a un servidor local en la máquina virtual
 
 Con esta opción abres Colab en el navegador de la **máquina virtual** y el código también se ejecuta en la VM. Usarás el Python, Java y los archivos accesibles desde el kernel de Jupyter de la VM.
 
 1. En la VM, prepara [Jupyter Notebook](00_environment_python.md#2-jupyter-notebook) y comprueba [Java en la máquina virtual](#java-en-la-máquina-virtual).
-2. En la terminal de la VM, desde la carpeta `PySpark`, inicia Jupyter con este comando y deja la terminal abierta:
+2. En la terminal de la VM, desde la `Carpeta personal`, inicia Jupyter con este comando y deja la terminal abierta:
 
 ```bash
 python3 -m notebook \
@@ -41,7 +32,7 @@ python3 -m notebook \
   --no-browser
 ```
 
-3. Copia la URL completa que muestra la terminal, incluido el token. Tendrá una forma parecida a `http://127.0.0.1:8888/?token=TU_TOKEN`. Si el puerto 8888 ya está ocupado, usa otro en el comando y copia la nueva URL. Guarda el token para tu sesión.
+3. Copia la URL completa que muestra la terminal. Tendrá una forma parecida a `http://127.0.0.1:8888/`. Si el puerto 8888 ya está ocupado, usa otro en el comando y copia la nueva URL. 
 4. Abre **Google Colab en el navegador de la VM**. En el menú **Conectar**, elige **Conectar a un entorno de ejecución local**, pega la URL y confirma. Usa el navegador de la VM porque `127.0.0.1` apunta a la máquina donde está abierto.
 5. Si el kernel local todavía no tiene PySpark 3.5.x, ejecuta `%pip install "pyspark>=3.5,<3.6"` en una celda de Colab ya conectado al servidor local. Reinicia el kernel si hace falta y ejecuta la [comprobación de Spark](#4-comprobar-que-spark-arranca).
 
@@ -51,8 +42,8 @@ python3 -m notebook \
 ## 2. Jupyter Notebook
 
 1. Comprueba [Java en la máquina virtual](#java-en-la-máquina-virtual).
-2. Desde la carpeta `PySpark`, ejecuta `python3 -m notebook` en la terminal. Si el navegador no se abre automáticamente, usa la URL que muestra Jupyter.
-3. Crea un notebook temporal y selecciona el mismo kernel de Python que usarás para la práctica. Si hace falta instalar PySpark, ejecuta la celda siguiente y reinicia el kernel:
+2. Desde la `Carpeta personal`, ejecuta `python3 -m notebook` en la terminal. Si el navegador no se abre automáticamente, usa la URL que muestra Jupyter.
+3. Crea un notebook temporal y selecciona el mismo kernel de Python que usarás para la práctica. Instalamos PySpark, ejecuta la celda siguiente y reinicia el kernel:
 
 ```python
 %pip install "pyspark>=3.5,<3.6"
@@ -62,9 +53,8 @@ python3 -m notebook \
 
 ## 3. Visual Studio Code
 
-1. Comprueba [Java en la máquina virtual](#java-en-la-máquina-virtual).
-2. Abre la carpeta `PySpark` en VS Code y crea un notebook temporal. En **Seleccionar kernel**, elige el entorno de Python que usarás también para la práctica.
-3. Si necesitas instalar PySpark, ejecuta la celda siguiente y reinicia el kernel:
+1. Abre un notebook nuevo. En **Seleccionar kernel**, elige el entorno de Python que usarás también para la práctica.
+2. Instala PySpark, ejecuta la celda siguiente y reinicia el kernel:
 
 ```python
 %pip install "pyspark>=3.5,<3.6"
@@ -94,17 +84,11 @@ Abre Jupyter o VS Code desde esa misma terminal para que sus kernels reciban el 
 Ejecuta esta celda en el notebook temporal del entorno que elegiste:
 
 ```python
-from pyspark.sql import SparkSession
-
-spark = SparkSession.builder.master("local[2]").appName("Comprobación PySpark").getOrCreate()
-try:
-    print("Versión de Spark:", spark.version)
-    print("Resultado:", spark.range(3).count())
-finally:
-    spark.stop()
+import pyspark
+print(pyspark.__version__)
 ```
 
-Si aparece `Resultado: 3`, el kernel puede iniciar Spark y ejecutar un cálculo. Si falla el arranque, comprueba que `JAVA_HOME` apunta a la carpeta de Java 17 y que dentro existe `bin/java`. Si aparece `ModuleNotFoundError`, comprueba que instalaste PySpark en el mismo kernel. Si ya hay un contexto de Spark activo y el notebook no responde como esperas, reinicia el kernel y vuelve a ejecutar la comprobación.
+Si aparece la versión todo esta ok. Si aparece `ModuleNotFoundError`, comprueba que instalaste PySpark en el mismo kernel. Si ya hay un contexto de Spark activo y el notebook no responde como esperas, reinicia el kernel y vuelve a ejecutar la comprobación.
 
 [Documentación de instalación de PySpark 3.5](https://spark.apache.org/docs/3.5.9/api/python/getting_started/install.html)
 
