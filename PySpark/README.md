@@ -20,8 +20,8 @@ Los pasos 00 a 10 cubren Python, Spark, formatos de datos, preparación, anális
 | 02 | [Ejercicio de RDD](notebooks/02_rdd_exercise.ipynb) | Crea un RDD, muestra sus datos, aplica transformaciones y filtros y ejecuta acciones. |
 | 03 | [DataFrames de Spark](notebooks/03_spark_dataframes.ipynb) | Lee el CSV de accidentes de Barcelona con Spark, selecciona, filtra y agrupa registros. Con un ejemplo de pedidos, une tablas y calcula importes. |
 | 04 | [Ejercicios de DataFrames](notebooks/04_df_exercise.ipynb) | Explora los nacimientos de Barcelona en 2024 con ejercicios de inspección, filtrado, ordenación y estadísticas descriptivas. |
-| 05 | [CSV con Python y PySpark](notebooks/05_csv_python_vs_pyspark.ipynb) | Procesa el mismo CSV con Python y PySpark y compara resultados y tiempos. |
-| 06 | [Parquet con Python y PySpark](notebooks/06_parquet_python_vs_pyspark.ipynb) | Observa el formato, compara tamaños y procesa el mismo Parquet con PyArrow y PySpark. |
+| 05 | [CSV vs. Parquet con PySpark](notebooks/05_csv_python_vs_pyspark.ipynb) | Guarda los mismos pedidos en ambos formatos y compara tamaños, esquemas y resultados. |
+| 06 | [Parquet particionado por zona](notebooks/06_parquet_python_vs_pyspark.ipynb) | Reutiliza los pedidos del 05, guarda Parquet por zona y examina el filtro en el plan de ejecución. |
 | 07 | [Spark y HDFS](notebooks/07_spark_hdfs.ipynb) | Lee pedidos de HDFS, agrupa por zona y guarda el resumen en HDFS. |
 | 08 | [EDA y estadística con PySpark](notebooks/08_data_preparation_and_analysis.ipynb) | Prepara la encuesta de empleados con Spark y calcula resúmenes, Welch, chi-cuadrado, Pearson y Spearman. |
 | 09 | [EDA y estadística con pandas](notebooks/09_eda_y_estadistica_bigdata.ipynb) | Repite los pasos del 08 sobre la misma encuesta para comparar la limpieza, los resúmenes y los resultados estadísticos. |
