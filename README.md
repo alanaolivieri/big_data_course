@@ -33,7 +33,7 @@ Consulta la [ruta completa de PySpark](PySpark/README.md). Incluye notebooks y e
 - Introducción a PySpark.
 - DataFrames.
 - Procesamiento y preparación de datos.
-- [Análisis exploratorio, contrastes y correlación](PySpark/notebooks/09_eda_y_estadistica_bigdata.ipynb).
+- [Análisis exploratorio, contrastes y correlación](PySpark/notebooks/08_data_preparation_and_analysis.ipynb).
 - Regresión y regresión logística.
 - K-Means.
 - Visualización de datos.

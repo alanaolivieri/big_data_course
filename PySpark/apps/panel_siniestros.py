@@ -17,7 +17,7 @@ def cargar_datos():
                 inicio / 'PySpark' / 'data', Path(__file__).resolve().parent.parent / 'data']
     ruta = next((p / ARCHIVO for p in carpetas if (p / ARCHIVO).is_file()), None)
     if ruta is None:
-        raise FileNotFoundError(f'No encuentro {ARCHIVO}. Ejecuta la exportación del notebook 16.')
+        raise FileNotFoundError(f'No encuentro {ARCHIVO}. Ejecuta la exportación del notebook 15.')
     return pd.read_csv(ruta, parse_dates=['fecha'])
 
 
