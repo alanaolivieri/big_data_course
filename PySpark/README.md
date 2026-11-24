@@ -38,10 +38,10 @@ Los cuadernos 10 a 13 son independientes y contienen datos simulados. Para una c
 
 ## Módulo final · Visualización y valor
 
-- [14 · Día 1: Visualizar siniestros](notebooks/14_visualizacion_siniestros_dia_1.ipynb). Seaborn, mapa geográfico con Folium y ejercicio final.
-- [15 · Día 2: Panel con subplots](notebooks/15_panel_siniestros_dia_2.ipynb). Combina el indicador y tres gráficos. Exporta la tabla común para los cuadernos 16 y 17.
-- [16 · Día 2: Plotly, Streamlit y Dash](notebooks/16_panel_streamlit_y_dash_dia_2.ipynb). Tres formas de mostrar el mismo panel sobre el CSV exportado.
-- [17 · Día 3: Power BI y valor](notebooks/17_power_bi_y_valor_dia_3.ipynb). Reconstruye el panel en BI y defiende una decisión. Incluye una ruta equivalente en Looker Studio.
+- [14 · Día 1: Visualizar siniestros](notebooks/14_visualizacion_siniestros.ipynb). Seaborn, mapa geográfico con Folium y ejercicio final.
+- [15 · Día 2: Panel con subplots](notebooks/15_panel_siniestros.ipynb). Combina el indicador y tres gráficos. Exporta la tabla común para los cuadernos 16 y 17.
+- [16 · Día 2: Plotly, Streamlit y Dash](notebooks/16_panel_streamlit_y_dash.ipynb). Tres formas de mostrar el mismo panel sobre el CSV exportado.
+- [17 · Día 3: Power BI y valor](notebooks/17_power_bi_y_valor.ipynb). Reconstruye el panel en BI y defiende una decisión. Incluye una ruta equivalente en Looker Studio.
 
 ## Soluciones
 
