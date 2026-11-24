@@ -1,4 +1,4 @@
-﻿fecha,distrito,barrio,hora,expedientes
+﻿data,districte,barri,hora,expedientes
 2023-01-01,Ciutat Vella,el Raval,3,1
 2023-01-01,Gràcia,la Vila de Gràcia,14,1
 2023-01-01,Gràcia,la Vila de Gràcia,17,2
@@ -328,7 +328,7 @@
 2023-01-17,Sarrià-Sant Gervasi,Sant Gervasi - Galvany,16,1
 2023-01-17,Sarrià-Sant Gervasi,Sant Gervasi - la Bonanova,21,1
 2023-01-17,Sarrià-Sant Gervasi,Sarrià,8,1
-2023-01-18,Desconocido,Desconocido,8,1
+2023-01-18,Desconegut,Desconegut,8,1
 2023-01-18,Eixample,Sant Antoni,21,1
 2023-01-18,Eixample,l'Antiga Esquerra de l'Eixample,10,1
 2023-01-18,Eixample,la Dreta de l'Eixample,14,1
@@ -430,8 +430,8 @@
 2023-01-22,Sants-Montjuïc,la Bordeta,19,1
 2023-01-22,Sarrià-Sant Gervasi,Sarrià,20,1
 2023-01-23,Ciutat Vella,"Sant Pere, Santa Caterina i la Ribera",9,1
-2023-01-23,Desconocido,Desconocido,12,1
-2023-01-23,Desconocido,Desconocido,23,1
+2023-01-23,Desconegut,Desconegut,12,1
+2023-01-23,Desconegut,Desconegut,23,1
 2023-01-23,Eixample,Sant Antoni,16,1
 2023-01-23,Eixample,la Dreta de l'Eixample,7,1
 2023-01-23,Eixample,la Dreta de l'Eixample,9,1
@@ -464,7 +464,7 @@
 2023-01-24,Sarrià-Sant Gervasi,Sant Gervasi - la Bonanova,10,1
 2023-01-24,Sarrià-Sant Gervasi,Sant Gervasi - la Bonanova,16,1
 2023-01-24,Sarrià-Sant Gervasi,Sarrià,23,1
-2023-01-25,Desconocido,Desconocido,5,1
+2023-01-25,Desconegut,Desconegut,5,1
 2023-01-25,Eixample,Sant Antoni,19,1
 2023-01-25,Eixample,l'Antiga Esquerra de l'Eixample,9,1
 2023-01-25,Eixample,l'Antiga Esquerra de l'Eixample,12,1
@@ -488,8 +488,8 @@
 2023-01-25,Sarrià-Sant Gervasi,Sant Gervasi - la Bonanova,18,1
 2023-01-25,Sarrià-Sant Gervasi,el Putxet i el Farró,8,1
 2023-01-25,Sarrià-Sant Gervasi,el Putxet i el Farró,14,1
-2023-01-26,Desconocido,Desconocido,14,1
-2023-01-26,Desconocido,Desconocido,15,1
+2023-01-26,Desconegut,Desconegut,14,1
+2023-01-26,Desconegut,Desconegut,15,1
 2023-01-26,Eixample,el Fort Pienc,14,1
 2023-01-26,Eixample,l'Antiga Esquerra de l'Eixample,14,1
 2023-01-26,Eixample,la Dreta de l'Eixample,12,1
@@ -533,7 +533,7 @@
 2023-01-27,Sant Martí,la Verneda i la Pau,9,1
 2023-01-27,Sants-Montjuïc,Sants,20,1
 2023-01-27,Sarrià-Sant Gervasi,el Putxet i el Farró,19,1
-2023-01-28,Desconocido,Desconocido,14,1
+2023-01-28,Desconegut,Desconegut,14,1
 2023-01-28,Eixample,la Dreta de l'Eixample,12,1
 2023-01-28,Eixample,la Dreta de l'Eixample,19,1
 2023-01-28,Les Corts,Pedralbes,22,1
@@ -544,7 +544,7 @@
 2023-01-28,Sants-Montjuïc,la Marina del Prat Vermell,6,1
 2023-01-28,Sarrià-Sant Gervasi,Sant Gervasi - Galvany,21,1
 2023-01-28,Sarrià-Sant Gervasi,Sant Gervasi - la Bonanova,13,1
-2023-01-29,Desconocido,Desconocido,10,1
+2023-01-29,Desconegut,Desconegut,10,1
 2023-01-29,Eixample,el Fort Pienc,4,1
 2023-01-29,Eixample,l'Antiga Esquerra de l'Eixample,13,1
 2023-01-29,Eixample,la Dreta de l'Eixample,21,1
@@ -648,7 +648,7 @@
 2023-02-02,Sarrià-Sant Gervasi,Sant Gervasi - Galvany,20,1
 2023-02-03,Ciutat Vella,el Raval,11,1
 2023-02-03,Ciutat Vella,el Raval,12,1
-2023-02-03,Desconocido,Desconocido,16,1
+2023-02-03,Desconegut,Desconegut,16,1
 2023-02-03,Eixample,l'Antiga Esquerra de l'Eixample,9,1
 2023-02-03,Eixample,la Dreta de l'Eixample,4,1
 2023-02-03,Eixample,la Dreta de l'Eixample,8,1
@@ -673,7 +673,7 @@
 2023-02-03,Sarrià-Sant Gervasi,Sant Gervasi - Galvany,17,1
 2023-02-03,Sarrià-Sant Gervasi,Sant Gervasi - Galvany,20,1
 2023-02-03,Sarrià-Sant Gervasi,el Putxet i el Farró,9,1
-2023-02-04,Desconocido,Desconocido,16,1
+2023-02-04,Desconegut,Desconegut,16,1
 2023-02-04,Eixample,Sant Antoni,23,1
 2023-02-04,Eixample,el Fort Pienc,12,1
 2023-02-04,Eixample,l'Antiga Esquerra de l'Eixample,14,1
@@ -697,7 +697,7 @@
 2023-02-04,Sarrià-Sant Gervasi,Sant Gervasi - la Bonanova,8,1
 2023-02-04,Sarrià-Sant Gervasi,Sant Gervasi - la Bonanova,12,1
 2023-02-04,Sarrià-Sant Gervasi,Sant Gervasi - la Bonanova,19,1
-2023-02-05,Desconocido,Desconocido,6,1
+2023-02-05,Desconegut,Desconegut,6,1
 2023-02-05,Eixample,el Fort Pienc,12,1
 2023-02-05,Eixample,la Dreta de l'Eixample,1,1
 2023-02-05,Eixample,la Nova Esquerra de l'Eixample,15,1
@@ -987,7 +987,7 @@
 2023-02-17,Sarrià-Sant Gervasi,el Putxet i el Farró,14,1
 2023-02-17,Sarrià-Sant Gervasi,les Tres Torres,9,1
 2023-02-18,Ciutat Vella,el Raval,14,1
-2023-02-18,Desconocido,Desconocido,10,1
+2023-02-18,Desconegut,Desconegut,10,1
 2023-02-18,Eixample,el Fort Pienc,1,1
 2023-02-18,Eixample,el Fort Pienc,9,1
 2023-02-18,Eixample,la Dreta de l'Eixample,3,1
@@ -1053,7 +1053,7 @@
 2023-02-21,Sarrià-Sant Gervasi,Sant Gervasi - Galvany,19,1
 2023-02-21,Sarrià-Sant Gervasi,Sarrià,17,1
 2023-02-21,Sarrià-Sant Gervasi,el Putxet i el Farró,7,1
-2023-02-22,Desconocido,Desconocido,21,1
+2023-02-22,Desconegut,Desconegut,21,1
 2023-02-22,Eixample,l'Antiga Esquerra de l'Eixample,19,1
 2023-02-22,Eixample,la Nova Esquerra de l'Eixample,14,1
 2023-02-22,Gràcia,Vallcarca i els Penitents,16,1
@@ -1137,7 +1137,7 @@
 2023-02-26,Sant Martí,la Vila Olímpica del Poblenou,0,1
 2023-02-26,Sants-Montjuïc,la Font de la Guatlla,4,1
 2023-02-26,Sarrià-Sant Gervasi,el Putxet i el Farró,15,1
-2023-02-27,Desconocido,Desconocido,8,1
+2023-02-27,Desconegut,Desconegut,8,1
 2023-02-27,Eixample,Sant Antoni,10,1
 2023-02-27,Eixample,Sant Antoni,13,1
 2023-02-27,Eixample,l'Antiga Esquerra de l'Eixample,7,1
@@ -1161,7 +1161,7 @@
 2023-02-27,Sarrià-Sant Gervasi,Sant Gervasi - la Bonanova,13,1
 2023-02-27,Sarrià-Sant Gervasi,"Vallvidrera, el Tibidabo i les Planes",13,1
 2023-02-28,Ciutat Vella,"Sant Pere, Santa Caterina i la Ribera",17,1
-2023-02-28,Desconocido,Desconocido,13,1
+2023-02-28,Desconegut,Desconegut,13,1
 2023-02-28,Eixample,el Fort Pienc,9,1
 2023-02-28,Eixample,la Dreta de l'Eixample,12,1
 2023-02-28,Eixample,la Sagrada Família,10,1
@@ -1315,7 +1315,7 @@
 2023-03-06,Sarrià-Sant Gervasi,Sant Gervasi - la Bonanova,20,2
 2023-03-06,Sarrià-Sant Gervasi,el Putxet i el Farró,8,1
 2023-03-07,Ciutat Vella,la Barceloneta,2,1
-2023-03-07,Desconocido,Desconocido,21,1
+2023-03-07,Desconegut,Desconegut,21,1
 2023-03-07,Eixample,el Fort Pienc,10,1
 2023-03-07,Eixample,l'Antiga Esquerra de l'Eixample,1,1
 2023-03-07,Eixample,l'Antiga Esquerra de l'Eixample,12,2
@@ -1371,7 +1371,7 @@
 2023-03-09,Sarrià-Sant Gervasi,Sant Gervasi - Galvany,10,1
 2023-03-09,Sarrià-Sant Gervasi,Sant Gervasi - Galvany,18,1
 2023-03-09,Sarrià-Sant Gervasi,Sant Gervasi - Galvany,23,1
-2023-03-10,Desconocido,Desconocido,16,1
+2023-03-10,Desconegut,Desconegut,16,1
 2023-03-10,Eixample,el Fort Pienc,12,1
 2023-03-10,Eixample,el Fort Pienc,14,1
 2023-03-10,Eixample,el Fort Pienc,19,1
@@ -1638,7 +1638,7 @@
 2023-03-22,Sarrià-Sant Gervasi,les Tres Torres,18,1
 2023-03-23,Ciutat Vella,el Barri Gòtic,21,1
 2023-03-23,Ciutat Vella,la Barceloneta,14,1
-2023-03-23,Desconocido,Desconocido,14,1
+2023-03-23,Desconegut,Desconegut,14,1
 2023-03-23,Eixample,el Fort Pienc,16,1
 2023-03-23,Eixample,la Dreta de l'Eixample,16,1
 2023-03-23,Eixample,la Dreta de l'Eixample,18,1
@@ -1809,7 +1809,7 @@
 2023-03-30,Sarrià-Sant Gervasi,Sant Gervasi - la Bonanova,8,1
 2023-03-31,Ciutat Vella,el Barri Gòtic,10,1
 2023-03-31,Ciutat Vella,el Barri Gòtic,18,1
-2023-03-31,Desconocido,Desconocido,13,1
+2023-03-31,Desconegut,Desconegut,13,1
 2023-03-31,Eixample,el Fort Pienc,18,1
 2023-03-31,Eixample,l'Antiga Esquerra de l'Eixample,18,1
 2023-03-31,Eixample,la Dreta de l'Eixample,15,1
@@ -1852,7 +1852,7 @@
 2023-04-01,Sarrià-Sant Gervasi,les Tres Torres,7,1
 2023-04-02,Ciutat Vella,el Barri Gòtic,2,1
 2023-04-02,Ciutat Vella,la Barceloneta,6,1
-2023-04-02,Desconocido,Desconocido,22,1
+2023-04-02,Desconegut,Desconegut,22,1
 2023-04-02,Eixample,el Fort Pienc,2,1
 2023-04-02,Eixample,l'Antiga Esquerra de l'Eixample,8,1
 2023-04-02,Eixample,la Sagrada Família,0,1
@@ -1895,7 +1895,7 @@
 2023-04-03,Sarrià-Sant Gervasi,el Putxet i el Farró,17,1
 2023-04-03,Sarrià-Sant Gervasi,el Putxet i el Farró,22,1
 2023-04-03,Sarrià-Sant Gervasi,les Tres Torres,11,1
-2023-04-04,Desconocido,Desconocido,22,1
+2023-04-04,Desconegut,Desconegut,22,1
 2023-04-04,Eixample,l'Antiga Esquerra de l'Eixample,11,1
 2023-04-04,Eixample,la Dreta de l'Eixample,12,1
 2023-04-04,Eixample,la Dreta de l'Eixample,17,1
@@ -1962,7 +1962,7 @@
 2023-04-07,Sant Martí,la Vila Olímpica del Poblenou,13,1
 2023-04-07,Sants-Montjuïc,Hostafrancs,19,1
 2023-04-07,Sants-Montjuïc,la Bordeta,14,1
-2023-04-08,Desconocido,Desconocido,22,1
+2023-04-08,Desconegut,Desconegut,22,1
 2023-04-08,Eixample,Sant Antoni,6,1
 2023-04-08,Eixample,l'Antiga Esquerra de l'Eixample,10,1
 2023-04-08,Eixample,l'Antiga Esquerra de l'Eixample,13,1
@@ -1996,8 +1996,8 @@
 2023-04-10,Sants-Montjuïc,la Marina del Prat Vermell,17,1
 2023-04-10,Sarrià-Sant Gervasi,Sant Gervasi - Galvany,14,1
 2023-04-10,Sarrià-Sant Gervasi,les Tres Torres,20,1
-2023-04-11,Desconocido,Desconocido,8,1
-2023-04-11,Desconocido,Desconocido,15,1
+2023-04-11,Desconegut,Desconegut,8,1
+2023-04-11,Desconegut,Desconegut,15,1
 2023-04-11,Eixample,Sant Antoni,18,1
 2023-04-11,Eixample,el Fort Pienc,13,1
 2023-04-11,Eixample,el Fort Pienc,14,1
@@ -2031,7 +2031,7 @@
 2023-04-11,Sarrià-Sant Gervasi,Sant Gervasi - la Bonanova,14,1
 2023-04-11,Sarrià-Sant Gervasi,Sarrià,17,1
 2023-04-12,Ciutat Vella,el Barri Gòtic,11,1
-2023-04-12,Desconocido,Desconocido,11,1
+2023-04-12,Desconegut,Desconegut,11,1
 2023-04-12,Eixample,Sant Antoni,21,1
 2023-04-12,Eixample,el Fort Pienc,18,1
 2023-04-12,Eixample,l'Antiga Esquerra de l'Eixample,9,1
@@ -2146,7 +2146,7 @@
 2023-04-16,Sants-Montjuïc,la Marina del Prat Vermell,19,1
 2023-04-17,Ciutat Vella,"Sant Pere, Santa Caterina i la Ribera",14,1
 2023-04-17,Ciutat Vella,el Raval,14,1
-2023-04-17,Desconocido,Desconocido,9,1
+2023-04-17,Desconegut,Desconegut,9,1
 2023-04-17,Eixample,el Fort Pienc,12,1
 2023-04-17,Eixample,l'Antiga Esquerra de l'Eixample,12,1
 2023-04-17,Eixample,la Dreta de l'Eixample,8,2
@@ -2415,7 +2415,7 @@
 2023-04-26,Sarrià-Sant Gervasi,Sarrià,8,1
 2023-04-26,Sarrià-Sant Gervasi,Sarrià,10,1
 2023-04-26,Sarrià-Sant Gervasi,Sarrià,15,1
-2023-04-27,Desconocido,Desconocido,20,1
+2023-04-27,Desconegut,Desconegut,20,1
 2023-04-27,Eixample,l'Antiga Esquerra de l'Eixample,12,2
 2023-04-27,Eixample,l'Antiga Esquerra de l'Eixample,16,1
 2023-04-27,Eixample,la Dreta de l'Eixample,11,1
@@ -2576,7 +2576,7 @@
 2023-05-04,Ciutat Vella,el Raval,15,1
 2023-05-04,Ciutat Vella,la Barceloneta,17,1
 2023-05-04,Ciutat Vella,la Barceloneta,22,1
-2023-05-04,Desconocido,Desconocido,14,1
+2023-05-04,Desconegut,Desconegut,14,1
 2023-05-04,Eixample,el Fort Pienc,16,1
 2023-05-04,Eixample,el Fort Pienc,21,1
 2023-05-04,Eixample,l'Antiga Esquerra de l'Eixample,17,1
@@ -2666,8 +2666,8 @@
 2023-05-07,Sants-Montjuïc,la Bordeta,12,1
 2023-05-08,Ciutat Vella,el Raval,8,1
 2023-05-08,Ciutat Vella,la Barceloneta,12,1
-2023-05-08,Desconocido,Desconocido,1,1
-2023-05-08,Desconocido,Desconocido,15,1
+2023-05-08,Desconegut,Desconegut,1,1
+2023-05-08,Desconegut,Desconegut,15,1
 2023-05-08,Eixample,el Fort Pienc,15,1
 2023-05-08,Eixample,la Dreta de l'Eixample,2,1
 2023-05-08,Eixample,la Dreta de l'Eixample,17,1
@@ -2739,7 +2739,7 @@
 2023-05-10,Sarrià-Sant Gervasi,Sant Gervasi - Galvany,19,1
 2023-05-10,Sarrià-Sant Gervasi,Sant Gervasi - Galvany,20,1
 2023-05-10,Sarrià-Sant Gervasi,Sant Gervasi - la Bonanova,16,1
-2023-05-11,Desconocido,Desconocido,18,1
+2023-05-11,Desconegut,Desconegut,18,1
 2023-05-11,Eixample,el Fort Pienc,13,1
 2023-05-11,Eixample,l'Antiga Esquerra de l'Eixample,14,1
 2023-05-11,Eixample,l'Antiga Esquerra de l'Eixample,15,1
@@ -2795,7 +2795,7 @@
 2023-05-12,Sarrià-Sant Gervasi,Sarrià,17,1
 2023-05-13,Ciutat Vella,"Sant Pere, Santa Caterina i la Ribera",20,1
 2023-05-13,Ciutat Vella,la Barceloneta,13,1
-2023-05-13,Desconocido,Desconocido,18,1
+2023-05-13,Desconegut,Desconegut,18,1
 2023-05-13,Eixample,l'Antiga Esquerra de l'Eixample,9,1
 2023-05-13,Eixample,la Dreta de l'Eixample,13,1
 2023-05-13,Eixample,la Dreta de l'Eixample,14,1
@@ -2855,7 +2855,7 @@
 2023-05-16,Sarrià-Sant Gervasi,Sarrià,8,1
 2023-05-17,Ciutat Vella,el Barri Gòtic,15,1
 2023-05-17,Ciutat Vella,el Barri Gòtic,19,1
-2023-05-17,Desconocido,Desconocido,17,1
+2023-05-17,Desconegut,Desconegut,17,1
 2023-05-17,Eixample,Sant Antoni,12,1
 2023-05-17,Eixample,la Nova Esquerra de l'Eixample,9,1
 2023-05-17,Eixample,la Nova Esquerra de l'Eixample,23,1
@@ -2949,7 +2949,7 @@
 2023-05-21,Sant Martí,Provençals del Poblenou,14,1
 2023-05-21,Sants-Montjuïc,la Marina de Port,22,1
 2023-05-22,Ciutat Vella,el Raval,15,1
-2023-05-22,Desconocido,Desconocido,18,1
+2023-05-22,Desconegut,Desconegut,18,1
 2023-05-22,Eixample,Sant Antoni,1,1
 2023-05-22,Eixample,Sant Antoni,18,1
 2023-05-22,Eixample,l'Antiga Esquerra de l'Eixample,13,2
@@ -2996,7 +2996,7 @@
 2023-05-23,Sarrià-Sant Gervasi,Sarrià,8,1
 2023-05-23,Sarrià-Sant Gervasi,el Putxet i el Farró,10,1
 2023-05-24,Ciutat Vella,el Barri Gòtic,18,1
-2023-05-24,Desconocido,Desconocido,18,1
+2023-05-24,Desconegut,Desconegut,18,1
 2023-05-24,Eixample,Sant Antoni,9,1
 2023-05-24,Eixample,el Fort Pienc,12,1
 2023-05-24,Eixample,l'Antiga Esquerra de l'Eixample,19,1
@@ -3021,7 +3021,7 @@
 2023-05-24,Sarrià-Sant Gervasi,Sant Gervasi - la Bonanova,7,1
 2023-05-24,Sarrià-Sant Gervasi,Sant Gervasi - la Bonanova,9,1
 2023-05-25,Ciutat Vella,el Raval,9,1
-2023-05-25,Desconocido,Desconocido,1,1
+2023-05-25,Desconegut,Desconegut,1,1
 2023-05-25,Eixample,l'Antiga Esquerra de l'Eixample,16,1
 2023-05-25,Eixample,l'Antiga Esquerra de l'Eixample,17,1
 2023-05-25,Eixample,la Dreta de l'Eixample,11,1
@@ -3090,7 +3090,7 @@
 2023-05-26,Sarrià-Sant Gervasi,les Tres Torres,19,1
 2023-05-27,Ciutat Vella,el Raval,8,1
 2023-05-27,Ciutat Vella,la Barceloneta,12,1
-2023-05-27,Desconocido,Desconocido,20,1
+2023-05-27,Desconegut,Desconegut,20,1
 2023-05-27,Eixample,Sant Antoni,0,1
 2023-05-27,Eixample,l'Antiga Esquerra de l'Eixample,18,1
 2023-05-27,Eixample,la Dreta de l'Eixample,13,1
@@ -3188,7 +3188,7 @@
 2023-05-31,Sarrià-Sant Gervasi,les Tres Torres,10,1
 2023-06-01,Ciutat Vella,el Barri Gòtic,9,1
 2023-06-01,Ciutat Vella,el Barri Gòtic,18,1
-2023-06-01,Desconocido,Desconocido,8,1
+2023-06-01,Desconegut,Desconegut,8,1
 2023-06-01,Eixample,Sant Antoni,13,1
 2023-06-01,Gràcia,el Camp d'en Grassot i Gràcia Nova,21,1
 2023-06-01,Gràcia,la Vila de Gràcia,19,1
@@ -3207,7 +3207,7 @@
 2023-06-02,Ciutat Vella,el Barri Gòtic,15,1
 2023-06-02,Ciutat Vella,la Barceloneta,13,1
 2023-06-02,Ciutat Vella,la Barceloneta,17,1
-2023-06-02,Desconocido,Desconocido,23,1
+2023-06-02,Desconegut,Desconegut,23,1
 2023-06-02,Eixample,Sant Antoni,13,1
 2023-06-02,Eixample,Sant Antoni,15,1
 2023-06-02,Eixample,l'Antiga Esquerra de l'Eixample,13,2
@@ -3400,7 +3400,7 @@
 2023-06-10,Sarrià-Sant Gervasi,Sant Gervasi - la Bonanova,17,1
 2023-06-10,Sarrià-Sant Gervasi,Sarrià,20,1
 2023-06-11,Ciutat Vella,el Barri Gòtic,0,1
-2023-06-11,Desconocido,Desconocido,8,1
+2023-06-11,Desconegut,Desconegut,8,1
 2023-06-11,Eixample,el Fort Pienc,8,1
 2023-06-11,Eixample,l'Antiga Esquerra de l'Eixample,1,1
 2023-06-11,Eixample,l'Antiga Esquerra de l'Eixample,10,1
@@ -3450,7 +3450,7 @@
 2023-06-13,Sarrià-Sant Gervasi,Sant Gervasi - la Bonanova,15,1
 2023-06-13,Sarrià-Sant Gervasi,les Tres Torres,8,1
 2023-06-14,Ciutat Vella,el Raval,8,1
-2023-06-14,Desconocido,Desconocido,14,1
+2023-06-14,Desconegut,Desconegut,14,1
 2023-06-14,Eixample,l'Antiga Esquerra de l'Eixample,17,1
 2023-06-14,Eixample,l'Antiga Esquerra de l'Eixample,18,1
 2023-06-14,Eixample,l'Antiga Esquerra de l'Eixample,22,1
@@ -3598,7 +3598,7 @@
 2023-06-19,Sarrià-Sant Gervasi,Sarrià,11,1
 2023-06-19,Sarrià-Sant Gervasi,les Tres Torres,16,1
 2023-06-20,Ciutat Vella,la Barceloneta,20,1
-2023-06-20,Desconocido,Desconocido,14,1
+2023-06-20,Desconegut,Desconegut,14,1
 2023-06-20,Eixample,Sant Antoni,15,1
 2023-06-20,Eixample,el Fort Pienc,8,1
 2023-06-20,Eixample,l'Antiga Esquerra de l'Eixample,14,1
@@ -3764,8 +3764,8 @@
 2023-06-26,Sarrià-Sant Gervasi,el Putxet i el Farró,11,1
 2023-06-27,Ciutat Vella,"Sant Pere, Santa Caterina i la Ribera",19,1
 2023-06-27,Ciutat Vella,el Barri Gòtic,17,1
-2023-06-27,Desconocido,Desconocido,18,1
-2023-06-27,Desconocido,Desconocido,19,1
+2023-06-27,Desconegut,Desconegut,18,1
+2023-06-27,Desconegut,Desconegut,19,1
 2023-06-27,Eixample,Sant Antoni,20,1
 2023-06-27,Eixample,Sant Antoni,21,1
 2023-06-27,Eixample,l'Antiga Esquerra de l'Eixample,9,1
@@ -3819,7 +3819,7 @@
 2023-06-28,Sarrià-Sant Gervasi,Sarrià,21,1
 2023-06-28,Sarrià-Sant Gervasi,el Putxet i el Farró,15,1
 2023-06-29,Ciutat Vella,el Barri Gòtic,14,1
-2023-06-29,Desconocido,Desconocido,8,1
+2023-06-29,Desconegut,Desconegut,8,1
 2023-06-29,Eixample,Sant Antoni,6,1
 2023-06-29,Eixample,l'Antiga Esquerra de l'Eixample,15,1
 2023-06-29,Eixample,l'Antiga Esquerra de l'Eixample,20,1
@@ -4028,7 +4028,7 @@
 2023-07-07,Sarrià-Sant Gervasi,el Putxet i el Farró,0,1
 2023-07-08,Ciutat Vella,la Barceloneta,17,1
 2023-07-08,Ciutat Vella,la Barceloneta,19,1
-2023-07-08,Desconocido,Desconocido,5,1
+2023-07-08,Desconegut,Desconegut,5,1
 2023-07-08,Eixample,la Dreta de l'Eixample,19,2
 2023-07-08,Eixample,la Nova Esquerra de l'Eixample,12,1
 2023-07-08,Horta-Guinardó,el Baix Guinardó,9,1
@@ -4046,7 +4046,7 @@
 2023-07-08,Sarrià-Sant Gervasi,Sant Gervasi - Galvany,20,1
 2023-07-08,Sarrià-Sant Gervasi,Sant Gervasi - la Bonanova,5,1
 2023-07-09,Ciutat Vella,la Barceloneta,2,1
-2023-07-09,Desconocido,Desconocido,20,1
+2023-07-09,Desconegut,Desconegut,20,1
 2023-07-09,Eixample,Sant Antoni,20,1
 2023-07-09,Eixample,l'Antiga Esquerra de l'Eixample,0,1
 2023-07-09,Eixample,l'Antiga Esquerra de l'Eixample,13,2
@@ -4212,7 +4212,7 @@
 2023-07-16,Sarrià-Sant Gervasi,Sarrià,19,1
 2023-07-17,Ciutat Vella,el Raval,8,1
 2023-07-17,Ciutat Vella,el Raval,15,1
-2023-07-17,Desconocido,Desconocido,15,1
+2023-07-17,Desconegut,Desconegut,15,1
 2023-07-17,Eixample,Sant Antoni,19,1
 2023-07-17,Eixample,l'Antiga Esquerra de l'Eixample,11,1
 2023-07-17,Eixample,l'Antiga Esquerra de l'Eixample,23,1
@@ -4309,7 +4309,7 @@
 2023-07-20,Sarrià-Sant Gervasi,el Putxet i el Farró,7,1
 2023-07-20,Sarrià-Sant Gervasi,les Tres Torres,16,1
 2023-07-21,Ciutat Vella,la Barceloneta,15,1
-2023-07-21,Desconocido,Desconocido,16,1
+2023-07-21,Desconegut,Desconegut,16,1
 2023-07-21,Eixample,Sant Antoni,2,1
 2023-07-21,Eixample,l'Antiga Esquerra de l'Eixample,21,1
 2023-07-21,Eixample,la Dreta de l'Eixample,0,1
@@ -4338,8 +4338,8 @@
 2023-07-21,Sarrià-Sant Gervasi,el Putxet i el Farró,16,1
 2023-07-22,Ciutat Vella,el Raval,5,1
 2023-07-22,Ciutat Vella,el Raval,22,1
-2023-07-22,Desconocido,Desconocido,14,1
-2023-07-22,Desconocido,Desconocido,15,1
+2023-07-22,Desconegut,Desconegut,14,1
+2023-07-22,Desconegut,Desconegut,15,1
 2023-07-22,Eixample,Sant Antoni,13,1
 2023-07-22,Eixample,l'Antiga Esquerra de l'Eixample,16,1
 2023-07-22,Eixample,la Dreta de l'Eixample,13,1
@@ -4372,7 +4372,7 @@
 2023-07-23,Sants-Montjuïc,la Marina de Port,21,1
 2023-07-23,Sarrià-Sant Gervasi,Sant Gervasi - Galvany,21,1
 2023-07-24,Ciutat Vella,el Raval,11,1
-2023-07-24,Desconocido,Desconocido,15,1
+2023-07-24,Desconegut,Desconegut,15,1
 2023-07-24,Eixample,la Dreta de l'Eixample,12,1
 2023-07-24,Eixample,la Dreta de l'Eixample,15,2
 2023-07-24,Eixample,la Dreta de l'Eixample,18,1
@@ -4395,7 +4395,7 @@
 2023-07-25,Ciutat Vella,el Raval,18,1
 2023-07-25,Ciutat Vella,la Barceloneta,12,1
 2023-07-25,Ciutat Vella,la Barceloneta,14,1
-2023-07-25,Desconocido,Desconocido,20,1
+2023-07-25,Desconegut,Desconegut,20,1
 2023-07-25,Eixample,l'Antiga Esquerra de l'Eixample,13,1
 2023-07-25,Eixample,l'Antiga Esquerra de l'Eixample,15,1
 2023-07-25,Eixample,la Dreta de l'Eixample,16,2
@@ -4728,7 +4728,7 @@
 2023-08-09,Sants-Montjuïc,la Marina del Prat Vermell,16,1
 2023-08-09,Sarrià-Sant Gervasi,les Tres Torres,8,1
 2023-08-10,Ciutat Vella,el Barri Gòtic,17,1
-2023-08-10,Desconocido,Desconocido,11,1
+2023-08-10,Desconegut,Desconegut,11,1
 2023-08-10,Eixample,la Sagrada Família,0,1
 2023-08-10,Eixample,la Sagrada Família,13,1
 2023-08-10,Gràcia,el Camp d'en Grassot i Gràcia Nova,16,1
@@ -4902,7 +4902,7 @@
 2023-08-21,Sants-Montjuïc,la Marina del Prat Vermell,1,1
 2023-08-21,Sants-Montjuïc,la Marina del Prat Vermell,8,1
 2023-08-22,Ciutat Vella,el Raval,20,1
-2023-08-22,Desconocido,Desconocido,22,1
+2023-08-22,Desconegut,Desconegut,22,1
 2023-08-22,Eixample,el Fort Pienc,12,1
 2023-08-22,Les Corts,les Corts,17,1
 2023-08-22,Nou Barris,Vilapicina i la Torre Llobeta,5,1
@@ -4959,7 +4959,7 @@
 2023-08-25,Ciutat Vella,el Barri Gòtic,11,1
 2023-08-25,Ciutat Vella,el Raval,23,1
 2023-08-25,Ciutat Vella,la Barceloneta,20,1
-2023-08-25,Desconocido,Desconocido,17,1
+2023-08-25,Desconegut,Desconegut,17,1
 2023-08-25,Eixample,Sant Antoni,12,1
 2023-08-25,Eixample,el Fort Pienc,18,1
 2023-08-25,Eixample,l'Antiga Esquerra de l'Eixample,14,1
@@ -5089,7 +5089,7 @@
 2023-08-31,Sarrià-Sant Gervasi,Sant Gervasi - Galvany,15,1
 2023-08-31,Sarrià-Sant Gervasi,les Tres Torres,16,1
 2023-09-01,Ciutat Vella,la Barceloneta,17,1
-2023-09-01,Desconocido,Desconocido,13,1
+2023-09-01,Desconegut,Desconegut,13,1
 2023-09-01,Eixample,Sant Antoni,1,1
 2023-09-01,Eixample,el Fort Pienc,6,1
 2023-09-01,Eixample,el Fort Pienc,8,1
@@ -5134,7 +5134,7 @@
 2023-09-03,Sants-Montjuïc,la Marina de Port,20,1
 2023-09-03,Sarrià-Sant Gervasi,Sant Gervasi - Galvany,16,1
 2023-09-04,Ciutat Vella,"Sant Pere, Santa Caterina i la Ribera",12,1
-2023-09-04,Desconocido,Desconocido,12,1
+2023-09-04,Desconegut,Desconegut,12,1
 2023-09-04,Eixample,el Fort Pienc,17,1
 2023-09-04,Eixample,la Dreta de l'Eixample,12,1
 2023-09-04,Eixample,la Dreta de l'Eixample,17,1
@@ -5189,7 +5189,7 @@
 2023-09-07,Ciutat Vella,el Raval,12,1
 2023-09-07,Ciutat Vella,la Barceloneta,10,1
 2023-09-07,Ciutat Vella,la Barceloneta,18,1
-2023-09-07,Desconocido,Desconocido,13,1
+2023-09-07,Desconegut,Desconegut,13,1
 2023-09-07,Eixample,Sant Antoni,3,1
 2023-09-07,Eixample,Sant Antoni,14,1
 2023-09-07,Eixample,Sant Antoni,16,1
@@ -5219,7 +5219,7 @@
 2023-09-07,Sarrià-Sant Gervasi,Sarrià,17,1
 2023-09-07,Sarrià-Sant Gervasi,les Tres Torres,0,1
 2023-09-08,Ciutat Vella,el Barri Gòtic,0,1
-2023-09-08,Desconocido,Desconocido,10,1
+2023-09-08,Desconegut,Desconegut,10,1
 2023-09-08,Eixample,l'Antiga Esquerra de l'Eixample,1,1
 2023-09-08,Eixample,l'Antiga Esquerra de l'Eixample,9,1
 2023-09-08,Eixample,l'Antiga Esquerra de l'Eixample,18,1
@@ -5242,7 +5242,7 @@
 2023-09-08,Sants-Montjuïc,la Marina del Prat Vermell,12,1
 2023-09-08,Sants-Montjuïc,la Marina del Prat Vermell,17,1
 2023-09-08,Sarrià-Sant Gervasi,Sant Gervasi - Galvany,8,1
-2023-09-09,Desconocido,Desconocido,16,1
+2023-09-09,Desconegut,Desconegut,16,1
 2023-09-09,Eixample,la Dreta de l'Eixample,13,1
 2023-09-09,Gràcia,el Camp d'en Grassot i Gràcia Nova,7,1
 2023-09-09,Gràcia,la Vila de Gràcia,15,1
@@ -5415,8 +5415,8 @@
 2023-09-18,Sarrià-Sant Gervasi,Sant Gervasi - la Bonanova,13,1
 2023-09-18,Sarrià-Sant Gervasi,Sarrià,1,1
 2023-09-18,Sarrià-Sant Gervasi,les Tres Torres,9,1
-2023-09-19,Desconocido,Desconocido,9,1
-2023-09-19,Desconocido,Desconocido,11,1
+2023-09-19,Desconegut,Desconegut,9,1
+2023-09-19,Desconegut,Desconegut,11,1
 2023-09-19,Eixample,l'Antiga Esquerra de l'Eixample,16,1
 2023-09-19,Eixample,la Dreta de l'Eixample,22,1
 2023-09-19,Eixample,la Sagrada Família,11,1
@@ -5433,7 +5433,7 @@
 2023-09-19,Sant Martí,el Clot,15,1
 2023-09-19,Sarrià-Sant Gervasi,Sant Gervasi - la Bonanova,4,1
 2023-09-20,Ciutat Vella,el Raval,12,1
-2023-09-20,Desconocido,Desconocido,8,1
+2023-09-20,Desconegut,Desconegut,8,1
 2023-09-20,Eixample,l'Antiga Esquerra de l'Eixample,10,1
 2023-09-20,Eixample,l'Antiga Esquerra de l'Eixample,16,1
 2023-09-20,Eixample,l'Antiga Esquerra de l'Eixample,18,1
@@ -5552,8 +5552,8 @@
 2023-09-25,Sarrià-Sant Gervasi,Sant Gervasi - Galvany,22,1
 2023-09-25,Sarrià-Sant Gervasi,Sarrià,4,1
 2023-09-26,Ciutat Vella,el Raval,20,1
-2023-09-26,Desconocido,Desconocido,15,1
-2023-09-26,Desconocido,Desconocido,17,1
+2023-09-26,Desconegut,Desconegut,15,1
+2023-09-26,Desconegut,Desconegut,17,1
 2023-09-26,Eixample,el Fort Pienc,10,1
 2023-09-26,Eixample,l'Antiga Esquerra de l'Eixample,13,1
 2023-09-26,Eixample,l'Antiga Esquerra de l'Eixample,14,1
@@ -5605,8 +5605,8 @@
 2023-09-28,Ciutat Vella,"Sant Pere, Santa Caterina i la Ribera",14,1
 2023-09-28,Ciutat Vella,"Sant Pere, Santa Caterina i la Ribera",15,1
 2023-09-28,Ciutat Vella,el Raval,13,1
-2023-09-28,Desconocido,Desconocido,14,1
-2023-09-28,Desconocido,Desconocido,16,1
+2023-09-28,Desconegut,Desconegut,14,1
+2023-09-28,Desconegut,Desconegut,16,1
 2023-09-28,Eixample,Sant Antoni,21,1
 2023-09-28,Eixample,el Fort Pienc,12,1
 2023-09-28,Eixample,l'Antiga Esquerra de l'Eixample,17,1
@@ -5676,7 +5676,7 @@
 2023-09-30,Sarrià-Sant Gervasi,Sant Gervasi - Galvany,2,1
 2023-09-30,Sarrià-Sant Gervasi,Sant Gervasi - la Bonanova,8,1
 2023-09-30,Sarrià-Sant Gervasi,el Putxet i el Farró,17,1
-2023-10-01,Desconocido,Desconocido,14,1
+2023-10-01,Desconegut,Desconegut,14,1
 2023-10-01,Eixample,l'Antiga Esquerra de l'Eixample,18,1
 2023-10-01,Eixample,la Dreta de l'Eixample,16,1
 2023-10-01,Les Corts,les Corts,20,1
@@ -5687,7 +5687,7 @@
 2023-10-01,Sants-Montjuïc,la Font de la Guatlla,19,1
 2023-10-01,Sants-Montjuïc,la Marina del Prat Vermell,14,1
 2023-10-01,Sarrià-Sant Gervasi,les Tres Torres,15,1
-2023-10-02,Desconocido,Desconocido,15,1
+2023-10-02,Desconegut,Desconegut,15,1
 2023-10-02,Eixample,Sant Antoni,13,1
 2023-10-02,Eixample,el Fort Pienc,8,1
 2023-10-02,Eixample,el Fort Pienc,14,1
@@ -5823,7 +5823,7 @@
 2023-10-07,Ciutat Vella,el Raval,19,1
 2023-10-07,Ciutat Vella,la Barceloneta,15,1
 2023-10-07,Ciutat Vella,la Barceloneta,23,1
-2023-10-07,Desconocido,Desconocido,15,1
+2023-10-07,Desconegut,Desconegut,15,1
 2023-10-07,Eixample,el Fort Pienc,20,1
 2023-10-07,Eixample,l'Antiga Esquerra de l'Eixample,16,1
 2023-10-07,Horta-Guinardó,Horta,21,1
@@ -5840,7 +5840,7 @@
 2023-10-07,Sants-Montjuïc,el Poble-sec,23,1
 2023-10-07,Sants-Montjuïc,la Marina del Prat Vermell,15,1
 2023-10-08,Ciutat Vella,"Sant Pere, Santa Caterina i la Ribera",19,1
-2023-10-08,Desconocido,Desconocido,10,1
+2023-10-08,Desconegut,Desconegut,10,1
 2023-10-08,Eixample,Sant Antoni,18,1
 2023-10-08,Eixample,Sant Antoni,20,1
 2023-10-08,Eixample,el Fort Pienc,11,1
@@ -5910,7 +5910,7 @@
 2023-10-10,Sarrià-Sant Gervasi,Sant Gervasi - Galvany,19,1
 2023-10-10,Sarrià-Sant Gervasi,Sarrià,14,1
 2023-10-11,Ciutat Vella,el Barri Gòtic,15,1
-2023-10-11,Desconocido,Desconocido,17,1
+2023-10-11,Desconegut,Desconegut,17,1
 2023-10-11,Eixample,Sant Antoni,18,1
 2023-10-11,Eixample,el Fort Pienc,13,1
 2023-10-11,Eixample,el Fort Pienc,16,1
@@ -6048,8 +6048,8 @@
 2023-10-18,Sarrià-Sant Gervasi,Sarrià,14,1
 2023-10-18,Sarrià-Sant Gervasi,el Putxet i el Farró,21,1
 2023-10-19,Ciutat Vella,el Raval,15,1
-2023-10-19,Desconocido,Desconocido,18,1
-2023-10-19,Desconocido,Desconocido,21,1
+2023-10-19,Desconegut,Desconegut,18,1
+2023-10-19,Desconegut,Desconegut,21,1
 2023-10-19,Eixample,la Dreta de l'Eixample,14,1
 2023-10-19,Eixample,la Dreta de l'Eixample,16,1
 2023-10-19,Eixample,la Dreta de l'Eixample,17,1
@@ -6135,7 +6135,7 @@
 2023-10-23,Sarrià-Sant Gervasi,Sant Gervasi - Galvany,12,1
 2023-10-23,Sarrià-Sant Gervasi,Sant Gervasi - Galvany,14,1
 2023-10-24,Ciutat Vella,el Raval,8,1
-2023-10-24,Desconocido,Desconocido,16,1
+2023-10-24,Desconegut,Desconegut,16,1
 2023-10-24,Eixample,Sant Antoni,15,1
 2023-10-24,Eixample,Sant Antoni,20,1
 2023-10-24,Eixample,l'Antiga Esquerra de l'Eixample,11,1
@@ -6166,7 +6166,7 @@
 2023-10-24,Sants-Montjuïc,la Marina del Prat Vermell,16,1
 2023-10-25,Ciutat Vella,"Sant Pere, Santa Caterina i la Ribera",18,1
 2023-10-25,Ciutat Vella,el Barri Gòtic,23,1
-2023-10-25,Desconocido,Desconocido,12,1
+2023-10-25,Desconegut,Desconegut,12,1
 2023-10-25,Eixample,Sant Antoni,2,1
 2023-10-25,Eixample,Sant Antoni,10,1
 2023-10-25,Eixample,Sant Antoni,12,1
@@ -6269,7 +6269,7 @@
 2023-10-29,Ciutat Vella,el Barri Gòtic,8,1
 2023-10-29,Ciutat Vella,el Barri Gòtic,20,1
 2023-10-29,Ciutat Vella,el Raval,20,1
-2023-10-29,Desconocido,Desconocido,13,1
+2023-10-29,Desconegut,Desconegut,13,1
 2023-10-29,Eixample,Sant Antoni,16,1
 2023-10-29,Eixample,la Dreta de l'Eixample,12,1
 2023-10-29,Eixample,la Dreta de l'Eixample,15,1
@@ -6334,7 +6334,7 @@
 2023-10-31,Sarrià-Sant Gervasi,Sant Gervasi - la Bonanova,18,1
 2023-10-31,Sarrià-Sant Gervasi,Sarrià,20,1
 2023-10-31,Sarrià-Sant Gervasi,el Putxet i el Farró,10,1
-2023-11-01,Desconocido,Desconocido,19,1
+2023-11-01,Desconegut,Desconegut,19,1
 2023-11-01,Eixample,el Fort Pienc,4,1
 2023-11-01,Eixample,la Nova Esquerra de l'Eixample,9,1
 2023-11-01,Les Corts,les Corts,6,1
@@ -6348,7 +6348,7 @@
 2023-11-02,Ciutat Vella,el Raval,9,1
 2023-11-02,Ciutat Vella,el Raval,15,1
 2023-11-02,Ciutat Vella,el Raval,18,1
-2023-11-02,Desconocido,Desconocido,14,1
+2023-11-02,Desconegut,Desconegut,14,1
 2023-11-02,Eixample,Sant Antoni,3,1
 2023-11-02,Eixample,l'Antiga Esquerra de l'Eixample,22,1
 2023-11-02,Eixample,la Nova Esquerra de l'Eixample,9,1
@@ -6510,7 +6510,7 @@
 2023-11-08,Sarrià-Sant Gervasi,Sant Gervasi - la Bonanova,15,1
 2023-11-08,Sarrià-Sant Gervasi,Sant Gervasi - la Bonanova,17,1
 2023-11-09,Ciutat Vella,la Barceloneta,20,1
-2023-11-09,Desconocido,Desconocido,18,1
+2023-11-09,Desconegut,Desconegut,18,1
 2023-11-09,Eixample,l'Antiga Esquerra de l'Eixample,6,1
 2023-11-09,Eixample,la Dreta de l'Eixample,1,1
 2023-11-09,Eixample,la Dreta de l'Eixample,13,1
@@ -6570,7 +6570,7 @@
 2023-11-12,Ciutat Vella,"Sant Pere, Santa Caterina i la Ribera",21,1
 2023-11-12,Ciutat Vella,el Barri Gòtic,22,1
 2023-11-12,Ciutat Vella,la Barceloneta,6,1
-2023-11-12,Desconocido,Desconocido,9,1
+2023-11-12,Desconegut,Desconegut,9,1
 2023-11-12,Eixample,Sant Antoni,23,1
 2023-11-12,Eixample,l'Antiga Esquerra de l'Eixample,15,1
 2023-11-12,Horta-Guinardó,Sant Genís dels Agudells,17,1
@@ -6722,7 +6722,7 @@
 2023-11-18,Sarrià-Sant Gervasi,Sant Gervasi - la Bonanova,11,1
 2023-11-18,Sarrià-Sant Gervasi,Sarrià,1,1
 2023-11-18,Sarrià-Sant Gervasi,"Vallvidrera, el Tibidabo i les Planes",17,1
-2023-11-19,Desconocido,Desconocido,7,1
+2023-11-19,Desconegut,Desconegut,7,1
 2023-11-19,Eixample,el Fort Pienc,16,1
 2023-11-19,Eixample,la Nova Esquerra de l'Eixample,6,1
 2023-11-19,Horta-Guinardó,el Baix Guinardó,11,1
@@ -6778,7 +6778,7 @@
 2023-11-21,Sarrià-Sant Gervasi,Sant Gervasi - Galvany,16,1
 2023-11-21,Sarrià-Sant Gervasi,Sant Gervasi - la Bonanova,8,1
 2023-11-21,Sarrià-Sant Gervasi,les Tres Torres,10,1
-2023-11-22,Desconocido,Desconocido,14,1
+2023-11-22,Desconegut,Desconegut,14,1
 2023-11-22,Eixample,Sant Antoni,10,2
 2023-11-22,Eixample,l'Antiga Esquerra de l'Eixample,19,1
 2023-11-22,Eixample,la Dreta de l'Eixample,14,1
@@ -7144,7 +7144,7 @@
 2023-12-08,Sarrià-Sant Gervasi,Sant Gervasi - Galvany,11,1
 2023-12-08,Sarrià-Sant Gervasi,Sant Gervasi - Galvany,12,1
 2023-12-08,Sarrià-Sant Gervasi,les Tres Torres,2,1
-2023-12-09,Desconocido,Desconocido,17,1
+2023-12-09,Desconegut,Desconegut,17,1
 2023-12-09,Eixample,Sant Antoni,20,1
 2023-12-09,Eixample,la Dreta de l'Eixample,19,1
 2023-12-09,Eixample,la Sagrada Família,11,1
@@ -7280,7 +7280,7 @@
 2023-12-14,Sarrià-Sant Gervasi,Sarrià,10,1
 2023-12-14,Sarrià-Sant Gervasi,Sarrià,16,1
 2023-12-15,Ciutat Vella,el Raval,21,1
-2023-12-15,Desconocido,Desconocido,11,1
+2023-12-15,Desconegut,Desconegut,11,1
 2023-12-15,Eixample,el Fort Pienc,23,1
 2023-12-15,Eixample,l'Antiga Esquerra de l'Eixample,12,1
 2023-12-15,Eixample,l'Antiga Esquerra de l'Eixample,15,1
@@ -7322,7 +7322,7 @@
 2023-12-16,Sants-Montjuïc,la Bordeta,21,1
 2023-12-16,Sarrià-Sant Gervasi,Sant Gervasi - Galvany,16,1
 2023-12-16,Sarrià-Sant Gervasi,el Putxet i el Farró,16,1
-2023-12-17,Desconocido,Desconocido,22,1
+2023-12-17,Desconegut,Desconegut,22,1
 2023-12-17,Eixample,l'Antiga Esquerra de l'Eixample,15,1
 2023-12-17,Eixample,l'Antiga Esquerra de l'Eixample,17,1
 2023-12-17,Eixample,la Dreta de l'Eixample,3,1
@@ -7369,7 +7369,7 @@
 2023-12-18,Sarrià-Sant Gervasi,Sant Gervasi - Galvany,19,1
 2023-12-18,Sarrià-Sant Gervasi,Sant Gervasi - la Bonanova,9,1
 2023-12-18,Sarrià-Sant Gervasi,Sarrià,14,1
-2023-12-19,Desconocido,Desconocido,14,1
+2023-12-19,Desconegut,Desconegut,14,1
 2023-12-19,Eixample,l'Antiga Esquerra de l'Eixample,8,1
 2023-12-19,Eixample,l'Antiga Esquerra de l'Eixample,19,1
 2023-12-19,Eixample,l'Antiga Esquerra de l'Eixample,22,1
@@ -7492,7 +7492,7 @@
 2023-12-23,Sarrià-Sant Gervasi,Sant Gervasi - Galvany,14,1
 2023-12-23,Sarrià-Sant Gervasi,Sarrià,18,1
 2023-12-23,Sarrià-Sant Gervasi,el Putxet i el Farró,12,1
-2023-12-24,Desconocido,Desconocido,15,1
+2023-12-24,Desconegut,Desconegut,15,1
 2023-12-24,Eixample,Sant Antoni,11,1
 2023-12-24,Eixample,Sant Antoni,18,1
 2023-12-24,Eixample,el Fort Pienc,18,1
@@ -7536,7 +7536,7 @@
 2023-12-27,Sants-Montjuïc,la Marina de Port,20,1
 2023-12-27,Sants-Montjuïc,la Marina del Prat Vermell,16,1
 2023-12-27,Sarrià-Sant Gervasi,les Tres Torres,20,1
-2023-12-28,Desconocido,Desconocido,18,1
+2023-12-28,Desconegut,Desconegut,18,1
 2023-12-28,Eixample,l'Antiga Esquerra de l'Eixample,22,1
 2023-12-28,Eixample,la Dreta de l'Eixample,22,1
 2023-12-28,Eixample,la Nova Esquerra de l'Eixample,13,1
